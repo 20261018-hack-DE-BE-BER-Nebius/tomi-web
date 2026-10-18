@@ -1,0 +1,53 @@
+bun test v1.4.3 (c6da4a4d3)
+
+src/lib/types.test.ts:
+(pass) rejects active and credential-bearing citation URLs [0.18ms]
+(pass) validates event and answer boundaries [0.12ms]
+
+src/lib/api-routes.test.ts:
+(pass) BFF route allowlist > forwards saved history to the implemented backend endpoint [0.11ms]
+(pass) BFF route allowlist > forwards audio transcription to the implemented backend endpoint
+(pass) BFF route allowlist > keeps the additions exact and rejects alternate or nested routes [0.02ms]
+(pass) BFF route allowlist > retains existing authentication, model and inference routes [0.01ms]
+
+src/app/archive/route.test.ts:
+(pass) archive redirect preserves the browser origin behind a reverse proxy [0.11ms]
+
+src/features/evidence/replay.test.ts:
+(pass) rejects unrelated JSON and invalid answers [0.04ms]
+(pass) accepts actual exported answer shape without manufacturing failed-run answers [0.06ms]
+
+src/features/evidence/conversation.test.ts:
+(pass) conversation restore is account scoped and validates session and content [0.06ms]
+(pass) restores actual server answers and events without inventing answers for incomplete runs [0.12ms]
+(pass) a steered history replaces the prior run and retains the successor answer [0.03ms]
+
+src/features/chat/runState.test.ts:
+(pass) real run reducer > binds service run IDs and appends only matching events [0.10ms]
+(pass) real run reducer > a steering successor keeps the audit trail and replaces partial text [0.03ms]
+(pass) real run reducer > invalid evidence cannot appear as a successful answer [0.01ms]
+(pass) real run reducer > pre-start failure clears the pending run
+(pass) real run reducer > cancel events do not imply a completed answer
+
+src/features/deck/deck.test.ts:
+(pass) every deck section and editor label has all four language variants [0.13ms]
+
+src/lib/i18n/i18n.test.ts:
+(pass) all four languages cover the same interface [0.11ms]
+
+src/components/ui/cards/ComparisonCard/ComparisonCard.test.tsx:
+(pass) source text is escaped and unsafe links are omitted [6.85ms]
+
+src/components/ui/data-display/Markdown/Markdown.test.tsx:
+(pass) renders markdown without active HTML or dangerous links [3.05ms]
+
+src/components/ui/data-display/TracePanel/TracePanel.test.tsx:
+(pass) trace renders supplied events without inventing activity [3.23ms]
+
+src/components/ui/data-display/MermaidDiagram/source.test.ts:
+(pass) diagram edits accept flowcharts while rejecting executable configuration and actions [0.03ms]
+
+ 23 pass
+ 0 fail
+ 101 expect() calls
+Ran 23 tests across 12 files. [60.00ms]

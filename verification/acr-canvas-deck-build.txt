@@ -1,0 +1,220 @@
+WARNING: Packing source code into tar to upload...
+WARNING: Excluding '.gitignore' based on default ignore rules
+WARNING: Excluding '.git' based on default ignore rules
+WARNING: Uploading archived source code from '/var/folders/zb/6yrhsssj3tg5647b8fyhjs800000gn/T/build_archive_00d6a0807262487a86ae5d19a6d28eea.tar.gz'...
+WARNING: Sending context (49.502 MiB) to registry: tomireg2610181730...
+WARNING: Queued a build with ID: dtj
+WARNING: Waiting for an agent...
+2026/10/18 17:22:58 Downloading source code...
+2026/10/18 17:23:00 Finished downloading source code
+2026/10/18 17:23:01 Using acb_vol_0dfed378-e855-4ad4-88df-304988408ce5 as the home volume
+2026/10/18 17:23:01 Setting up Docker configuration...
+2026/10/18 17:23:01 Successfully set up Docker configuration
+2026/10/18 17:23:01 Logging in to registry: tomireg2610181730.azurecr.io
+2026/10/18 17:23:02 Successfully logged into tomireg2610181730.azurecr.io
+2026/10/18 17:23:02 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+2026/10/18 17:23:02 Scanning for dependencies...
+2026/10/18 17:23:03 Successfully scanned dependencies
+2026/10/18 17:23:03 Launching container with name: build
+Sending build context to Docker daemon  55.64MB
+Step 1/15 : FROM oven/bun:1.4.3 AS dependencies
+1.4.3: Pulling from oven/bun
+4846f2900730: Pulling fs layer
+c4194ac61053: Pulling fs layer
+5fe4e744a71a: Pulling fs layer
+1a556d540a85: Pulling fs layer
+c6792e97436b: Pulling fs layer
+b521ffe452bc: Pulling fs layer
+8a6cfacb3076: Pulling fs layer
+1a556d540a85: Waiting
+c6792e97436b: Waiting
+b521ffe452bc: Waiting
+8a6cfacb3076: Waiting
+5fe4e744a71a: Download complete
+c4194ac61053: Verifying Checksum
+c4194ac61053: Download complete
+c6792e97436b: Download complete
+b521ffe452bc: Verifying Checksum
+b521ffe452bc: Download complete
+1a556d540a85: Verifying Checksum
+4846f2900730: Verifying Checksum
+4846f2900730: Download complete
+8a6cfacb3076: Verifying Checksum
+8a6cfacb3076: Download complete
+4846f2900730: Pull complete
+c4194ac61053: Pull complete
+5fe4e744a71a: Pull complete
+1a556d540a85: Pull complete
+c6792e97436b: Pull complete
+b521ffe452bc: Pull complete
+8a6cfacb3076: Pull complete
+Digest: sha256:ec06c3b6cea04192ae6770c434f668ca41d343ad19fa6472216c7b48be39c598
+Status: Downloaded newer image for oven/bun:1.4.3
+ ---> 88fe237a7725
+Step 2/15 : WORKDIR /app
+ ---> Running in f54922130594
+Removing intermediate container f54922130594
+ ---> abe99cf156ac
+Step 3/15 : COPY package.json bun.lock ./
+ ---> 6215c738dc2d
+Step 4/15 : RUN bun install --frozen-lockfile
+ ---> Running in f591c3ff9f3a
+bun install v1.4.3 (c6da4a4d3)
+
++ @biomejs/biome@2.4.2
++ @tailwindcss/turbopack@4.3.3
++ @types/bun@1.4.3
++ @types/node@20.19.43
++ @types/react@19.3.0
++ @types/react-dom@19.3.0
++ @types/three@0.186.0
++ @types/ws@8.18.1
++ babel-plugin-react-compiler@1.0.0
++ tailwindcss@4.3.3
++ typescript@5.9.3
++ dompurify@3.4.17
++ mermaid@12.2.0
++ next@16.4.2
++ react@19.3.0
++ react-dom@19.3.0
++ react-markdown@10.1.0
++ remark-gfm@4.0.1
++ three@0.186.1
++ ws@8.21.0
+
+288 packages installed [3.06s]
+Removing intermediate container f591c3ff9f3a
+ ---> ee5d46aa2a1f
+Step 5/15 : RUN bun audit
+ ---> Running in 50ceb5d55995
+bun audit v1.4.3 (c6da4a4d3)
+
+No vulnerabilities found (checked 338 packages) [235.00ms]
+Removing intermediate container 50ceb5d55995
+ ---> b70ac4cb2f44
+Step 6/15 : FROM dependencies AS build
+ ---> b70ac4cb2f44
+Step 7/15 : COPY . .
+ ---> 38cc54d5124b
+Step 8/15 : RUN bun run build
+ ---> Running in f5a4da13a647
+$ next build
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.ts took 41ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  Creating an optimized production build ...
+
+✓ Compiled successfully in 32.9s
+  Running TypeScript ...
+  Finished TypeScript in 10.2s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/4) ...
+  Generating static pages using 1 worker (1/4)
+  Generating static pages using 1 worker (2/4)
+  Generating static pages using 1 worker (3/4)
+✓ Generating static pages using 1 worker (4/4) in 100ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /api/[...path]
+├ ƒ /api/csp-report
+├ ƒ /api/health
+├ ƒ /archive
+├ ƒ /canvas
+├ ƒ /chat
+├ ƒ /deck/202610181800
+├ ƒ /evidence
+├ ƒ /graph
+└ ƒ /login
+
+
+ƒ Proxy (Middleware)
+
+ƒ  (Dynamic)  server-rendered on demand
+
+Removing intermediate container f5a4da13a647
+ ---> b13ed2a605c7
+Step 9/15 : FROM oven/bun:1.4.3 AS runtime
+1.4.3: Pulling from oven/bun
+Digest: sha256:ec06c3b6cea04192ae6770c434f668ca41d343ad19fa6472216c7b48be39c598
+Status: Image is up to date for oven/bun:1.4.3
+ ---> 88fe237a7725
+Step 10/15 : WORKDIR /app
+ ---> Using cache
+ ---> abe99cf156ac
+Step 11/15 : ENV NODE_ENV=production
+ ---> Running in 6bc35c91c4db
+Removing intermediate container 6bc35c91c4db
+ ---> 19394d53a2fc
+Step 12/15 : COPY --from=build --chown=bun:bun /app /app
+
+ ---> 23ac7936fc8a
+Step 13/15 : USER bun
+ ---> Running in 57f364006c5a
+Removing intermediate container 57f364006c5a
+ ---> b8c838df4207
+Step 14/15 : EXPOSE 3000
+ ---> Running in d18fd39e0fee
+Removing intermediate container d18fd39e0fee
+ ---> 0b12a8324db5
+Step 15/15 : CMD ["bun", "server.mjs"]
+ ---> Running in cbfb1ce94ec6
+Removing intermediate container cbfb1ce94ec6
+ ---> b1b980e36e10
+Successfully built b1b980e36e10
+Successfully tagged tomireg2610181730.azurecr.io/tomi-web:20261018-implementation
+2026/10/18 17:24:44 Successfully executed container: build
+2026/10/18 17:24:44 Executing step ID: push. Timeout(sec): 3600, Working directory: '', Network: ''
+2026/10/18 17:24:44 Pushing image: tomireg2610181730.azurecr.io/tomi-web:20261018-implementation, attempt 1
+The push refers to repository [tomireg2610181730.azurecr.io/tomi-web]
+b157858ccb18: Preparing
+6dae4b0a1675: Preparing
+bba7cbd90ad4: Preparing
+7d7e5edd555c: Preparing
+18fa3c8262f0: Preparing
+6c04c2b058b9: Preparing
+c83271467846: Preparing
+50db8351c565: Preparing
+0487fc82d485: Preparing
+6c04c2b058b9: Waiting
+c83271467846: Waiting
+50db8351c565: Waiting
+0487fc82d485: Waiting
+18fa3c8262f0: Layer already exists
+7d7e5edd555c: Layer already exists
+bba7cbd90ad4: Layer already exists
+6c04c2b058b9: Layer already exists
+50db8351c565: Layer already exists
+c83271467846: Layer already exists
+6dae4b0a1675: Pushed
+0487fc82d485: Pushed
+b157858ccb18: Pushed
+20261018-implementation: digest: sha256:e60ec1ce4c85d3c1677fb633d523198022f03cb85dc69073ad2535ab12e2b9d2 size: 2200
+2026/10/18 17:25:35 Successfully pushed image: tomireg2610181730.azurecr.io/tomi-web:20261018-implementation
+2026/10/18 17:25:35 Step ID: build marked as successful (elapsed time in seconds: 102.489428)
+2026/10/18 17:25:35 Populating digests for step ID: build...
+2026/10/18 17:25:36 Successfully populated digests for step ID: build
+2026/10/18 17:25:36 Step ID: push marked as successful (elapsed time in seconds: 50.551084)
+2026/10/18 17:25:36 The following dependencies were found:
+2026/10/18 17:25:36
+- image:
+    registry: tomireg2610181730.azurecr.io
+    repository: tomi-web
+    tag: 20261018-implementation
+    digest: sha256:e60ec1ce4c85d3c1677fb633d523198022f03cb85dc69073ad2535ab12e2b9d2
+  runtime-dependency:
+    registry: registry.hub.docker.com
+    repository: oven/bun
+    tag: 1.4.3
+    digest: sha256:ec06c3b6cea04192ae6770c434f668ca41d343ad19fa6472216c7b48be39c598
+  git: {}
+
+
+Run ID: dtj was successful after 2m38s

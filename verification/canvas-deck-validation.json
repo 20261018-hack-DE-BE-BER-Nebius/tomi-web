@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-10-18T17:16:45.066786+00:00",
+  "service": "tomi-web",
+  "source_status": "frozen",
+  "tests": {
+    "passed": 23,
+    "assertions": 101
+  },
+  "lint": "passed",
+  "audit": "zero vulnerabilities",
+  "build": "passed",
+  "git_mutations": "none; root owns central release",
+  "live_api_acceptance": {
+    "class": "actual provider and persistence roundtrip",
+    "result": "passed",
+    "answers": 1,
+    "sources": 7,
+    "history_status": 200,
+    "receipt": "tomi-web/verification/canvas-live-acceptance.json"
+  },
+  "browser_acceptance": {
+    "owner": "root",
+    "reported": "Root IAB canvas1answer7sources, reload persistence, actual3D, Mermaid rendering and editor passed",
+    "screenshot": "root video02 capture; exact path pending root receipt"
+  },
+  "limits": [
+    "Spatial positions do not assert semantic similarity.",
+    "Required Embed VL and Rerank VL inference awaiting current verification.",
+    "Super VL provider inference and Parse3.5 extraction verified; full six-case pipeline evaluation remains separate."
+  ]
+}

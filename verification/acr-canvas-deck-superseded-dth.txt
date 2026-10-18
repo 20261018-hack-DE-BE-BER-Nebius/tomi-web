@@ -1,0 +1,147 @@
+WARNING: Packing source code into tar to upload...
+WARNING: Excluding '.gitignore' based on default ignore rules
+WARNING: Excluding '.git' based on default ignore rules
+WARNING: Uploading archived source code from '/var/folders/zb/6yrhsssj3tg5647b8fyhjs800000gn/T/build_archive_c0f461def5854fbd92650c83d9ae1a73.tar.gz'...
+WARNING: Sending context (20.012 MiB) to registry: tomireg2610181730...
+WARNING: Queued a build with ID: dth
+WARNING: Waiting for an agent...
+2026/10/18 17:21:39 Downloading source code...
+2026/10/18 17:21:40 Finished downloading source code
+2026/10/18 17:21:40 Using acb_vol_fdaf1880-3cf3-4899-ad9e-a258cfb34ce2 as the home volume
+2026/10/18 17:21:40 Setting up Docker configuration...
+2026/10/18 17:21:41 Successfully set up Docker configuration
+2026/10/18 17:21:41 Logging in to registry: tomireg2610181730.azurecr.io
+2026/10/18 17:21:41 Successfully logged into tomireg2610181730.azurecr.io
+2026/10/18 17:21:41 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+2026/10/18 17:21:41 Scanning for dependencies...
+2026/10/18 17:21:42 Successfully scanned dependencies
+2026/10/18 17:21:42 Launching container with name: build
+Sending build context to Docker daemon  23.59MB
+Step 1/15 : FROM oven/bun:1.4.3 AS dependencies
+1.4.3: Pulling from oven/bun
+4846f2900730: Pulling fs layer
+c4194ac61053: Pulling fs layer
+5fe4e744a71a: Pulling fs layer
+1a556d540a85: Pulling fs layer
+c6792e97436b: Pulling fs layer
+b521ffe452bc: Pulling fs layer
+8a6cfacb3076: Pulling fs layer
+1a556d540a85: Waiting
+c6792e97436b: Waiting
+b521ffe452bc: Waiting
+8a6cfacb3076: Waiting
+5fe4e744a71a: Verifying Checksum
+5fe4e744a71a: Download complete
+c4194ac61053: Verifying Checksum
+c4194ac61053: Download complete
+4846f2900730: Verifying Checksum
+4846f2900730: Download complete
+c6792e97436b: Verifying Checksum
+c6792e97436b: Download complete
+b521ffe452bc: Verifying Checksum
+b521ffe452bc: Download complete
+1a556d540a85: Verifying Checksum
+1a556d540a85: Download complete
+8a6cfacb3076: Verifying Checksum
+8a6cfacb3076: Download complete
+4846f2900730: Pull complete
+c4194ac61053: Pull complete
+5fe4e744a71a: Pull complete
+1a556d540a85: Pull complete
+c6792e97436b: Pull complete
+b521ffe452bc: Pull complete
+8a6cfacb3076: Pull complete
+Digest: sha256:ec06c3b6cea04192ae6770c434f668ca41d343ad19fa6472216c7b48be39c598
+Status: Downloaded newer image for oven/bun:1.4.3
+ ---> 88fe237a7725
+Step 2/15 : WORKDIR /app
+ ---> Running in 5ed267f209a1
+Removing intermediate container 5ed267f209a1
+ ---> 908cd6e3b4f3
+Step 3/15 : COPY package.json bun.lock ./
+ ---> a97817c6ced2
+Step 4/15 : RUN bun install --frozen-lockfile
+ ---> Running in 3a26d26126ef
+bun install v1.4.3 (c6da4a4d3)
+
++ @biomejs/biome@2.4.2
++ @tailwindcss/turbopack@4.3.3
++ @types/bun@1.4.3
++ @types/node@20.19.43
++ @types/react@19.3.0
++ @types/react-dom@19.3.0
++ @types/three@0.186.0
++ @types/ws@8.18.1
++ babel-plugin-react-compiler@1.0.0
++ tailwindcss@4.3.3
++ typescript@5.9.3
++ dompurify@3.4.17
++ mermaid@12.2.0
++ next@16.4.2
++ react@19.3.0
++ react-dom@19.3.0
++ react-markdown@10.1.0
++ remark-gfm@4.0.1
++ three@0.186.1
++ ws@8.21.0
+
+288 packages installed [2.78s]
+Removing intermediate container 3a26d26126ef
+ ---> 493d86d98cbc
+Step 5/15 : RUN bun audit
+ ---> Running in 5b7b532194c6
+bun audit v1.4.3 (c6da4a4d3)
+
+No vulnerabilities found (checked 338 packages) [224.00ms]
+Removing intermediate container 5b7b532194c6
+ ---> 41640907fc3b
+Step 6/15 : FROM dependencies AS build
+ ---> 41640907fc3b
+Step 7/15 : COPY . .
+ ---> d1d9af34d6d9
+Step 8/15 : RUN bun run build
+ ---> Running in 4d2921b3f7a7
+$ next build
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.ts took 45ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  Creating an optimized production build ...
+
+✓ Compiled successfully in 30.2s
+  Running TypeScript ...
+  Finished TypeScript in 9.3s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/4) ...
+  Generating static pages using 1 worker (1/4)
+  Generating static pages using 1 worker (2/4)
+  Generating static pages using 1 worker (3/4)
+✓ Generating static pages using 1 worker (4/4) in 97ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /api/[...path]
+├ ƒ /api/csp-report
+├ ƒ /api/health
+├ ƒ /archive
+├ ƒ /canvas
+├ ƒ /chat
+├ ƒ /deck/202610181800
+├ ƒ /evidence
+├ ƒ /graph
+└ ƒ /login
+
+
+ƒ Proxy (Middleware)
+
+ƒ  (Dynamic)  server-rendered on demand
+
+Removing intermediate container 4d2921b3f7a7
+ ---> d4cbe6a510f9
+Step 9/15 : FROM oven/bun:1.4.3 AS runtime

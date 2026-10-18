@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-10-18T17:27:12.245704+00:00",
+  "scope": "Targeted web-only rollout to preserve concurrent core model configuration changes",
+  "plan_path": "tomi-iac/.terraform/web-canvas-deck.tfplan (private ignored plan)",
+  "resource_changes": [
+    {
+      "address": "azurerm_container_app.service[\"web\"]",
+      "actions": ["update"],
+      "image_before": "tomireg2610181730.azurecr.io/tomi-web@sha256:17ba0f4099ff8b9f28331409c376525bb2a8ee73542af072fd66c2b161b6095e",
+      "image_after": "tomireg2610181730.azurecr.io/tomi-web@sha256:e60ec1ce4c85d3c1677fb633d523198022f03cb85dc69073ad2535ab12e2b9d2",
+      "changed_environment_names": []
+    }
+  ],
+  "approved_for_apply": true,
+  "raw_plan_persisted_publicly": false,
+  "provider_secrets_in_receipt": false
+}

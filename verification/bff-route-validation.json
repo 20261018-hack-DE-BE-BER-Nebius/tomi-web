@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-18T16:43:01.796889+00:00",
+  "change": "Allow only the implemented history and audio/transcriptions additions in the BFF route allowlist",
+  "regression_before": {
+    "passed": 2,
+    "failed": 2
+  },
+  "tests_after": {
+    "passed": 17,
+    "failed": 0
+  },
+  "lint": "passed",
+  "production_build": "passed",
+  "gitleaks_source": "passed",
+  "new_allowed_paths": ["history", "audio/transcriptions"],
+  "boundary_checks": [
+    "history/private",
+    "audio/transcriptions/private",
+    "audio/diarize",
+    "audio%2ftranscriptions",
+    "../history"
+  ],
+  "source_paths": [
+    "/Users/eydrent/Documents/hackathons/20261018-hack-DE-BE-BER-Nebius/project/project-nemotron/tomi-web/src/app/api/[...path]/route.ts",
+    "/Users/eydrent/Documents/hackathons/20261018-hack-DE-BE-BER-Nebius/project/project-nemotron/tomi-web/src/lib/api-routes.ts",
+    "/Users/eydrent/Documents/hackathons/20261018-hack-DE-BE-BER-Nebius/project/project-nemotron/tomi-web/src/lib/api-routes.test.ts"
+  ]
+}

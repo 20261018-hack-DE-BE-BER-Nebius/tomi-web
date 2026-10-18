@@ -1,0 +1,42 @@
+{
+  "assets": [
+    {
+      "source": "/Users/eydrent/Documents/hackathons/20261018-hack-DE-BE-BER-Nebius/project/project-nemotron/tomi-web/verification/screenshots/azure-landing.jpg",
+      "source_sha256": "4883f92065facffa93e18020b7aa4d1fa519b6de09874ec81e6c4bfe597d4034",
+      "asset": "public/deck/azure-landing.webp",
+      "asset_sha256": "9a3d43d77472e7c28e764f56a483c751050290b476859eb98bc0865a6b5c148c",
+      "bytes": 50626,
+      "transformation": "WebP quality84, no enlargement, no compositing or changed UI content",
+      "capture": "Actual deployed Tomi UI, 18 October 2026"
+    },
+    {
+      "source": "/Users/eydrent/Documents/hackathons/20261018-hack-DE-BE-BER-Nebius/project/project-nemotron/tomi-web/verification/screenshots/azure-comparison-light.jpg",
+      "source_sha256": "65d237fb54a862538a25632f318aa3336c4b5defbe35b8f9f15fa924324c1fc5",
+      "asset": "public/deck/azure-comparison-light.webp",
+      "asset_sha256": "3f19af730bd65135c5a6347a4c01ce0caf00813ceeb50b6e58e6ac561ca13f84",
+      "bytes": 69596,
+      "transformation": "WebP quality84, no enlargement, no compositing or changed UI content",
+      "capture": "Actual deployed Tomi UI, 18 October 2026"
+    },
+    {
+      "source": "/Users/eydrent/Documents/hackathons/20261018-hack-DE-BE-BER-Nebius/project/project-nemotron/tomi-web/verification/screenshots/azure-comparison-trace.jpg",
+      "source_sha256": "446785d70227fd3005178e61ae5fed6e1c62b7f354bb86e77f050b72c55710eb",
+      "asset": "public/deck/azure-comparison-trace.webp",
+      "asset_sha256": "8eab3bd3f82a9f94ca4f35a5a98f2af3a8f009048f68c20056a3bf6efdb1da6f",
+      "bytes": 45456,
+      "transformation": "WebP quality84, no enlargement, no compositing or changed UI content",
+      "capture": "Actual deployed Tomi UI, 18 October 2026"
+    }
+  ],
+  "architecture": "Editable authored service topology. Parse3.5 extraction verified; Super VL provider and core inference HTTP200 verified. Embed and Rerank still awaiting verification.",
+  "rendering_sources": [
+    "https://mermaid.js.org/config/usage.html",
+    "https://github.com/mermaid-js/mermaid",
+    "https://github.com/cure53/DOMPurify"
+  ],
+  "dependency_registry_observed": {
+    "mermaid": "12.2.0",
+    "dompurify": "3.4.17"
+  },
+  "super_vl_receipt": "project-nemotron/tomi-ai/tomi-ai-core/verification/nebius-model-deployment/super-vl-core-live.json"
+}

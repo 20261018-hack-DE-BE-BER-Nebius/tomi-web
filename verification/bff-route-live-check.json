@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-18T16:42:31.079Z",
+  "method": "Actual BFF handler calls against native Rust backend, unauthenticated",
+  "results": [
+    {
+      "path": "history",
+      "status": 401
+    },
+    {
+      "path": "audio/transcriptions",
+      "status": 401
+    },
+    {
+      "path": "history/private",
+      "status": 404
+    }
+  ]
+}
