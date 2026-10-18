@@ -1,0 +1,178 @@
+{
+  "en": [
+    [
+      "Tomi TimeLens",
+      "Knowledge across time",
+      "Historical Britannica and modern Wikipedia, compared through their original passages.",
+      "A source-first research workspace."
+    ],
+    [
+      "The problem",
+      "Two sources. Different eras.",
+      "A matching title does not prove that two passages discuss the same thing. OCR errors and changing terminology can hide the difference.",
+      "Evidence before interpretation.|Original wording beside modern accounts.|Uncertainty stays visible."
+    ],
+    [
+      "The experience",
+      "A comparison you can inspect",
+      "Ask a question, choose a model, then read the answer alongside the passages that support it.",
+      "Actual product capture: shipbuilding comparison with gpt-6-astra."
+    ],
+    [
+      "The evidence",
+      "Sources and limits, together",
+      "Expand a passage, follow the original source, and inspect the run activity. A failed or missing stage remains part of the answer.",
+      "Actual product capture: retrieval limitations and service events."
+    ],
+    [
+      "The architecture",
+      "A traceable service boundary",
+      "The Rust backend owns sessions and event history. AI Core alone holds provider credentials. Hermes retrieves the source material.",
+      "Edit the Mermaid source below to explore the architecture."
+    ],
+    [
+      "Verification",
+      "Working today. Still to verify.",
+      "Parse3.5 has extracted real historical pages. Nemotron Super VL provider inference is verified. Embedding and reranking are still being deployed and tested.",
+      "Status recorded on 18 October 2026. Provider configuration alone does not prove inference."
+    ],
+    [
+      "The live demo",
+      "One question, all the evidence",
+      "Start in the workspace, open the canvas, then return to the source. Use the visible service status to check the available models.",
+      "English, Spanish, German and French. Dark and light themes."
+    ]
+  ],
+  "es": [
+    [
+      "Tomi TimeLens",
+      "El conocimiento a través del tiempo",
+      "Britannica histórica y Wikipedia actual, comparadas mediante sus pasajes originales.",
+      "Un espacio de investigación centrado en las fuentes."
+    ],
+    [
+      "El problema",
+      "Dos fuentes. Épocas distintas.",
+      "Un título coincidente no demuestra que dos pasajes traten el mismo tema. Los errores de OCR y la terminología cambiante pueden ocultar la diferencia.",
+      "Evidencia antes de interpretar.|Redacción original junto a las versiones modernas.|La incertidumbre permanece visible."
+    ],
+    [
+      "La experiencia",
+      "Una comparación que puedes examinar",
+      "Formula una pregunta, elige un modelo y lee la respuesta junto a los pasajes que la sustentan.",
+      "Captura real: comparación de construcción naval con gpt-6-astra."
+    ],
+    [
+      "La evidencia",
+      "Fuentes y límites, juntos",
+      "Amplía un pasaje, sigue la fuente original y examina la actividad de la ejecución. Una etapa fallida o ausente permanece en la respuesta.",
+      "Captura real: limitaciones de recuperación y eventos de los servicios."
+    ],
+    [
+      "La arquitectura",
+      "Servicios con trazabilidad",
+      "El backend Rust gestiona sesiones e historial. Solo AI Core conserva las credenciales de proveedores. Hermes recupera las fuentes.",
+      "Edita el código Mermaid para explorar la arquitectura."
+    ],
+    [
+      "Verificación",
+      "Operativo y pendiente de verificar",
+      "Parse3.5 ha extraído páginas históricas reales. La inferencia del proveedor Nemotron Super VL está verificada. La búsqueda semántica y la reordenación siguen en despliegue y prueba.",
+      "Estado registrado el 18 de octubre de 2026. Configurar un proveedor no demuestra inferencia."
+    ],
+    [
+      "La demostración",
+      "Una pregunta, todas las fuentes",
+      "Comienza en el espacio de trabajo, abre el lienzo y consulta la fuente. Comprueba los modelos disponibles en el estado del servicio.",
+      "Inglés, español, alemán y francés. Temas claro y oscuro."
+    ]
+  ],
+  "de": [
+    [
+      "Tomi TimeLens",
+      "Wissen im Wandel der Zeit",
+      "Historische Britannica und heutige Wikipedia im Vergleich anhand ihrer Originalpassagen.",
+      "Ein Forschungsarbeitsplatz mit Quellen im Mittelpunkt."
+    ],
+    [
+      "Das Problem",
+      "Zwei Quellen. Verschiedene Epochen.",
+      "Ein gleicher Titel beweist nicht, dass zwei Passagen dasselbe behandeln. OCR-Fehler und veränderte Begriffe können den Unterschied verdecken.",
+      "Belege vor Interpretation.|Originalwortlaut neben modernen Darstellungen.|Unsicherheit bleibt sichtbar."
+    ],
+    [
+      "Die Anwendung",
+      "Ein überprüfbarer Vergleich",
+      "Stelle eine Frage, wähle ein Modell und lies die Antwort neben den zugrunde liegenden Quellenpassagen.",
+      "Echte Produktaufnahme: Schiffbauvergleich mit gpt-6-astra."
+    ],
+    [
+      "Die Belege",
+      "Quellen und Grenzen zusammen",
+      "Öffne die vollständige Passage, folge der Originalquelle und prüfe die Laufereignisse. Fehlende oder fehlgeschlagene Schritte bleiben sichtbar.",
+      "Echte Produktaufnahme: Grenzen der Quellensuche und Dienstereignisse."
+    ],
+    [
+      "Die Architektur",
+      "Nachvollziehbare Dienstgrenzen",
+      "Das Rust-Backend verwaltet Sitzungen und Ereignisverlauf. Nur AI Core hält Anbieterzugangsdaten. Hermes ruft Quellen ab.",
+      "Bearbeite den Mermaid-Quelltext, um die Architektur zu untersuchen."
+    ],
+    [
+      "Verifikation",
+      "Betrieb und offene Prüfung",
+      "Parse3.5 hat historische Seiten tatsächlich extrahiert. Die Anbieterinferenz von Nemotron Super VL ist verifiziert. Embedding und Reranking werden noch bereitgestellt und getestet.",
+      "Stand: 18. Oktober 2026. Anbieterkonfiguration allein belegt keine Inferenz."
+    ],
+    [
+      "Die Live-Demo",
+      "Eine Frage, alle Belege",
+      "Beginne im Arbeitsbereich, öffne die Belegfläche und folge der Quelle. Der Dienststatus zeigt verfügbare Modelle.",
+      "Englisch, Spanisch, Deutsch und Französisch. Helles und dunkles Design."
+    ]
+  ],
+  "fr": [
+    [
+      "Tomi TimeLens",
+      "Le savoir à travers le temps",
+      "Britannica historique et Wikipedia actuelle, comparées à partir de leurs passages originaux.",
+      "Un espace de recherche centré sur les sources."
+    ],
+    [
+      "Le problème",
+      "Deux sources. Des époques différentes.",
+      "Un titre identique ne prouve pas que deux passages traitent du même sujet. Les erreurs d’OCR et l’évolution des termes peuvent masquer la différence.",
+      "Les preuves avant l’interprétation.|Le texte original près des récits modernes.|L’incertitude reste visible."
+    ],
+    [
+      "L’expérience",
+      "Une comparaison vérifiable",
+      "Posez une question, choisissez un modèle, puis lisez la réponse près des passages qui la soutiennent.",
+      "Capture réelle : comparaison de construction navale avec gpt-6-astra."
+    ],
+    [
+      "Les preuves",
+      "Sources et limites, ensemble",
+      "Développez un passage, ouvrez la source originale et examinez les événements. Une étape absente ou en échec reste visible dans la réponse.",
+      "Capture réelle : limites de recherche et événements des services."
+    ],
+    [
+      "L’architecture",
+      "Des services traçables",
+      "Le backend Rust gère les sessions et l’historique. Seul AI Core conserve les identifiants des fournisseurs. Hermes retrouve les sources.",
+      "Modifiez le code Mermaid pour explorer l’architecture."
+    ],
+    [
+      "Vérification",
+      "Opérationnel et encore à vérifier",
+      "Parse3.5 a extrait de véritables pages historiques. L’inférence du fournisseur Nemotron Super VL est vérifiée. L’embedding et le reclassement sont encore en déploiement et en test.",
+      "État relevé le 18 octobre 2026. La configuration ne prouve pas l’inférence."
+    ],
+    [
+      "La démonstration",
+      "Une question, toutes les preuves",
+      "Ouvrez l’espace de travail, consultez le canevas, puis suivez la source. L’état des services indique les modèles disponibles.",
+      "Anglais, espagnol, allemand et français. Thèmes clair et sombre."
+    ]
+  ]
+}

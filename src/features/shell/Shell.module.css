@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s4);
+  padding: var(--s5) var(--s6);
+  max-width: var(--content);
+  margin: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  font-size: var(--textLogo);
+  font-weight: 750;
+  letter-spacing: -0.07em;
+  text-decoration: none;
+}
+.brandDot {
+  color: var(--accent);
+}
+.mark {
+  background: var(--accent);
+  color: var(--ink);
+  border-radius: var(--r2);
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: var(--textLogo);
+  letter-spacing: -0.12em;
+}
+.mark span {
+  font-size: var(--textLogo);
+}
+.preferences,
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+.preferences select,
+.preferences button {
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font-size: var(--small);
+  height: 2.5rem;
+  border-radius: var(--r2);
+}
+.preferences button {
+  width: 2.5rem;
+  display: grid;
+  place-items: center;
+}
+.preferences select option {
+  background: var(--surface);
+  color: var(--text);
+}
+.nav {
+  display: none;
+  gap: var(--s6);
+  font-size: var(--small);
+  color: var(--secondary);
+}
+.nav a {
+  text-decoration: none;
+}
+.signin {
+  display: none;
+  align-items: center;
+  gap: var(--s3);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: var(--pill);
+  padding: var(--s3) var(--s5);
+  font-size: var(--small);
+}
+@media (min-width: 48rem) {
+  .nav,
+  .signin {
+    display: flex;
+  }
+  .header {
+    padding: var(--s6) var(--s8);
+  }
+}

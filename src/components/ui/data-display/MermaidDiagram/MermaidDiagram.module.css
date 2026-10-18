@@ -1,0 +1,18 @@
+.diagram {
+  background: #0c100b;
+  border: 1px solid var(--border);
+  border-radius: var(--r3);
+  padding: var(--s4);
+  display: grid;
+  place-items: center;
+  min-height: 20rem;
+}
+.diagram img {
+  width: 100%;
+  height: auto;
+  max-height: 66vh;
+  object-fit: contain;
+}
+.diagram p {
+  color: #b6c4a9;
+}

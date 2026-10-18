@@ -1,0 +1,21 @@
+.graph {
+  border: 1px solid var(--border);
+  border-radius: var(--r4);
+  background: var(--surface);
+  overflow: hidden;
+}
+.graph > div {
+  height: 28rem;
+  width: 100%;
+  touch-action: none;
+}
+.graph canvas {
+  display: block;
+}
+.graph > p {
+  border-top: 1px solid var(--border);
+  padding: var(--s3) var(--s5);
+  font-size: var(--label);
+  color: var(--muted);
+  margin: 0;
+}

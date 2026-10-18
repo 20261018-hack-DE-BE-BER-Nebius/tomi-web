@@ -1,0 +1,69 @@
+.panel {
+  margin: var(--s3) 0;
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--r3);
+  font-size: var(--small);
+}
+.panel summary {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  cursor: pointer;
+  list-style: none;
+  padding: var(--s3) var(--s4);
+}
+.panel summary::-webkit-details-marker {
+  display: none;
+}
+.panel summary > svg:first-child {
+  color: var(--accentText);
+}
+.panel summary > svg:last-child {
+  margin-left: auto;
+  transition: transform 0.15s;
+}
+.panel[open] summary > svg:last-child {
+  transform: rotate(90deg);
+}
+.count {
+  font-size: var(--label);
+  background: var(--surface2);
+  padding: 0 var(--s2);
+  border-radius: var(--pill);
+}
+.panel p {
+  padding: 0 var(--s4);
+  font-size: var(--label);
+  color: var(--muted);
+}
+.panel ol {
+  list-style: none;
+  padding: 0 var(--s4);
+  max-height: 24rem;
+  overflow: auto;
+}
+.panel li {
+  border-left: 1px solid var(--border);
+  padding: var(--s2) var(--s4);
+  margin-left: var(--s1);
+}
+.event {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s3);
+  font-family: monospace;
+  font-size: var(--label);
+}
+.event time {
+  color: var(--muted);
+}
+.panel pre {
+  font-size: var(--label);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: var(--surface2);
+  border-radius: var(--r1);
+  padding: var(--s3);
+  color: var(--secondary);
+}

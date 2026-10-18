@@ -1,0 +1,11 @@
+flowchart LR
+  U["Browser workspace<br/>Chat · Canvas · Sources"] --> B["Rust backend<br/>Cookie sessions · WebSocket"]
+  B --> D["Persistence<br/>User-scoped event history"]
+  B --> C["AI Core<br/>Provider credentials stay here"]
+  C --> H["Hermes<br/>Source retrieval · LanceDB"]
+  P["Parse3.5<br/>Verified page extraction"] --> H
+  H --> W["Britannica + Wikipedia<br/>Original passages"]
+  C --> A["Selected answer model<br/>Real streamed events"]
+  H -.-> E["Embed VL + Rerank VL<br/>Deployment in progress"]
+  A -.-> N["Nemotron Super VL<br/>Provider inference verified"]
+  O["OpenClaw<br/>Read-only evidence tool"] --> C
