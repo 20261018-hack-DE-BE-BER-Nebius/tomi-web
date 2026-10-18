@@ -1,0 +1,1115 @@
+{
+  "reviewed_at": "2026-10-18T17:43:10.986292+00:00",
+  "successful_cases": 3,
+  "failed_cases": 3,
+  "review_class": "assistant manual source-entailment review, not independent human certification",
+  "cases": [
+    {
+      "id": "success-candidate-01-shipbuilding",
+      "question": "What does the historical excerpt say shelf-pieces are made from, compared with the modern excerpt's definition of a shipyard? Give only that narrow comparison. Do not mention other construction techniques or materials.",
+      "discovery_query": "Shipbuilding techniques",
+      "status": "needs_review",
+      "outcome": "success",
+      "review_reason": "Both clauses are directly supported: historical quote says shelf-pieces comprise lengths of timber; Wikipedia defines shipyard as specialized shipbuilding facility. This is a narrow coverage comparison, not proof of technological change.",
+      "review_class": "assistant manual source-entailment review; independent human sign-off pending",
+      "model_aliases": {
+        "parse": "nemotron-parse-3.5",
+        "embedding": "nemotron-3-embed-vl",
+        "reranker": "nemotron-3-rerank-vl",
+        "agent": "nemotron-3.5-super-vl"
+      },
+      "receipt_sha256": "ed7238f8cc1377a6d3b1491e513dd6b528af39b2d2ac6141c2eab83992bfefe6",
+      "relative_receipt_path": "evidence/live-nemotron-narrow-20261018T1742Z/success-candidate-01-shipbuilding.json",
+      "run_id": "3b412498-6fef-4b23-82e7-4f788fd54d1c",
+      "created_at": "2026-10-18T17:42:13.978113+00:00",
+      "answer": "The historical excerpt says shelf-pieces are composed of several lengths of timber, while the modern excerpt defines a shipyard as a specialized facility where shipbuilding normally takes place.",
+      "claims": [
+        {
+          "category": "coverage",
+          "citations": [
+            {
+              "document_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13",
+              "end_cp": 2520,
+              "offset_basis": "raw_codepoints",
+              "quote": "1 Lc by And of pieces internal hoops, distinguished by the letter 2. These shelf-pieces are composed of several lengths of timber, scarded or joined together by coaks or circular downs, so as to form a full of internal hoop, extending from the hooks forward, to the transons shall --(in the plate the transons are not shown), we have chosen the perfected application of Sir Robert Seapings’ system, after the adoption of the circular stem into the service, —to the under side of which, as well as the whole part of the beams, they are securely cookies, and being then firmly bolted to the side, instead of becoming a mere local fixer of the beam to the shiny’s exterior frame, as likely were, they are seen continued and general security. The shelf-piece is also a tie to the top-side in a four and a",
+              "revision_id": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+              "source_url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443",
+              "start_cp": 1720,
+              "text_sha256": "4bdd311a6eb6a14bd8632709e16b2a598e914e7dadcddc412814fcd94378ebe2"
+            },
+            {
+              "document_id": "wikipedia:187377",
+              "end_cp": 800,
+              "offset_basis": "raw_codepoints",
+              "quote": "Shipbuilding is the construction of ships and other floating vessels. In modern times, it normally takes place in a specialized facility known as a shipyard. Shipbuilders, also called shipwrights, follow a specialized occupation that traces its roots to before recorded history.\n\nUntil recently, with the development of complex non-maritime technologies during the industrial revolution, a ship has often represented the most advanced structure that the society building it could produce.: ch1 Some key industrial advances were developed to support shipbuilding, for instance the sawing of timbers by mechanical saws propelled by windmills in Dutch shipyards during the first half of the 17th century.: 34–37 The design process saw the early adoption of the logarithm (invented in 1615) to generate t",
+              "revision_id": "1348971360",
+              "source_url": "https://en.wikipedia.org/w/index.php?oldid=1348971360",
+              "start_cp": 0,
+              "text_sha256": "4e0ee6694b55edc40293146c4a9f0fddc6a7ec7b983ea5a733fc935ee8a93e73"
+            }
+          ],
+          "support_status": "span_verified_semantics_unreviewed",
+          "text": "The historical excerpt says shelf-pieces are composed of several lengths of timber, while the modern excerpt defines a shipyard as a specialized facility where shipbuilding normally takes place."
+        }
+      ],
+      "citations": [
+        {
+          "document_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13",
+          "end_cp": 2520,
+          "offset_basis": "raw_codepoints",
+          "quote": "1 Lc by And of pieces internal hoops, distinguished by the letter 2. These shelf-pieces are composed of several lengths of timber, scarded or joined together by coaks or circular downs, so as to form a full of internal hoop, extending from the hooks forward, to the transons shall --(in the plate the transons are not shown), we have chosen the perfected application of Sir Robert Seapings’ system, after the adoption of the circular stem into the service, —to the under side of which, as well as the whole part of the beams, they are securely cookies, and being then firmly bolted to the side, instead of becoming a mere local fixer of the beam to the shiny’s exterior frame, as likely were, they are seen continued and general security. The shelf-piece is also a tie to the top-side in a four and a",
+          "revision_id": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "source_url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "start_cp": 1720,
+          "text_sha256": "4bdd311a6eb6a14bd8632709e16b2a598e914e7dadcddc412814fcd94378ebe2"
+        },
+        {
+          "document_id": "wikipedia:187377",
+          "end_cp": 800,
+          "offset_basis": "raw_codepoints",
+          "quote": "Shipbuilding is the construction of ships and other floating vessels. In modern times, it normally takes place in a specialized facility known as a shipyard. Shipbuilders, also called shipwrights, follow a specialized occupation that traces its roots to before recorded history.\n\nUntil recently, with the development of complex non-maritime technologies during the industrial revolution, a ship has often represented the most advanced structure that the society building it could produce.: ch1 Some key industrial advances were developed to support shipbuilding, for instance the sawing of timbers by mechanical saws propelled by windmills in Dutch shipyards during the first half of the 17th century.: 34–37 The design process saw the early adoption of the logarithm (invented in 1615) to generate t",
+          "revision_id": "1348971360",
+          "source_url": "https://en.wikipedia.org/w/index.php?oldid=1348971360",
+          "start_cp": 0,
+          "text_sha256": "4e0ee6694b55edc40293146c4a9f0fddc6a7ec7b983ea5a733fc935ee8a93e73"
+        }
+      ],
+      "traces": [
+        {
+          "duration_ms": 140,
+          "occurred_at": "2026-10-18T17:42:07.766053+00:00",
+          "status": "completed",
+          "tool": "wikipedia.search"
+        },
+        {
+          "duration_ms": 516,
+          "occurred_at": "2026-10-18T17:42:08.282212+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 525,
+          "occurred_at": "2026-10-18T17:42:08.816474+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 532,
+          "occurred_at": "2026-10-18T17:42:09.359923+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 1093,
+          "occurred_at": "2026-10-18T17:42:10.467517+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 902,
+          "occurred_at": "2026-10-18T17:42:11.378400+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 649,
+          "occurred_at": "2026-10-18T17:42:12.040474+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 528,
+          "occurred_at": "2026-10-18T17:42:12.578557+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 526,
+          "occurred_at": "2026-10-18T17:42:13.119566+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 17,
+          "occurred_at": "2026-10-18T17:42:13.146085+00:00",
+          "status": "completed",
+          "tool": "wikipedia.cached_exact_title"
+        },
+        {
+          "duration_ms": 562,
+          "occurred_at": "2026-10-18T17:42:13.708033+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.document"
+        },
+        {
+          "duration_ms": 62,
+          "occurred_at": "2026-10-18T17:42:13.782883+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.query"
+        },
+        {
+          "duration_ms": 7,
+          "occurred_at": "2026-10-18T17:42:13.790317+00:00",
+          "status": "completed",
+          "tool": "lancedb.search"
+        },
+        {
+          "duration_ms": 180,
+          "occurred_at": "2026-10-18T17:42:13.970178+00:00",
+          "status": "completed",
+          "tool": "nemotron.rerank"
+        },
+        {
+          "at_epoch": 1792345336.559679,
+          "status": "completed",
+          "tool": "tomi_evidence"
+        }
+      ],
+      "candidate_titles": [
+        "Shipbuilding",
+        "Ancient shipbuilding techniques",
+        "Shipbuilding in the early modern period"
+      ],
+      "metrics": {
+        "historical_top_words": [
+          ["the", 167],
+          ["of", 85],
+          ["to", 45],
+          ["in", 37],
+          ["and", 36],
+          ["a", 35],
+          ["as", 19],
+          ["which", 18],
+          ["is", 14],
+          ["ship", 12],
+          ["this", 12],
+          ["on", 12],
+          ["from", 11],
+          ["we", 11],
+          ["deck", 11]
+        ],
+        "historical_words": 1419,
+        "interpretation": "Lexical differences alone do not establish a change in factual knowledge.",
+        "jensen_shannon_divergence": 0.47297167134124657,
+        "modern_top_words": [
+          ["the", 427],
+          ["of", 212],
+          ["and", 168],
+          ["in", 141],
+          ["to", 127],
+          ["a", 106],
+          ["ships", 72],
+          ["with", 60],
+          ["were", 58],
+          ["as", 52],
+          ["was", 46],
+          ["from", 45],
+          ["by", 43],
+          ["is", 42],
+          ["for", 42]
+        ],
+        "modern_words": 5593,
+        "vocabulary_jaccard": 0.10974409448818898
+      },
+      "uncertainty": [],
+      "receipt_url": "receipts/success-candidate-01-shipbuilding.json",
+      "title": "Shipbuilding: material and setting"
+    },
+    {
+      "id": "success-candidate-02-litre",
+      "question": "Compare only how the historical and modern text name the litre as a cubic decimetre. Do not quote numerical conversion values or infer system-wide changes.",
+      "discovery_query": "weights measures litre cubic decimetre",
+      "status": "needs_review",
+      "outcome": "success",
+      "review_reason": "Both supplied spans explicitly associate litre with cubic decimetre. The answer renders dm 3 as dm³; this is typographic normalization in claim prose, not a verbatim quotation certification. Raw citations preserve exact source text. No corrupted numerical conversion was adopted.",
+      "review_class": "assistant manual source-entailment review; independent human sign-off pending",
+      "model_aliases": {
+        "parse": "nemotron-parse-3.5",
+        "embedding": "nemotron-3-embed-vl",
+        "reranker": "nemotron-3-rerank-vl",
+        "agent": "nemotron-3.5-super-vl"
+      },
+      "receipt_sha256": "c09e08bdbfba50594255c8fa62918dcb4bc51132b2754aeeb6e6e406bae0ab76",
+      "relative_receipt_path": "evidence/live-nemotron-narrow-20261018T1742Z/success-candidate-02-litre.json",
+      "run_id": "230bb357-6a12-4037-8822-c847df11cd82",
+      "created_at": "2026-10-18T17:42:23.477427+00:00",
+      "answer": "Britannica names the litre as \"cubic decimetre\"; Wikipedia names it as \"cubic decimetre (dm³)\" and \"1 cubic decimetre (dm³)\".",
+      "claims": [
+        {
+          "category": "language",
+          "citations": [
+            {
+              "document_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:104",
+              "end_cp": 485,
+              "offset_basis": "raw_codepoints",
+              "quote": "is litre or cubic decimetre = 10 diclitres = 100 centiltes = 27/430 Brit. cubic inches, and so liere was nearly I Brit. Als. Also lo litre as 10 dec metres a 1 becollires ≈ 27/10/7 lb. bubels s and 22 becollires are nearly equal to 11 Brit; quarters, the satellites no 10 kiltser or cubic meters at 3hr 34:300698 Brit. quarters.",
+              "revision_id": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+              "source_url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443",
+              "start_cp": 157,
+              "text_sha256": "004b7e594ad00eb4a8b991c060453349d2039a3f9d4079cf5f4cf32109c46bef"
+            },
+            {
+              "document_id": "wikipedia:18094",
+              "end_cp": 800,
+              "offset_basis": "raw_codepoints",
+              "quote": "The litre (Commonwealth spelling) or liter (American spelling) (SI symbols L and l, other symbol used: ℓ) is a metric unit of volume. It is equal to 1 cubic decimetre (dm 3), 1000 cubic centimetres (cm 3) or 0.001 cubic metres (m 3). A cubic decimetre (or litre) occupies a volume of 10 cm × 10 cm × 10 cm (see figure) and is thus equal to one-thousandth of a cubic metre.\n\nThe original French metric system used the litre as a base unit. The word litre is derived from an older French unit, the litron, whose name came from Byzantine Greek —where it was a unit of weight, not volume—via Late Medieval Latin, and which equalled approximately 0.82 litres. The litre was also used in several subsequent versions of the metric system and is accepted for use with the SI, despite it not being an SI unit.",
+              "revision_id": "1341552788",
+              "source_url": "https://en.wikipedia.org/w/index.php?oldid=1341552788",
+              "start_cp": 0,
+              "text_sha256": "df0bdfb1592b80d73a6682ea11855af012ce85f537890b7bdc9b24d9b60bb609"
+            }
+          ],
+          "support_status": "span_verified_semantics_unreviewed",
+          "text": "Britannica names the litre as \"cubic decimetre\"; Wikipedia names it as \"cubic decimetre (dm³)\" and \"1 cubic decimetre (dm³)\"."
+        }
+      ],
+      "citations": [
+        {
+          "document_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:104",
+          "end_cp": 485,
+          "offset_basis": "raw_codepoints",
+          "quote": "is litre or cubic decimetre = 10 diclitres = 100 centiltes = 27/430 Brit. cubic inches, and so liere was nearly I Brit. Als. Also lo litre as 10 dec metres a 1 becollires ≈ 27/10/7 lb. bubels s and 22 becollires are nearly equal to 11 Brit; quarters, the satellites no 10 kiltser or cubic meters at 3hr 34:300698 Brit. quarters.",
+          "revision_id": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "source_url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "start_cp": 157,
+          "text_sha256": "004b7e594ad00eb4a8b991c060453349d2039a3f9d4079cf5f4cf32109c46bef"
+        },
+        {
+          "document_id": "wikipedia:18094",
+          "end_cp": 800,
+          "offset_basis": "raw_codepoints",
+          "quote": "The litre (Commonwealth spelling) or liter (American spelling) (SI symbols L and l, other symbol used: ℓ) is a metric unit of volume. It is equal to 1 cubic decimetre (dm 3), 1000 cubic centimetres (cm 3) or 0.001 cubic metres (m 3). A cubic decimetre (or litre) occupies a volume of 10 cm × 10 cm × 10 cm (see figure) and is thus equal to one-thousandth of a cubic metre.\n\nThe original French metric system used the litre as a base unit. The word litre is derived from an older French unit, the litron, whose name came from Byzantine Greek —where it was a unit of weight, not volume—via Late Medieval Latin, and which equalled approximately 0.82 litres. The litre was also used in several subsequent versions of the metric system and is accepted for use with the SI, despite it not being an SI unit.",
+          "revision_id": "1341552788",
+          "source_url": "https://en.wikipedia.org/w/index.php?oldid=1341552788",
+          "start_cp": 0,
+          "text_sha256": "df0bdfb1592b80d73a6682ea11855af012ce85f537890b7bdc9b24d9b60bb609"
+        }
+      ],
+      "traces": [
+        {
+          "duration_ms": 125,
+          "occurred_at": "2026-10-18T17:42:18.558574+00:00",
+          "status": "completed",
+          "tool": "wikipedia.search"
+        },
+        {
+          "duration_ms": 514,
+          "occurred_at": "2026-10-18T17:42:19.072760+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 523,
+          "occurred_at": "2026-10-18T17:42:19.611131+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 534,
+          "occurred_at": "2026-10-18T17:42:20.162630+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 525,
+          "occurred_at": "2026-10-18T17:42:20.697095+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 520,
+          "occurred_at": "2026-10-18T17:42:21.230630+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 520,
+          "occurred_at": "2026-10-18T17:42:21.770222+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 508,
+          "occurred_at": "2026-10-18T17:42:22.289383+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 513,
+          "occurred_at": "2026-10-18T17:42:22.818697+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 24,
+          "occurred_at": "2026-10-18T17:42:22.856724+00:00",
+          "status": "completed",
+          "tool": "wikipedia.cached_exact_title"
+        },
+        {
+          "duration_ms": 364,
+          "occurred_at": "2026-10-18T17:42:23.220665+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.document"
+        },
+        {
+          "duration_ms": 57,
+          "occurred_at": "2026-10-18T17:42:23.285045+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.query"
+        },
+        {
+          "duration_ms": 5,
+          "occurred_at": "2026-10-18T17:42:23.289960+00:00",
+          "status": "completed",
+          "tool": "lancedb.search"
+        },
+        {
+          "duration_ms": 182,
+          "occurred_at": "2026-10-18T17:42:23.472435+00:00",
+          "status": "completed",
+          "tool": "nemotron.rerank"
+        },
+        {
+          "at_epoch": 1792345345.615566,
+          "status": "completed",
+          "tool": "tomi_evidence"
+        }
+      ],
+      "candidate_titles": ["Litre", "Malay units of measurement", "Decimetre"],
+      "metrics": {
+        "historical_top_words": [
+          ["the", 117],
+          ["a", 89],
+          ["of", 75],
+          ["and", 61],
+          ["brit", 33],
+          ["in", 25],
+          ["is", 24],
+          ["or", 21],
+          ["are", 16],
+          ["as", 15],
+          ["lb", 15],
+          ["inches", 13],
+          ["by", 13],
+          ["to", 11],
+          ["at", 11]
+        ],
+        "historical_words": 1460,
+        "interpretation": "Lexical differences alone do not establish a change in factual knowledge.",
+        "jensen_shannon_divergence": 0.5141121252829898,
+        "modern_top_words": [
+          ["the", 141],
+          ["of", 80],
+          ["in", 59],
+          ["and", 57],
+          ["a", 49],
+          ["is", 40],
+          ["litre", 39],
+          ["for", 37],
+          ["as", 29],
+          ["was", 29],
+          ["l", 25],
+          ["to", 22],
+          ["used", 20],
+          ["cubic", 19],
+          ["one", 19]
+        ],
+        "modern_words": 1903,
+        "vocabulary_jaccard": 0.11850501367365543
+      },
+      "uncertainty": [],
+      "receipt_url": "receipts/success-candidate-02-litre.json",
+      "title": "The litre: a shared definition"
+    },
+    {
+      "id": "success-candidate-03-bleaching",
+      "question": "Compare the historical excerpt's attention to vessels and gas with the modern excerpt's definition of textile bleaching as removing colour. Mention only this difference in coverage; do not infer a specific chemical recipe or equipment design.",
+      "discovery_query": "textile bleaching",
+      "status": "needs_review",
+      "outcome": "success",
+      "review_reason": "The historical span discusses a vessel, water and escaping gas; the modern span states removal of natural colour as the bleaching objective. The claim stays at coverage level and does not infer a chemical recipe.",
+      "review_class": "assistant manual source-entailment review; independent human sign-off pending",
+      "model_aliases": {
+        "parse": "nemotron-parse-3.5",
+        "embedding": "nemotron-3-embed-vl",
+        "reranker": "nemotron-3-rerank-vl",
+        "agent": "nemotron-3.5-super-vl"
+      },
+      "receipt_sha256": "3c0c4447945f01d1b4a3b9c6935c30add904e9d59182c5edc6f08022c598a7dd",
+      "relative_receipt_path": "evidence/live-nemotron-narrow-20261018T1742Z/success-candidate-03-bleaching.json",
+      "run_id": "6b6ede89-694d-44a7-a14b-8c52415d1461",
+      "created_at": "2026-10-18T17:42:33.432292+00:00",
+      "answer": "The historical excerpt covers vessels and gas, while the modern excerpt defines textile bleaching as removing colour.",
+      "claims": [
+        {
+          "category": "coverage",
+          "citations": [
+            {
+              "document_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:115",
+              "end_cp": 863,
+              "offset_basis": "raw_codepoints",
+              "quote": "When the liquor is entirely worn off from the\nveffel, it must not be immediately filled with water, or at least to the height of five or its inches above the\nreturn of the leader tube, otherwise the gas, which\ncontinues to escape from the difficulty veffle then\naffords no refinance, might attack the pneumatic veffel\ninficit.",
+              "revision_id": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+              "source_url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443",
+              "start_cp": 537,
+              "text_sha256": "b1ecbf458765782ad9e5203a04abcceda0900a3e33855a30d02f97db6ca2df6a"
+            },
+            {
+              "document_id": "wikipedia:11501704",
+              "end_cp": 800,
+              "offset_basis": "raw_codepoints",
+              "quote": "The textile bleaching (or bleaching of textiles) is one of the steps in the textile manufacturing process. The objective of bleaching is to remove the natural color for the following steps such as dyeing or printing or to achieve full white. All raw textile materials, when they are in natural form, are known as ' greige' material. They have their natural color, odor and impurities that are not suited to clothing materials. Not only the natural impurities will remain in the greige material, but also the add-ons that were made during its cultivation, growth and manufacture in the form of pesticides, fungicides, worm killers, sizes, lubricants, etc. The removal of these natural coloring matters and add-ons during the previous state of manufacturing is called scouring and bleaching.: 193\n\nA co",
+              "revision_id": "1338304831",
+              "source_url": "https://en.wikipedia.org/w/index.php?oldid=1338304831",
+              "start_cp": 0,
+              "text_sha256": "63b542cc80b394335449719bae076e4be8dac667a0e6986c84e7fa01f91e49fb"
+            }
+          ],
+          "support_status": "span_verified_semantics_unreviewed",
+          "text": "The historical excerpt covers vessels and gas, while the modern excerpt defines textile bleaching as removing colour."
+        }
+      ],
+      "citations": [
+        {
+          "document_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:115",
+          "end_cp": 863,
+          "offset_basis": "raw_codepoints",
+          "quote": "When the liquor is entirely worn off from the\nveffel, it must not be immediately filled with water, or at least to the height of five or its inches above the\nreturn of the leader tube, otherwise the gas, which\ncontinues to escape from the difficulty veffle then\naffords no refinance, might attack the pneumatic veffel\ninficit.",
+          "revision_id": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "source_url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "start_cp": 537,
+          "text_sha256": "b1ecbf458765782ad9e5203a04abcceda0900a3e33855a30d02f97db6ca2df6a"
+        },
+        {
+          "document_id": "wikipedia:11501704",
+          "end_cp": 800,
+          "offset_basis": "raw_codepoints",
+          "quote": "The textile bleaching (or bleaching of textiles) is one of the steps in the textile manufacturing process. The objective of bleaching is to remove the natural color for the following steps such as dyeing or printing or to achieve full white. All raw textile materials, when they are in natural form, are known as ' greige' material. They have their natural color, odor and impurities that are not suited to clothing materials. Not only the natural impurities will remain in the greige material, but also the add-ons that were made during its cultivation, growth and manufacture in the form of pesticides, fungicides, worm killers, sizes, lubricants, etc. The removal of these natural coloring matters and add-ons during the previous state of manufacturing is called scouring and bleaching.: 193\n\nA co",
+          "revision_id": "1338304831",
+          "source_url": "https://en.wikipedia.org/w/index.php?oldid=1338304831",
+          "start_cp": 0,
+          "text_sha256": "63b542cc80b394335449719bae076e4be8dac667a0e6986c84e7fa01f91e49fb"
+        }
+      ],
+      "traces": [
+        {
+          "duration_ms": 68,
+          "occurred_at": "2026-10-18T17:42:27.219740+00:00",
+          "status": "completed",
+          "tool": "wikipedia.search"
+        },
+        {
+          "duration_ms": 616,
+          "occurred_at": "2026-10-18T17:42:27.835862+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 1246,
+          "occurred_at": "2026-10-18T17:42:29.090419+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 616,
+          "occurred_at": "2026-10-18T17:42:29.715606+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 564,
+          "occurred_at": "2026-10-18T17:42:30.295214+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 602,
+          "occurred_at": "2026-10-18T17:42:30.907334+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 508,
+          "occurred_at": "2026-10-18T17:42:31.425345+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 528,
+          "occurred_at": "2026-10-18T17:42:31.965604+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 530,
+          "occurred_at": "2026-10-18T17:42:32.509912+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 16,
+          "occurred_at": "2026-10-18T17:42:32.534948+00:00",
+          "status": "completed",
+          "tool": "wikipedia.cached_exact_title"
+        },
+        {
+          "duration_ms": 579,
+          "occurred_at": "2026-10-18T17:42:33.114465+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.document"
+        },
+        {
+          "duration_ms": 121,
+          "occurred_at": "2026-10-18T17:42:33.242529+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.query"
+        },
+        {
+          "duration_ms": 5,
+          "occurred_at": "2026-10-18T17:42:33.247477+00:00",
+          "status": "completed",
+          "tool": "lancedb.search"
+        },
+        {
+          "duration_ms": 182,
+          "occurred_at": "2026-10-18T17:42:33.429500+00:00",
+          "status": "completed",
+          "tool": "nemotron.rerank"
+        },
+        {
+          "at_epoch": 1792345355.3338208,
+          "status": "completed",
+          "tool": "tomi_evidence"
+        }
+      ],
+      "candidate_titles": [
+        "Textile bleaching",
+        "Grassing (textiles)",
+        "Snow bleaching"
+      ],
+      "metrics": {
+        "historical_top_words": [
+          ["the", 130],
+          ["of", 55],
+          ["to", 42],
+          ["in", 31],
+          ["be", 25],
+          ["it", 23],
+          ["is", 21],
+          ["which", 20],
+          ["and", 19],
+          ["a", 19],
+          ["this", 15],
+          ["or", 12],
+          ["its", 12],
+          ["for", 11],
+          ["by", 11]
+        ],
+        "historical_words": 1220,
+        "interpretation": "Lexical differences alone do not establish a change in factual knowledge.",
+        "jensen_shannon_divergence": 0.5462795725865615,
+        "modern_top_words": [
+          ["the", 79],
+          ["of", 42],
+          ["and", 41],
+          ["bleaching", 37],
+          ["in", 25],
+          ["a", 23],
+          ["is", 21],
+          ["to", 21],
+          ["it", 15],
+          ["or", 12],
+          ["that", 12],
+          ["with", 12],
+          ["as", 11],
+          ["are", 11],
+          ["was", 11]
+        ],
+        "modern_words": 1145,
+        "vocabulary_jaccard": 0.09639830508474577
+      },
+      "uncertainty": [],
+      "receipt_url": "receipts/success-candidate-03-bleaching.json",
+      "title": "Bleaching: equipment and purpose"
+    },
+    {
+      "id": "case-01-shipbuilding",
+      "question": "Compare shipbuilding methods and vocabulary.",
+      "discovery_query": "shipbuilding",
+      "status": "abstained",
+      "outcome": "failure",
+      "review_reason": "Actual initial semantic retrieval ranked industry organizations and companies; the agent abstained because provided modern excerpts did not support a methods comparison. Preserved genuine recall failure.",
+      "review_class": "assistant manual source-entailment review; independent human sign-off pending",
+      "model_aliases": {
+        "parse": "nemotron-parse-3.5",
+        "embedding": "nemotron-3-embed-vl",
+        "reranker": "nemotron-3-rerank-vl",
+        "agent": "nemotron-3.5-super-vl"
+      },
+      "receipt_sha256": "d9c24f600336b9cbd5f4a051eeb82ee1d9d1a316d7e1b619bd9432adba21d507",
+      "relative_receipt_path": "evidence/live-nemotron-cases-20261018T1731Z/case-01-shipbuilding.json",
+      "run_id": "e644e379-bb27-49b4-b920-d16fff373bfe",
+      "created_at": "2026-10-18T17:32:11.815678+00:00",
+      "answer": "The evidence does not support a comparison of shipbuilding methods or vocabulary. The Britannica excerpt is OCR-corrupted and describes structural elements (diagonal timbers, beams, shelf-pieces, knees) without a coherent method, while the Wikipedia excerpts cover modern shipbuilding industry organizations and a single company, with no construction methods or vocabulary.",
+      "claims": [],
+      "citations": [],
+      "traces": [
+        {
+          "duration_ms": 215,
+          "occurred_at": "2026-10-18T17:32:06.763046+00:00",
+          "status": "completed",
+          "tool": "wikipedia.search"
+        },
+        {
+          "duration_ms": 551,
+          "occurred_at": "2026-10-18T17:32:07.314082+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 532,
+          "occurred_at": "2026-10-18T17:32:07.855695+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 537,
+          "occurred_at": "2026-10-18T17:32:08.413059+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 540,
+          "occurred_at": "2026-10-18T17:32:08.975624+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 529,
+          "occurred_at": "2026-10-18T17:32:09.514609+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 514,
+          "occurred_at": "2026-10-18T17:32:10.042617+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 523,
+          "occurred_at": "2026-10-18T17:32:10.577122+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 538,
+          "occurred_at": "2026-10-18T17:32:11.134078+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 458,
+          "occurred_at": "2026-10-18T17:32:11.602092+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.document"
+        },
+        {
+          "duration_ms": 57,
+          "occurred_at": "2026-10-18T17:32:11.667460+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.query"
+        },
+        {
+          "duration_ms": 6,
+          "occurred_at": "2026-10-18T17:32:11.673939+00:00",
+          "status": "completed",
+          "tool": "lancedb.search"
+        },
+        {
+          "duration_ms": 139,
+          "occurred_at": "2026-10-18T17:32:11.812960+00:00",
+          "status": "completed",
+          "tool": "nemotron.rerank"
+        },
+        {
+          "at_epoch": 1792344733.773221,
+          "status": "completed",
+          "tool": "tomi_evidence"
+        }
+      ],
+      "candidate_titles": [
+        "Active Shipbuilding Experts' Federation",
+        "K Shipbuilding",
+        "Northumberland Shipbuilding Company"
+      ],
+      "metrics": {
+        "historical_top_words": [
+          ["the", 167],
+          ["of", 85],
+          ["to", 45],
+          ["in", 37],
+          ["and", 36],
+          ["a", 35],
+          ["as", 19],
+          ["which", 18],
+          ["is", 14],
+          ["ship", 12],
+          ["this", 12],
+          ["on", 12],
+          ["from", 11],
+          ["we", 11],
+          ["deck", 11]
+        ],
+        "historical_words": 1419,
+        "interpretation": "Lexical differences alone do not establish a change in factual knowledge.",
+        "jensen_shannon_divergence": 0.6895472337429774,
+        "modern_top_words": [
+          ["of", 11],
+          ["association", 10],
+          ["the", 9],
+          ["shipbuilding", 8],
+          ["and", 5],
+          ["maritime", 4],
+          ["industry", 4],
+          ["offshore", 4],
+          ["federation", 3],
+          ["international", 3],
+          ["marine", 3],
+          ["in", 3],
+          ["shipbuilders", 3],
+          ["active", 2],
+          ["experts", 2]
+        ],
+        "modern_words": 171,
+        "vocabulary_jaccard": 0.0420032310177706
+      },
+      "uncertainty": [
+        "Britannica text is heavily OCR-corrupted, making method and vocabulary unreliable.",
+        "Wikipedia excerpts contain no shipbuilding methods or vocabulary, only organizational descriptions."
+      ],
+      "receipt_url": "receipts/case-01-shipbuilding.json",
+      "title": "Failure: relevant topic, wrong material"
+    },
+    {
+      "id": "case-02-measurement",
+      "question": "Compare weights and measures: metric units and British units.",
+      "discovery_query": "weights measures metric units british",
+      "status": "abstained",
+      "outcome": "failure",
+      "review_reason": "Actual initial candidates emphasized metrication policy rather than unit definitions; OCR was corrupt and agent abstained. Preserved genuine retrieval/source-quality failure.",
+      "review_class": "assistant manual source-entailment review; independent human sign-off pending",
+      "model_aliases": {
+        "parse": "nemotron-parse-3.5",
+        "embedding": "nemotron-3-embed-vl",
+        "reranker": "nemotron-3-rerank-vl",
+        "agent": "nemotron-3.5-super-vl"
+      },
+      "receipt_sha256": "9436f787328f6034f2337da19327f385c627296cee886725e397e711192e48b5",
+      "relative_receipt_path": "evidence/live-nemotron-cases-20261018T1731Z/case-02-measurement.json",
+      "run_id": "f59f97de-6e03-4f5f-a6d4-d49c5d9616b1",
+      "created_at": "2026-10-18T17:32:22.717533+00:00",
+      "answer": "The evidence does not provide a clear, reliable comparison of metric and British units of weights and measures. The Britannica excerpts are heavily OCR-corrupted, and the Wikipedia excerpts discuss metrication policy in Barbados and the UK ",
+      "claims": [],
+      "citations": [],
+      "traces": [
+        {
+          "duration_ms": 89,
+          "occurred_at": "2026-10-18T17:32:14.949119+00:00",
+          "status": "completed",
+          "tool": "wikipedia.search"
+        },
+        {
+          "duration_ms": 1057,
+          "occurred_at": "2026-10-18T17:32:16.006359+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 539,
+          "occurred_at": "2026-10-18T17:32:16.560733+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 564,
+          "occurred_at": "2026-10-18T17:32:17.145512+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 542,
+          "occurred_at": "2026-10-18T17:32:17.706264+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 526,
+          "occurred_at": "2026-10-18T17:32:18.253413+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 1658,
+          "occurred_at": "2026-10-18T17:32:19.920111+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 521,
+          "occurred_at": "2026-10-18T17:32:20.455991+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 1580,
+          "occurred_at": "2026-10-18T17:32:22.048852+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 396,
+          "occurred_at": "2026-10-18T17:32:22.457241+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.document"
+        },
+        {
+          "duration_ms": 53,
+          "occurred_at": "2026-10-18T17:32:22.516506+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.query"
+        },
+        {
+          "duration_ms": 4,
+          "occurred_at": "2026-10-18T17:32:22.520879+00:00",
+          "status": "completed",
+          "tool": "lancedb.search"
+        },
+        {
+          "duration_ms": 194,
+          "occurred_at": "2026-10-18T17:32:22.714725+00:00",
+          "status": "completed",
+          "tool": "nemotron.rerank"
+        },
+        {
+          "at_epoch": 1792344744.2982578,
+          "status": "completed",
+          "tool": "tomi_evidence"
+        }
+      ],
+      "candidate_titles": [
+        "Metrication in Barbados",
+        "Metric Martyrs",
+        "Imperial units"
+      ],
+      "metrics": {
+        "historical_top_words": [
+          ["the", 117],
+          ["a", 89],
+          ["of", 75],
+          ["and", 61],
+          ["brit", 33],
+          ["in", 25],
+          ["is", 24],
+          ["or", 21],
+          ["are", 16],
+          ["as", 15],
+          ["lb", 15],
+          ["inches", 13],
+          ["by", 13],
+          ["to", 11],
+          ["at", 11]
+        ],
+        "historical_words": 1460,
+        "interpretation": "Lexical differences alone do not establish a change in factual knowledge.",
+        "jensen_shannon_divergence": 0.5685253339479878,
+        "modern_top_words": [
+          ["the", 38],
+          ["of", 29],
+          ["to", 14],
+          ["in", 13],
+          ["and", 13],
+          ["barbados", 11],
+          ["a", 8],
+          ["was", 8],
+          ["for", 7],
+          ["standards", 6],
+          ["metric", 5],
+          ["imperial", 5],
+          ["units", 5],
+          ["bnsi", 5],
+          ["process", 4]
+        ],
+        "modern_words": 400,
+        "vocabulary_jaccard": 0.07760814249363868
+      },
+      "uncertainty": [
+        "Britannica excerpts are OCR-corrupted and unreadable for unit conversions; Wikipedia excerpts cover metrication policy, not unit definitions or conversion factors."
+      ],
+      "receipt_url": "receipts/case-02-measurement.json",
+      "title": "Failure: policy instead of units"
+    },
+    {
+      "id": "case-03-bleaching",
+      "question": "How do historical and modern descriptions of textile bleaching differ?",
+      "discovery_query": "textile bleaching",
+      "status": "abstained",
+      "outcome": "failure",
+      "review_reason": "Actual initial broad question produced abstention because noisy historical OCR did not support a full historical-versus-modern process comparison. Later narrow coverage success does not repair or erase this failed broader question.",
+      "review_class": "assistant manual source-entailment review; independent human sign-off pending",
+      "model_aliases": {
+        "parse": "nemotron-parse-3.5",
+        "embedding": "nemotron-3-embed-vl",
+        "reranker": "nemotron-3-rerank-vl",
+        "agent": "nemotron-3.5-super-vl"
+      },
+      "receipt_sha256": "6e576a086f329f0696417afe1885b4ef3a9cf3b01aacadb73f38016c1dd79df0",
+      "relative_receipt_path": "evidence/live-nemotron-cases-20261018T1731Z/case-03-bleaching.json",
+      "run_id": "0c4c25e1-2db8-4371-8658-8ac5067de84b",
+      "created_at": "2026-10-18T17:32:31.055658+00:00",
+      "answer": "The Britannica excerpt is OCR-corrupted and contains no coherent description of textile bleaching, so no historical claim can be drawn from it. The modern Wikipedia excerpt describes bleaching as removing natural color and impurities from greige material to prepare for dyeing/printing or achieve full white, using scouring followed by oxidative agents (sodium hypochlorite, sodium chlorite, sulfuric acid, hydrogen peroxide) or reductive agents (sodium hydrosulphite), with optional optical brighteners; it also traces history from ancient grassing (lye of ashes plus sunlight, over seven days) through 18th–19th century chlorine-based chemical bleaching, which was faster and could be done indoors.",
+      "claims": [],
+      "citations": [],
+      "traces": [
+        {
+          "duration_ms": 78,
+          "occurred_at": "2026-10-18T17:32:25.680380+00:00",
+          "status": "completed",
+          "tool": "wikipedia.search"
+        },
+        {
+          "duration_ms": 534,
+          "occurred_at": "2026-10-18T17:32:26.214025+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 548,
+          "occurred_at": "2026-10-18T17:32:26.773629+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 533,
+          "occurred_at": "2026-10-18T17:32:27.318556+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 536,
+          "occurred_at": "2026-10-18T17:32:27.863706+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 530,
+          "occurred_at": "2026-10-18T17:32:28.404350+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 894,
+          "occurred_at": "2026-10-18T17:32:29.311063+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 531,
+          "occurred_at": "2026-10-18T17:32:29.855989+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 514,
+          "occurred_at": "2026-10-18T17:32:30.379510+00:00",
+          "status": "completed",
+          "tool": "wikipedia.article"
+        },
+        {
+          "duration_ms": 375,
+          "occurred_at": "2026-10-18T17:32:30.762721+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.document"
+        },
+        {
+          "duration_ms": 126,
+          "occurred_at": "2026-10-18T17:32:30.896276+00:00",
+          "status": "completed",
+          "tool": "nemotron.embed.query"
+        },
+        {
+          "duration_ms": 5,
+          "occurred_at": "2026-10-18T17:32:30.900976+00:00",
+          "status": "completed",
+          "tool": "lancedb.search"
+        },
+        {
+          "duration_ms": 153,
+          "occurred_at": "2026-10-18T17:32:31.053505+00:00",
+          "status": "completed",
+          "tool": "nemotron.rerank"
+        },
+        {
+          "at_epoch": 1792344752.849035,
+          "status": "completed",
+          "tool": "tomi_evidence"
+        }
+      ],
+      "candidate_titles": [
+        "Textile bleaching",
+        "Grassing (textiles)",
+        "Antichlor"
+      ],
+      "metrics": {
+        "historical_top_words": [
+          ["the", 130],
+          ["of", 55],
+          ["to", 42],
+          ["in", 31],
+          ["be", 25],
+          ["it", 23],
+          ["is", 21],
+          ["which", 20],
+          ["and", 19],
+          ["a", 19],
+          ["this", 15],
+          ["or", 12],
+          ["its", 12],
+          ["for", 11],
+          ["by", 11]
+        ],
+        "historical_words": 1220,
+        "interpretation": "Lexical differences alone do not establish a change in factual knowledge.",
+        "jensen_shannon_divergence": 0.5462795725865615,
+        "modern_top_words": [
+          ["the", 79],
+          ["of", 42],
+          ["and", 41],
+          ["bleaching", 37],
+          ["in", 25],
+          ["a", 23],
+          ["is", 21],
+          ["to", 21],
+          ["it", 15],
+          ["or", 12],
+          ["that", 12],
+          ["with", 12],
+          ["as", 11],
+          ["are", 11],
+          ["was", 11]
+        ],
+        "modern_words": 1145,
+        "vocabulary_jaccard": 0.09639830508474577
+      },
+      "uncertainty": [
+        "The Britannica source is too OCR-corrupted to extract any verifiable historical description of textile bleaching, so a historical-versus-modern comparison cannot be made from the provided evidence."
+      ],
+      "receipt_url": "receipts/case-03-bleaching.json",
+      "title": "Failure: unreadable process description"
+    }
+  ],
+  "scope": "Three narrowly scoped successes with explicit human-selected discovery queries; three original broad-question failures. All are actual required-model runs through core and Hermes. This does not establish general answer reliability or sample-wide matching accuracy.",
+  "sample_matching": "running separately, no100-percent accuracy claim",
+  "source_preservation": "All original receipts retained unchanged; reviewed status appears only in this separate review."
+}

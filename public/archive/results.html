@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tomi | Recorded comparison results</title>
+    <link rel="stylesheet" href="archive.css">
+    <link rel="stylesheet" href="results.css">
+    <script src="results.js" defer></script>
+  </head>
+  <body>
+    <header><a href="/">tomi<span> • recorded evaluation</span></a><nav><a href="index.html">Archive</a><a href="/chat">Chat</a><a href="/canvas">Canvas</a></nav></header>
+    <main>
+      <section class="intro"><p class="eyebrow">REAL MODEL CALLS · SAVED RECEIPTS</p><h1>Useful answers.<br>Visible failures.</h1><p>Three narrow comparisons supported by their cited sources, alongside three broader attempts that failed. These are curated demonstrations, not a general accuracy benchmark.</p><p class="muted">Source-entailment review by the assistant. Independent human sign-off remains pending. Raw model status and original failed runs are preserved.</p></section>
+      <section class="metrics"><div><strong>100</strong><span>selected source pages</span></div><div><strong>3 + 3</strong><span>reviewed cases</span></div><div><strong>4</strong><span>required NVIDIA models</span></div><div><strong>187</strong><span>compiled PDF pages</span></div></section>
+      <div class="case-filter"><button type="button" id="show-all">All six cases</button><button type="button" id="show-success">Supported comparisons</button><button type="button" id="show-failure">Clear failures</button></div>
+      <section id="case-list" aria-live="polite"></section>
+      <section class="coverage"><h2>Full sample matching</h2><p id="coverage-status">Loading matching status…</p><div id="coverage-table"></div><p class="muted">A retrieved or reranked candidate is not an accepted factual match. OCR, unequal article scope and ambiguous page subjects remain visible limitations.</p></section>
+    </main>
+  </body>
+</html>

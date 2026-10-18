@@ -35,5 +35,13 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["public/archive/receipts/*.json"],
+      "formatter": {
+        "enabled": false
+      }
+    }
+  ]
 }

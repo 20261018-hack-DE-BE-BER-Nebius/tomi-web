@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f4f2eb;
+  color: #1d2926;
+  font:
+    15px / 1.5 system-ui,
+    sans-serif;
+}
+a {
+  color: inherit;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 4vw;
+  border-bottom: 1px solid #d1d9cf;
+}
+header > a {
+  font-size: 25px;
+  font-weight: 750;
+  text-decoration: none;
+}
+header span {
+  font-size: 13px;
+  color: #4d6659;
+}
+nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+main {
+  padding: 25px 4vw 60px;
+}
+.intro {
+  max-width: 900px;
+}
+.eyebrow {
+  color: #476c47;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  font-size: 12px;
+}
+h1 {
+  font-size: clamp(30px, 4vw, 55px);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  margin: 18px 0;
+}
+.muted {
+  font-size: 12px;
+  color: #586c62;
+}
+.workbench {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+aside,
+article {
+  border: 1px solid #cad3c7;
+  border-radius: 16px;
+  padding: 18px;
+  background: #fffef9;
+}
+aside {
+  align-self: start;
+}
+label {
+  font-weight: 700;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #b6c5b3;
+  border-radius: 8px;
+}
+#pages {
+  max-height: 660px;
+  overflow: auto;
+}
+#pages button {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid transparent;
+  background: #f3f5ee;
+  border-radius: 7px;
+  cursor: pointer;
+}
+#pages button.active {
+  border-color: #759741;
+  background: #e4efce;
+}
+.page-head {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+h2 {
+  font-size: 21px;
+  margin: 0 0 8px;
+}
+#status {
+  color: #456239;
+  font-size: 12px;
+}
+.views {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.views section {
+  min-width: 0;
+}
+.views img {
+  width: 100%;
+  height: 630px;
+  object-fit: contain;
+  background: #f3efe2;
+}
+.views iframe {
+  width: 100%;
+  height: 630px;
+  border: 1px solid #d1d7cd;
+}
+#links {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  white-space: nowrap;
+}
+details {
+  margin: 20px 0;
+}
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  max-height: 420px;
+  overflow: auto;
+  background: #f0f3eb;
+  padding: 14px;
+  border-radius: 8px;
+}
+@media (max-width: 850px) {
+  .workbench {
+    grid-template-columns: 1fr;
+  }
+  .views {
+    grid-template-columns: 1fr;
+  }
+  #pages {
+    max-height: 200px;
+  }
+  .page-head {
+    display: block;
+  }
+  nav {
+    gap: 12px;
+  }
+  header span {
+    display: none;
+  }
+}

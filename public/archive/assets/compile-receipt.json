@@ -1,0 +1,611 @@
+{
+  "compiler": "Tectonic0.17.0",
+  "compiled_at": "2026-10-18T17:18:38.781620+00:00",
+  "source_pages": 100,
+  "compiled_pages": 187,
+  "missing_glyph_warnings": false,
+  "font_dependencies": ["macOS Arial Unicode MS", "macOS Kefa III"],
+  "app_preview_compiler": "Unavailable: app sandbox cannot access macOS system fonts; CLI compile succeeded.",
+  "pages": [
+    {
+      "row_index": 13,
+      "pdf": "pdfs/page-13.pdf",
+      "compiled_pages": 2,
+      "sha256": "5a25917dfd3a5c3f1be4e807e3012e73e86e069b5f7d7b8027fb00bfa62b3658"
+    },
+    {
+      "row_index": 104,
+      "pdf": "pdfs/page-104.pdf",
+      "compiled_pages": 2,
+      "sha256": "44884de0a758a6762e1fa6771d4cf9b9e19472153b6b521299dc360255640b20"
+    },
+    {
+      "row_index": 115,
+      "pdf": "pdfs/page-115.pdf",
+      "compiled_pages": 2,
+      "sha256": "107d6a884bf6be9ec03b5f9a0eeac99a8ea00f177849fd547a26b75df7f9c804"
+    },
+    {
+      "row_index": 217,
+      "pdf": "pdfs/page-217.pdf",
+      "compiled_pages": 2,
+      "sha256": "bccfa8433911f691dbbb4faf72b0066f905efb677874b7cd435d90e396927fce"
+    },
+    {
+      "row_index": 220,
+      "pdf": "pdfs/page-220.pdf",
+      "compiled_pages": 2,
+      "sha256": "3191a16d8bf02e2d96c1dcc8bbb192afa8f10dc10d1b567d9de2f9e2e89a29c9"
+    },
+    {
+      "row_index": 247,
+      "pdf": "pdfs/page-247.pdf",
+      "compiled_pages": 2,
+      "sha256": "feb40eca20cea236796023e7d24f30a4276dbf5b13d4f5ec804c8d5732e73ef7"
+    },
+    {
+      "row_index": 251,
+      "pdf": "pdfs/page-251.pdf",
+      "compiled_pages": 2,
+      "sha256": "c96dcc0a5071bec1bab1811088f16cf52be56d17696eed5a80e66ed0b1dcf536"
+    },
+    {
+      "row_index": 257,
+      "pdf": "pdfs/page-257.pdf",
+      "compiled_pages": 2,
+      "sha256": "68b931353b3fc497a040027a9e5c36aa36845d790f760c6877a870f281642a37"
+    },
+    {
+      "row_index": 258,
+      "pdf": "pdfs/page-258.pdf",
+      "compiled_pages": 2,
+      "sha256": "625199910eb4ac9f3be7ffae135bc824bf9e66a452c8fda9ce7a7d16507da298"
+    },
+    {
+      "row_index": 261,
+      "pdf": "pdfs/page-261.pdf",
+      "compiled_pages": 3,
+      "sha256": "8e026db4ac31d23631c0411f2566110785bcbce11ffbf6224b39824fccd35008"
+    },
+    {
+      "row_index": 266,
+      "pdf": "pdfs/page-266.pdf",
+      "compiled_pages": 2,
+      "sha256": "1020875ad2186f05fb9078fb109b7f92652e5da9985c6d246747be16e94b611f"
+    },
+    {
+      "row_index": 268,
+      "pdf": "pdfs/page-268.pdf",
+      "compiled_pages": 2,
+      "sha256": "c2e633aa1aa21b3657151d8c757dc8caa1afe73689acbe1894c2c2e7ce75005e"
+    },
+    {
+      "row_index": 270,
+      "pdf": "pdfs/page-270.pdf",
+      "compiled_pages": 1,
+      "sha256": "3b49c31d9e26827edb6ff5847d798fa79b29b96711b726b6ff3844d47a9608cc"
+    },
+    {
+      "row_index": 318,
+      "pdf": "pdfs/page-318.pdf",
+      "compiled_pages": 2,
+      "sha256": "c8dab128c77a24fc86f63d18486b155dde7e36ec5e78d66d798e4d5ddaae2534"
+    },
+    {
+      "row_index": 374,
+      "pdf": "pdfs/page-374.pdf",
+      "compiled_pages": 1,
+      "sha256": "6cd9a0e4241da253ab04ba97f055a7ba0061280074b2b620eb46c838eb4d7fcd"
+    },
+    {
+      "row_index": 383,
+      "pdf": "pdfs/page-383.pdf",
+      "compiled_pages": 2,
+      "sha256": "e0df6a08a4f2ab729a6e1ed34ee55affe888979d369558fc8567a00df3ca0061"
+    },
+    {
+      "row_index": 403,
+      "pdf": "pdfs/page-403.pdf",
+      "compiled_pages": 2,
+      "sha256": "3fd45d9b4f5f50313d1851fb457eb069f3fb2c6dd07bb207742465e81415b8c7"
+    },
+    {
+      "row_index": 452,
+      "pdf": "pdfs/page-452.pdf",
+      "compiled_pages": 1,
+      "sha256": "91fe0f9d6d2230ddde016b27f98383dc7a5376b900378a5900a7cd958a47e83b"
+    },
+    {
+      "row_index": 473,
+      "pdf": "pdfs/page-473.pdf",
+      "compiled_pages": 2,
+      "sha256": "ebb57e88231c824d4aaf5b6f2005cf9a34504540f4673dd398c3d3f5d2ea5fa5"
+    },
+    {
+      "row_index": 493,
+      "pdf": "pdfs/page-493.pdf",
+      "compiled_pages": 2,
+      "sha256": "fec8a176800af409cde910f01cf0e01c06165a3455983900f9f99beda362e13b"
+    },
+    {
+      "row_index": 499,
+      "pdf": "pdfs/page-499.pdf",
+      "compiled_pages": 2,
+      "sha256": "7f4a18bbe8521aaa9b5b278598162d61d619c7dffd9462cebad53cec92879e9f"
+    },
+    {
+      "row_index": 513,
+      "pdf": "pdfs/page-513.pdf",
+      "compiled_pages": 2,
+      "sha256": "f3b1a0c44b985f1a15b73ec29966a3c96bbb39ce1d51055f50eb90b7c725e010"
+    },
+    {
+      "row_index": 523,
+      "pdf": "pdfs/page-523.pdf",
+      "compiled_pages": 2,
+      "sha256": "48f574be56aeff35726127acdfb829221f0397dbc88db7f8f8120067c6adf91f"
+    },
+    {
+      "row_index": 546,
+      "pdf": "pdfs/page-546.pdf",
+      "compiled_pages": 1,
+      "sha256": "4a41d776f2292478c2d77e9a8dbdd699d09a4bf10aa9c840b7deba778fd36f6d"
+    },
+    {
+      "row_index": 560,
+      "pdf": "pdfs/page-560.pdf",
+      "compiled_pages": 2,
+      "sha256": "69f49f08122af1f92f883f40f7ea49cc2f97894a4c47d447a18c40edcfd20a2d"
+    },
+    {
+      "row_index": 563,
+      "pdf": "pdfs/page-563.pdf",
+      "compiled_pages": 2,
+      "sha256": "5116ba4c0854a0b7f37d6d31b86dffed77b4334a3372749a75be0b1562efb978"
+    },
+    {
+      "row_index": 604,
+      "pdf": "pdfs/page-604.pdf",
+      "compiled_pages": 2,
+      "sha256": "c81f80421fb5dc0d15e951a649e71ab1b1f5bfea56e82362f2fabef048c5b06a"
+    },
+    {
+      "row_index": 611,
+      "pdf": "pdfs/page-611.pdf",
+      "compiled_pages": 2,
+      "sha256": "24a1e544c367cb674bd8e1cb8229998c3d36236fa78d3be0285ce40a2708c24b"
+    },
+    {
+      "row_index": 651,
+      "pdf": "pdfs/page-651.pdf",
+      "compiled_pages": 1,
+      "sha256": "910a0b6ec72503114e32177ddfdb9aca2637750bf9c2e711e0a24d93ca6c1c65"
+    },
+    {
+      "row_index": 681,
+      "pdf": "pdfs/page-681.pdf",
+      "compiled_pages": 2,
+      "sha256": "3ad17bf4a5b5116fcbe1a02fd877f65bcdb6e5c8279d6a36eff406528e844bbd"
+    },
+    {
+      "row_index": 713,
+      "pdf": "pdfs/page-713.pdf",
+      "compiled_pages": 2,
+      "sha256": "67dc8b00893ec76c8288b0672a662412a88c60ee72a5703bfdd3e85caa0c9546"
+    },
+    {
+      "row_index": 756,
+      "pdf": "pdfs/page-756.pdf",
+      "compiled_pages": 2,
+      "sha256": "dc78e58590deb4b4b9df8b0bcf2e4ff1f6f8dd50fb5d12f417956e4edb3bddbb"
+    },
+    {
+      "row_index": 851,
+      "pdf": "pdfs/page-851.pdf",
+      "compiled_pages": 2,
+      "sha256": "d5532990c850774c21027b1b8cb6c851e77cc972a78bada8bc37bf59f0070d39"
+    },
+    {
+      "row_index": 914,
+      "pdf": "pdfs/page-914.pdf",
+      "compiled_pages": 2,
+      "sha256": "97d06c67c4c500f0dcf2e04fe03c25af9f4da3c97de87abd96ea0d71e9dfaac4"
+    },
+    {
+      "row_index": 944,
+      "pdf": "pdfs/page-944.pdf",
+      "compiled_pages": 1,
+      "sha256": "90b0abbc43e06b70d5743a9b09df2055bbcefd7f99d28f75f45467b347a045a0"
+    },
+    {
+      "row_index": 948,
+      "pdf": "pdfs/page-948.pdf",
+      "compiled_pages": 1,
+      "sha256": "9b707c87f05a7d15abff86cbb411fd15ac317a8a2c31667fe36a50f510d44019"
+    },
+    {
+      "row_index": 1017,
+      "pdf": "pdfs/page-1017.pdf",
+      "compiled_pages": 2,
+      "sha256": "efe49ea978cf96be54401b17f7e693d5dc8419352e8debfb8ac04d366c66cf88"
+    },
+    {
+      "row_index": 1032,
+      "pdf": "pdfs/page-1032.pdf",
+      "compiled_pages": 1,
+      "sha256": "e9c016b22ad584c901bfa39b14a1a508ae4ae57f4dce1585ac97d49fb1f9c3d1"
+    },
+    {
+      "row_index": 1102,
+      "pdf": "pdfs/page-1102.pdf",
+      "compiled_pages": 2,
+      "sha256": "c1ce2e56e3bbeda64ac086e0c10cf6014572bf71af25facfb39e490cc467c008"
+    },
+    {
+      "row_index": 1166,
+      "pdf": "pdfs/page-1166.pdf",
+      "compiled_pages": 2,
+      "sha256": "70ffa6bbf9b1cac3d25cefdf1372c358a4c3bd401b440e2386c4d2f3e14602e6"
+    },
+    {
+      "row_index": 1214,
+      "pdf": "pdfs/page-1214.pdf",
+      "compiled_pages": 2,
+      "sha256": "2221a0f05c59e5f51f9738985918279ccf6310e4f038571bdfdd31a6164f094c"
+    },
+    {
+      "row_index": 1250,
+      "pdf": "pdfs/page-1250.pdf",
+      "compiled_pages": 2,
+      "sha256": "90a7ab69d9bb9c678751953b0a1ba275a4dae19c3b0d561739a09d0289c33700"
+    },
+    {
+      "row_index": 1268,
+      "pdf": "pdfs/page-1268.pdf",
+      "compiled_pages": 2,
+      "sha256": "2be326dc1b6df6635ebe63fad72ead83c4ba0c7dd2ada45536a508e4a61d3f97"
+    },
+    {
+      "row_index": 1284,
+      "pdf": "pdfs/page-1284.pdf",
+      "compiled_pages": 2,
+      "sha256": "4842bc92358e6536271bbdeb44885463319a9f0c7d2caa9a3b4c46551aafa640"
+    },
+    {
+      "row_index": 1298,
+      "pdf": "pdfs/page-1298.pdf",
+      "compiled_pages": 2,
+      "sha256": "c5a3041702eadce2877edb63dd0e84eff6233fe2158656407fb7be7757cbdf0e"
+    },
+    {
+      "row_index": 1324,
+      "pdf": "pdfs/page-1324.pdf",
+      "compiled_pages": 2,
+      "sha256": "02b72096419410754053fe85d846735cedce1332aa4a544aad351b0ee6f16ebd"
+    },
+    {
+      "row_index": 1327,
+      "pdf": "pdfs/page-1327.pdf",
+      "compiled_pages": 2,
+      "sha256": "d8ce85d25c4f39ab44cb2aae9e1bbbc8cb6662f06334802667887080d786ca04"
+    },
+    {
+      "row_index": 1344,
+      "pdf": "pdfs/page-1344.pdf",
+      "compiled_pages": 2,
+      "sha256": "0ba7e8672c7e212dc1e15493a3101a77e4f614f4f9007a93751aaaba39cac20e"
+    },
+    {
+      "row_index": 1400,
+      "pdf": "pdfs/page-1400.pdf",
+      "compiled_pages": 1,
+      "sha256": "0c00a30971a8177fb35aaa439352a4292c8ee989c28ba34812b9d3934f8b5f86"
+    },
+    {
+      "row_index": 1415,
+      "pdf": "pdfs/page-1415.pdf",
+      "compiled_pages": 2,
+      "sha256": "e65f25e7df0a7f698e2af4262c55612490d6050d96ec255476aa31ab6c7787b2"
+    },
+    {
+      "row_index": 1422,
+      "pdf": "pdfs/page-1422.pdf",
+      "compiled_pages": 2,
+      "sha256": "16c2a799c2f427eac92e1bf61b4f9b913d340e0043b7e558c8ce0af3cd3952de"
+    },
+    {
+      "row_index": 1430,
+      "pdf": "pdfs/page-1430.pdf",
+      "compiled_pages": 2,
+      "sha256": "5a8f6fd0bd2bf83ac965cd9c2ec922bfbb3c82f77cf2cca0904d31e618920c5c"
+    },
+    {
+      "row_index": 1466,
+      "pdf": "pdfs/page-1466.pdf",
+      "compiled_pages": 2,
+      "sha256": "7d91868e3736efeeea66fcfbc794d0a01e9d5e3c4cd5c291ea3027f93784b0c3"
+    },
+    {
+      "row_index": 1473,
+      "pdf": "pdfs/page-1473.pdf",
+      "compiled_pages": 2,
+      "sha256": "58b5a826c99fe8993802e710871b3a3b7f62531843ff25da48d7538fc7222821"
+    },
+    {
+      "row_index": 1580,
+      "pdf": "pdfs/page-1580.pdf",
+      "compiled_pages": 2,
+      "sha256": "81a96079da560a1015550614610fa22b0cc5265d4f882622763f7f9a0d077669"
+    },
+    {
+      "row_index": 1614,
+      "pdf": "pdfs/page-1614.pdf",
+      "compiled_pages": 2,
+      "sha256": "b5084fc40ff384a67ca28ce42d16b3bd56bacf967151dd8d4ceeafd032acaf7e"
+    },
+    {
+      "row_index": 1615,
+      "pdf": "pdfs/page-1615.pdf",
+      "compiled_pages": 1,
+      "sha256": "2d3eb2946f85607bae6a3512b9b7a4850e9e398d02f9dfbc286e9c03a6eb1477"
+    },
+    {
+      "row_index": 1649,
+      "pdf": "pdfs/page-1649.pdf",
+      "compiled_pages": 2,
+      "sha256": "33ed4e5a95f7813e1e32fe9bd172d7ef58d1e342af689f4ee0a307f46520e033"
+    },
+    {
+      "row_index": 1670,
+      "pdf": "pdfs/page-1670.pdf",
+      "compiled_pages": 2,
+      "sha256": "b2abf6856420bd3da87ab2ef93ab9ed397990ba3486a79550d1416a814e98a90"
+    },
+    {
+      "row_index": 1678,
+      "pdf": "pdfs/page-1678.pdf",
+      "compiled_pages": 2,
+      "sha256": "87ca06d728f0e1cfc29aba4e5e2e7ab713a7cfd2ad0a4582bd2b5cafa578b333"
+    },
+    {
+      "row_index": 1680,
+      "pdf": "pdfs/page-1680.pdf",
+      "compiled_pages": 2,
+      "sha256": "2ce1f65bada85623beb104b9fdeaebee089eff645dc0f611d24b2acd98664b60"
+    },
+    {
+      "row_index": 1722,
+      "pdf": "pdfs/page-1722.pdf",
+      "compiled_pages": 2,
+      "sha256": "a8aa348561463e4b365758273209f7011dc3191600c49631953c1d2c35abf351"
+    },
+    {
+      "row_index": 1765,
+      "pdf": "pdfs/page-1765.pdf",
+      "compiled_pages": 2,
+      "sha256": "8d0df7d33a7a1a87ea376fd20bbfb0b68f1b9a1c4e02e464e60515f8476f9c22"
+    },
+    {
+      "row_index": 1803,
+      "pdf": "pdfs/page-1803.pdf",
+      "compiled_pages": 2,
+      "sha256": "c5a57d051f7268a3f22a5dbb84f41e1e6af7b9a1ba9c1800d9e55df6bb239959"
+    },
+    {
+      "row_index": 1805,
+      "pdf": "pdfs/page-1805.pdf",
+      "compiled_pages": 2,
+      "sha256": "1be727a8aec58082f834db4af38d7953a0699dd7dbbdde687562c768908b43cf"
+    },
+    {
+      "row_index": 1818,
+      "pdf": "pdfs/page-1818.pdf",
+      "compiled_pages": 2,
+      "sha256": "390cdf8afc7bc4e45e6096dbebf386bc443b008cbaec0587cda3f74dc5942181"
+    },
+    {
+      "row_index": 1828,
+      "pdf": "pdfs/page-1828.pdf",
+      "compiled_pages": 2,
+      "sha256": "4e391ee615fea3f21473a9f85719f661501c69297361ad603039bd24cffbf509"
+    },
+    {
+      "row_index": 1845,
+      "pdf": "pdfs/page-1845.pdf",
+      "compiled_pages": 1,
+      "sha256": "52a00e39ab91c31d4b37b3cab69ebfb9dc508490a9202074edcc3c88f3a79f74"
+    },
+    {
+      "row_index": 1904,
+      "pdf": "pdfs/page-1904.pdf",
+      "compiled_pages": 2,
+      "sha256": "a5d854e2474e90d7cbed2108c5b94a152d6eef648afd5039bf7fe318f7b90ccf"
+    },
+    {
+      "row_index": 1910,
+      "pdf": "pdfs/page-1910.pdf",
+      "compiled_pages": 2,
+      "sha256": "44bbb6380d28bf871fa2c33eb5ae6c84d85d09023cec5b16c826c3c2e711de6b"
+    },
+    {
+      "row_index": 1933,
+      "pdf": "pdfs/page-1933.pdf",
+      "compiled_pages": 2,
+      "sha256": "df400671504f7ee9ce90039aa88991c0a7a5290c0a8b62b785d192d475ef3c0d"
+    },
+    {
+      "row_index": 1939,
+      "pdf": "pdfs/page-1939.pdf",
+      "compiled_pages": 2,
+      "sha256": "06c1bcc4f281d7870eec42bae6492520db3aa7e6fb9f08decb5654a8d3e94df1"
+    },
+    {
+      "row_index": 1942,
+      "pdf": "pdfs/page-1942.pdf",
+      "compiled_pages": 2,
+      "sha256": "79064e52b0379e2ada5ca9a94903589f6c0c9bc0eb4db5260e7abe7a4406587f"
+    },
+    {
+      "row_index": 1945,
+      "pdf": "pdfs/page-1945.pdf",
+      "compiled_pages": 2,
+      "sha256": "03ac14c63b799479a9c060349bbd1b904f64344fa365fe56f43f26a2861dbb68"
+    },
+    {
+      "row_index": 2001,
+      "pdf": "pdfs/page-2001.pdf",
+      "compiled_pages": 2,
+      "sha256": "b666b96d57e86f82718e25b1a13e501621da66215a5b22265757d8e87bc97ef4"
+    },
+    {
+      "row_index": 2051,
+      "pdf": "pdfs/page-2051.pdf",
+      "compiled_pages": 2,
+      "sha256": "ad5c42c68ddf17534ee87d2b0f182ffc768417da2ef4017974913f1b99eb13f9"
+    },
+    {
+      "row_index": 2077,
+      "pdf": "pdfs/page-2077.pdf",
+      "compiled_pages": 1,
+      "sha256": "5a222653f10582d52ccc8af4f164dba407fdd936eac6a13071c4e66be0cd496b"
+    },
+    {
+      "row_index": 2087,
+      "pdf": "pdfs/page-2087.pdf",
+      "compiled_pages": 2,
+      "sha256": "7b0925b42befa0f95a748c462eb799cb9a4a0068a8672f7c807de3a2fab255ca"
+    },
+    {
+      "row_index": 2093,
+      "pdf": "pdfs/page-2093.pdf",
+      "compiled_pages": 2,
+      "sha256": "f33d39466f54259afc7f099af99f55aa8ea39d488bddbad5ae4530c7bc0c7aa3"
+    },
+    {
+      "row_index": 2108,
+      "pdf": "pdfs/page-2108.pdf",
+      "compiled_pages": 1,
+      "sha256": "6039a87edf6226ad2d002855fbd924928b3c03fcf2652f431dd85e4a0475f834"
+    },
+    {
+      "row_index": 2131,
+      "pdf": "pdfs/page-2131.pdf",
+      "compiled_pages": 2,
+      "sha256": "3460f79f7809641c6e1e1934decfd740f5220b136a095aaf0ec5ff4166e4f85d"
+    },
+    {
+      "row_index": 2155,
+      "pdf": "pdfs/page-2155.pdf",
+      "compiled_pages": 2,
+      "sha256": "fc2b04f3a1569dbb3617c432d26a19846c457fb5323fbcc8f56038dbc4b3dc2a"
+    },
+    {
+      "row_index": 2171,
+      "pdf": "pdfs/page-2171.pdf",
+      "compiled_pages": 2,
+      "sha256": "93f8580b98c9befac70da8a9650fe92593bc23b96703141cd5f36b4a0c78ffee"
+    },
+    {
+      "row_index": 2209,
+      "pdf": "pdfs/page-2209.pdf",
+      "compiled_pages": 1,
+      "sha256": "48ef6f74dc6dd8f30ab33a9d4365e54c36bf8a1ccfb7e4b12595f69f9a5e1652"
+    },
+    {
+      "row_index": 2243,
+      "pdf": "pdfs/page-2243.pdf",
+      "compiled_pages": 1,
+      "sha256": "2dccd7883712f47cc6f049408e4520547a7f18f4fc2adb66eca9ac6a55401fdd"
+    },
+    {
+      "row_index": 2250,
+      "pdf": "pdfs/page-2250.pdf",
+      "compiled_pages": 2,
+      "sha256": "5f9d26a6dea20826bc3564c5b5578f28153636cb8cebe027082ac9a2f31444d5"
+    },
+    {
+      "row_index": 2277,
+      "pdf": "pdfs/page-2277.pdf",
+      "compiled_pages": 2,
+      "sha256": "df0f3112c158654dac675884f87b801e01d514961f3fc0a4144938f1851bcdc1"
+    },
+    {
+      "row_index": 2296,
+      "pdf": "pdfs/page-2296.pdf",
+      "compiled_pages": 2,
+      "sha256": "45dc46050345618e0012d96d7d56904522505488193e7f1d35861fb23fc93beb"
+    },
+    {
+      "row_index": 2307,
+      "pdf": "pdfs/page-2307.pdf",
+      "compiled_pages": 2,
+      "sha256": "e0b34946fb060975635c61ecdd87f48245f74241bfafd6529418640fdf0b356b"
+    },
+    {
+      "row_index": 2402,
+      "pdf": "pdfs/page-2402.pdf",
+      "compiled_pages": 2,
+      "sha256": "21cf83326664b63d5eaf97842dbb57c7055f03f9360610dcc411a61e70f48d5b"
+    },
+    {
+      "row_index": 2424,
+      "pdf": "pdfs/page-2424.pdf",
+      "compiled_pages": 2,
+      "sha256": "e009700af7d7c03c70057b981d9dfa13eaec3b2a6fe33c3882bf8d2132c79981"
+    },
+    {
+      "row_index": 2446,
+      "pdf": "pdfs/page-2446.pdf",
+      "compiled_pages": 2,
+      "sha256": "da7e368f549954dd7a0facd108a60f9a8f61c6a2befdb5783dadb978c30510dd"
+    },
+    {
+      "row_index": 2448,
+      "pdf": "pdfs/page-2448.pdf",
+      "compiled_pages": 2,
+      "sha256": "e7ffe93009ebe3a48f2162f2991ddf7c82a807dcc6666dc0f612c8277532c96f"
+    },
+    {
+      "row_index": 2464,
+      "pdf": "pdfs/page-2464.pdf",
+      "compiled_pages": 2,
+      "sha256": "64565894c36d5fb6e57d3a58e13c7cb83632d4dc5d382c78075fe3f0239228f1"
+    },
+    {
+      "row_index": 2473,
+      "pdf": "pdfs/page-2473.pdf",
+      "compiled_pages": 2,
+      "sha256": "ecf7d1bf1ac18b5e586e7bf9637d10219e96a90ba6e597888f3abc2b97052fd1"
+    },
+    {
+      "row_index": 2479,
+      "pdf": "pdfs/page-2479.pdf",
+      "compiled_pages": 2,
+      "sha256": "eadc68c600f04fd28329b4ad7b809f75aa2894316ac51f177a6f98a517382746"
+    },
+    {
+      "row_index": 2493,
+      "pdf": "pdfs/page-2493.pdf",
+      "compiled_pages": 3,
+      "sha256": "34a4853b6dc695912b44710e828b212a6a696f538fa6b4cb06fd14bec5729110"
+    },
+    {
+      "row_index": 2524,
+      "pdf": "pdfs/page-2524.pdf",
+      "compiled_pages": 2,
+      "sha256": "3a5efbee42f331e0545aec051dd9603af177902a7dea7d9e9c02a8d2be2ebb66"
+    },
+    {
+      "row_index": 2569,
+      "pdf": "pdfs/page-2569.pdf",
+      "compiled_pages": 2,
+      "sha256": "53af7fed75c3d93433f0fbfa647062b909e9cfc87401dd0fa939b3c5e322882c"
+    },
+    {
+      "row_index": 2570,
+      "pdf": "pdfs/page-2570.pdf",
+      "compiled_pages": 1,
+      "sha256": "fa38c16eda8ac12f9a15b8ceccbf42a1e62d93d107d541b4c5ed15f8ad926339"
+    }
+  ]
+}
