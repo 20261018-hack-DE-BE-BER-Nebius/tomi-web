@@ -32,9 +32,9 @@
     ],
     [
       "Verification",
-      "Working today. Still to verify.",
-      "Parse3.5 has extracted real historical pages. Nemotron Super VL provider inference is verified. Embedding and reranking are still being deployed and tested.",
-      "Status recorded on 18 October 2026. Provider configuration alone does not prove inference."
+      "Five models, real outputs",
+      "All five NVIDIA models produced real outputs in native service checks: Parse3.5, Super VL, Embed VL, Rerank VL and batch Diarization.",
+      "Verified on 18 October 2026. Check the live service status for current availability."
     ],
     [
       "The live demo",
@@ -76,9 +76,9 @@
     ],
     [
       "Verificación",
-      "Operativo y pendiente de verificar",
-      "Parse3.5 ha extraído páginas históricas reales. La inferencia del proveedor Nemotron Super VL está verificada. La búsqueda semántica y la reordenación siguen en despliegue y prueba.",
-      "Estado registrado el 18 de octubre de 2026. Configurar un proveedor no demuestra inferencia."
+      "Cinco modelos, resultados reales",
+      "Los cinco modelos NVIDIA produjeron resultados reales en pruebas nativas del servicio: Parse3.5, Super VL, Embed VL, Rerank VL y Diarization por lotes.",
+      "Verificado el 18 de octubre de 2026. Consulta el estado del servicio para comprobar la disponibilidad actual."
     ],
     [
       "La demostración",
@@ -120,9 +120,9 @@
     ],
     [
       "Verifikation",
-      "Betrieb und offene Prüfung",
-      "Parse3.5 hat historische Seiten tatsächlich extrahiert. Die Anbieterinferenz von Nemotron Super VL ist verifiziert. Embedding und Reranking werden noch bereitgestellt und getestet.",
-      "Stand: 18. Oktober 2026. Anbieterkonfiguration allein belegt keine Inferenz."
+      "Fünf Modelle, echte Ergebnisse",
+      "Alle fünf NVIDIA-Modelle lieferten echte Ausgaben in nativen Dienstprüfungen: Parse3.5, Super VL, Embed VL, Rerank VL und nachträgliche Diarization.",
+      "Verifiziert am 18. Oktober 2026. Der Live-Dienststatus zeigt die aktuelle Verfügbarkeit."
     ],
     [
       "Die Live-Demo",
@@ -164,9 +164,9 @@
     ],
     [
       "Vérification",
-      "Opérationnel et encore à vérifier",
-      "Parse3.5 a extrait de véritables pages historiques. L’inférence du fournisseur Nemotron Super VL est vérifiée. L’embedding et le reclassement sont encore en déploiement et en test.",
-      "État relevé le 18 octobre 2026. La configuration ne prouve pas l’inférence."
+      "Cinq modèles, des résultats réels",
+      "Les cinq modèles NVIDIA ont produit des résultats réels lors des tests natifs : Parse3.5, Super VL, Embed VL, Rerank VL et Diarization en différé.",
+      "Vérifié le 18 octobre 2026. Consultez l’état des services pour leur disponibilité actuelle."
     ],
     [
       "La démonstration",

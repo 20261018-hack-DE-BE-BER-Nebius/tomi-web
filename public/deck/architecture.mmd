@@ -6,6 +6,7 @@ flowchart LR
   P["Parse3.5<br/>Verified page extraction"] --> H
   H --> W["Britannica + Wikipedia<br/>Original passages"]
   C --> A["Selected answer model<br/>Real streamed events"]
-  H -.-> E["Embed VL + Rerank VL<br/>Deployment in progress"]
+  H --> E["Embed VL + Rerank VL<br/>Native inference verified"]
   A -.-> N["Nemotron Super VL<br/>Provider inference verified"]
+  C --> T["Nemotron-3-Diarization<br/>CPU batch speaker turns"]
   O["OpenClaw<br/>Read-only evidence tool"] --> C
