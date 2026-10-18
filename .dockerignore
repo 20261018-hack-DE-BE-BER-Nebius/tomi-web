@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.env
+.env.*
+!.env.example
+*.log
+coverage
+
+*.key
+*.pem
+credentials.json
+service-account*.json
+*.p12
+*.pfx

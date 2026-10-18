@@ -1,0 +1,29 @@
+services:
+  web:
+    image: tomi-web:${TOMI_WEB_IMAGE_TAG:-dev}
+    build: .
+    environment:
+      PORT: ${PORT:-3000}
+      HOSTNAME: ${HOSTNAME:-0.0.0.0}
+      NODE_ENV: production
+      TOMI_BACKEND_URL: ${TOMI_BACKEND_URL}
+      TOMI_PUBLIC_ORIGIN: ${TOMI_PUBLIC_ORIGIN}
+    ports:
+      - "${PORT:-3000}:${PORT:-3000}"
+    healthcheck:
+      test: ["CMD", "bun", "-e", "fetch('http://127.0.0.1:'+process.env.PORT+'/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 1G
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
