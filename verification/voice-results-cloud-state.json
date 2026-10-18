@@ -1,0 +1,7 @@
+{
+  "image": "tomireg2610181730.azurecr.io/tomi-web@sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168",
+  "latestReadyRevision": "tomi-web--0000003",
+  "latestRevision": "tomi-web--0000003",
+  "provisioningState": "Succeeded",
+  "runningStatus": "Running"
+}

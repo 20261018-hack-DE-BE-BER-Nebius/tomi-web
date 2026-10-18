@@ -1,0 +1,4316 @@
+{
+  "reviewed_at": "2026-10-18T18:25:29.147124+00:00",
+  "summary": "All 100 original pages accounted for. Real semantic retrieval completed for 96 textual/partial pages: 23 candidates and 73 ambiguous outcomes. Three blank leaves and one nontext cover remain unmatched. One of the 96 textual pages is a partial astronomy plate. Candidate scores are uncalibrated; matching accuracy and full-page relevance remain unreviewed. Initial transport failures and targeted retries are retained.",
+  "counts": {
+    "ambiguous": 73,
+    "candidate": 23,
+    "blank_leaf": 3,
+    "nontext_cover": 1
+  },
+  "content_counts": {
+    "full_text_parse": 95,
+    "partial_plate": 1,
+    "blank_leaf": 3,
+    "nontext_cover": 1,
+    "total": 100
+  },
+  "semantic_completed_pages": 96,
+  "initial_attempt_counts": {
+    "ambiguous": 53,
+    "candidate": 16,
+    "blocked": 30,
+    "unreadable_or_nontext": 1
+  },
+  "attempts": [
+    "evidence/live-nemotron-matching-20261018T1742Z/progress.json",
+    "evidence/live-nemotron-matching-retry-20261018T1800Z/progress.json",
+    "evidence/live-nemotron-matching-entry-retry/progress.json"
+  ],
+  "counts_store_native": {
+    "documents": 894,
+    "vectors": 755,
+    "historical_pages": 99,
+    "wikipedia_articles": 795
+  },
+  "accuracy": null,
+  "accuracy_reason": "No adjudicated complete ground-truth match set; API success is not article relevance.",
+  "query_method": "Initial first normalized OCR line; explicit targeted retries for misspelled/abbreviated headers 403,1032,2171. Multiple-entry pages can have partial-topic candidates.",
+  "pages": [
+    {
+      "row_index": 13,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:13",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "American Ship Building Co. v. NLRB",
+        "Spain's National Exhibition of Ship Building",
+        "Abu Dhabi Ship Building"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:81127720",
+          "title": "American Ship Building Co. v. NLRB",
+          "score": -5.180790424346924,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:17059445",
+          "title": "Spain's National Exhibition of Ship Building",
+          "score": -5.227252960205078,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:77637434",
+          "title": "Abu Dhabi Ship Building",
+          "score": -5.352723598480225,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Separate narrow comparison reviewed; baseline match quality still requires adjudication.",
+      "query": "292 SHIP-BUILDING.",
+      "match_margin": 0.0464625358581543,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-13.json",
+      "receipt_sha256": "0b56c25b00330ed46b84ddba50e1f563dbdf93309cd94f34716fd7beeab51e85",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 104,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:104",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Weights and measures (disambiguation)",
+        "Weights and Measures Act",
+        "Weights and Measures Act 1972"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:32368790",
+          "title": "Weights and measures (disambiguation)",
+          "score": -4.31622314453125,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:46450138",
+          "title": "Weights and Measures Act",
+          "score": -5.159547328948975,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:51143693",
+          "title": "Weights and Measures Act 1972",
+          "score": -5.564484119415283,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Separate narrow comparison reviewed; baseline match quality still requires adjudication.",
+      "query": "WEIGHTS AND MEASURES.",
+      "match_margin": 0.8433241844177246,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-104.json",
+      "receipt_sha256": "a314389f668b8ca2c77d71cfeb79c39cc00da4d00bfb11ea47d01f68f9b92249",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 115,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:115",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Curtorim", "The Goa Inquisition", "Wallsuches"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:5719941",
+          "title": "Curtorim",
+          "score": -4.908281326293945,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:9140022",
+          "title": "The Goa Inquisition",
+          "score": -5.3324055671691895,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:9461242",
+          "title": "Wallsuches",
+          "score": -5.463372230529785,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Separate narrow comparison reviewed; baseline match quality still requires adjudication.",
+      "query": "6goa BLEACHING. Part II.",
+      "match_margin": 0.42412424087524414,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-115.json",
+      "receipt_sha256": "fb61be419767a381280133f1744622f29a495d795a6a5364ffc635c115bcf9bd",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 217,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:217",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Far Away", "Far Far Away", "Far from Over"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:5212631",
+          "title": "Far Away",
+          "score": -4.54298734664917,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:4348863",
+          "title": "Far Far Away",
+          "score": -4.655074596405029,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:43651704",
+          "title": "Far from Over",
+          "score": -4.758945941925049,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "FAR [ 107] FAR",
+      "match_margin": 0.11208724975585938,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-217.json",
+      "receipt_sha256": "b789fb0e7fb13952a10a4f51041b3fb0a3c1ee55cbdd37c0cdb84c5485f8222d",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 220,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:220",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["TeST TST-14", "TST", "TST (band)"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:32902266",
+          "title": "TeST TST-14",
+          "score": -4.54395055770874,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1574898",
+          "title": "TST",
+          "score": -4.867856025695801,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:55192778",
+          "title": "TST (band)",
+          "score": -5.200296878814697,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "FUR TST FUR",
+      "match_margin": 0.32390546798706055,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-220.json",
+      "receipt_sha256": "bb03739b0fca0f4ffa2e3572e1b2ef38c6f6338aeeed987151c63a452ca2bec8",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 247,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:247",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of islands of Italy",
+        "77th meridian east",
+        "104th meridian east"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:330114",
+          "title": "List of islands of Italy",
+          "score": -6.598690032958984,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:21133038",
+          "title": "77th meridian east",
+          "score": -6.676272392272949,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:20667751",
+          "title": "104th meridian east",
+          "score": -6.853357315063477,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "ET N [ 8 ] E T N",
+      "match_margin": 0.07758235931396484,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-247.json",
+      "receipt_sha256": "7abe629f38c02105f9c3f87e944e164d1b099997279cc8c8dcf33660acda60a3",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 251,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:251",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": ["SWI", "SWY", "SWI-Prolog"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:1287439",
+          "title": "SWI",
+          "score": -2.132368564605713,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:42683299",
+          "title": "SWY",
+          "score": -2.8981919288635254,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1719280",
+          "title": "SWI-Prolog",
+          "score": -3.4115676879882812,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "SWI [ 248] SYD",
+      "match_margin": 0.7658233642578125,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-251.json",
+      "receipt_sha256": "b4d4baa94ffc92eeb81cffb5432e4847f3f00953595bf76bbda98545e1faee54",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 257,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:257",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Moral certainty",
+        "Passive intellect",
+        "Master of Arts (Oxford, Cambridge and Dublin)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:3573435",
+          "title": "Moral certainty",
+          "score": -2.1477952003479004,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:5683641",
+          "title": "Passive intellect",
+          "score": -2.7402515411376953,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1445268",
+          "title": "Master of Arts (Oxford, Cambridge and Dublin)",
+          "score": -2.850755214691162,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "_Swift_ in his power to provide him indarwify. Swift that person (10/3) in different, having previously taken his matter’s degree at Oxford, by means of a tellimonal from Dublin, in which the world of debates were omitted. He was referred to enter into the",
+      "match_margin": 0.5924563407897949,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-257.json",
+      "receipt_sha256": "816ac52db767d0cb12b55cb00599e7ef634d245eceb9c69a175a2d1a9df8af1b",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 258,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:258",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Hundred Years' War",
+        "Henry VI of England",
+        "Louis XI"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:19038039",
+          "title": "Hundred Years' War",
+          "score": -3.920411348342895,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:46858",
+          "title": "Henry VI of England",
+          "score": -3.9284238815307617,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:70506",
+          "title": "Louis XI",
+          "score": -4.199227809906006,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "Willant lodhip, and fame time after the great feel. Edward being returned to England, after having carried on a very favouris- ful war in France, found his echterpect is great director. The duke of Lancafter, one of his foons, at the head of feveral lands,",
+      "match_margin": 0.008012533187866655,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-258.json",
+      "receipt_sha256": "74a5112f02d9f8ab0da29adf1fcac0495ad265186fe08db851532769d3c6b9cf",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 261,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:261",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "222 (disambiguation)",
+        "List of highways numbered 222",
+        "Maryland 222"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:52646213",
+          "title": "222 (disambiguation)",
+          "score": -1.5560593605041504,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1832197",
+          "title": "List of highways numbered 222",
+          "score": -2.351478576660156,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:22681212",
+          "title": "Maryland 222",
+          "score": -3.1271018981933594,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "222",
+      "match_margin": 0.7954192161560054,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-261.json",
+      "receipt_sha256": "fd37cc337c099b05fc134825f36a61e077fcd661703a1624fdeb8c2f8df19df3",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 266,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:266",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Monza Biennial III",
+        "Henry Masterson III",
+        "Thomas N. Armstrong III"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:59413822",
+          "title": "Monza Biennial III",
+          "score": -6.4030375480651855,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:63862582",
+          "title": "Henry Masterson III",
+          "score": -6.60512113571167,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:32192112",
+          "title": "Thomas N. Armstrong III",
+          "score": -6.666160583496094,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "art III.",
+      "match_margin": 0.20208358764648438,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-266.json",
+      "receipt_sha256": "880e1e9d2a3a799dd18e84e1793dbe668b47f7371b5be70faec179df4c910635",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 268,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:268",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Emerald City (disambiguation)",
+        "Red Lake Mine",
+        "MHSnet"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2593018",
+          "title": "Emerald City (disambiguation)",
+          "score": -6.6509294509887695,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:27183459",
+          "title": "Red Lake Mine",
+          "score": -6.656762599945068,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:818050",
+          "title": "MHSnet",
+          "score": -6.7242255210876465,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "LA U [ 6oz ] L AU",
+      "match_margin": 0.005833148956298828,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-268.json",
+      "receipt_sha256": "6c67d5624d05e2874332ea913bbfd2ad35dbbf5eeb3b0aa37c52d910d8780d57",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 270,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:270",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Hydrostatics",
+        "Hydrostatic seal",
+        "Hydrostatic skeleton"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:527232",
+          "title": "Hydrostatics",
+          "score": -2.4936349391937256,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:33926140",
+          "title": "Hydrostatic seal",
+          "score": -4.091378688812256,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:533618",
+          "title": "Hydrostatic skeleton",
+          "score": -5.025054931640625,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "HYDROSTATICS. Plate CCXXXIX.",
+      "match_margin": 1.5977437496185303,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-270.json",
+      "receipt_sha256": "b5737089cbd870100f8b21132441d67b4693372058b2d43b482dcb7ebb96992a",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 318,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:318",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Schuette–Nesbitt formula",
+        "Kaplansky's theorem on projective modules",
+        "Ladder operator"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:14182874",
+          "title": "Schuette–Nesbitt formula",
+          "score": -6.797638416290283,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:62610482",
+          "title": "Kaplansky's theorem on projective modules",
+          "score": -6.962270736694336,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:23280931",
+          "title": "Ladder operator",
+          "score": -6.966675758361816,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "N I L 75 J N I L",
+      "match_margin": 0.16463232040405273,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-318.json",
+      "receipt_sha256": "83870bf3a8bcd1580364aa4b6139af289275ac43c68e8e0161b7f7724fd5bcd6",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 374,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:374",
+      "source_classification": "blank_leaf",
+      "status": "blank_leaf",
+      "candidate_titles": [],
+      "candidates": [],
+      "review_state": "Original image visually verified as blank; no inferred prose.",
+      "query": null,
+      "match_margin": null,
+      "receipt_path": null,
+      "receipt_sha256": null,
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["v1/search: HTTP 422"],
+      "final_blockers": [],
+      "inference_tools": []
+    },
+    {
+      "row_index": 383,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:383",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Color wash",
+        "Thorley Wash nature reserve",
+        "Texize"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:12535980",
+          "title": "Color wash",
+          "score": -4.511939525604248,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:45647817",
+          "title": "Thorley Wash nature reserve",
+          "score": -4.651643753051758,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:8921249",
+          "title": "Texize",
+          "score": -5.185370445251465,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "110 Nature of Wash, Sc.",
+      "match_margin": 0.13970422744750977,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-383.json",
+      "receipt_sha256": "0f6202b4bb2920ab3e20475bd4bc114db909f792e63bc44b12488fd5b183456c",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 403,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:403",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Ethiopian studies",
+        "Giovanni Battista Gallizioli",
+        "Johannes Potken"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:18977595",
+          "title": "Ethiopian studies",
+          "score": -4.917393207550049,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:50063897",
+          "title": "Giovanni Battista Gallizioli",
+          "score": -5.072309494018555,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:9032476",
+          "title": "Johannes Potken",
+          "score": -5.238911151885986,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "philology Chaldean Ethiopian",
+      "match_margin": 0.15491628646850586,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-403.json",
+      "receipt_sha256": "1481d779ab6f4da4e34d45d41886260d0ebb897c1ec1552caf5aad882bc0295e",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": [
+        "wikipedia: No complete, hash-verified candidates"
+      ],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 452,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:452",
+      "source_classification": "nontext_cover",
+      "status": "nontext_cover",
+      "candidate_titles": [],
+      "candidates": [],
+      "review_state": "Cover retained; no usable prose or inferred match.",
+      "query": null,
+      "match_margin": null,
+      "receipt_path": null,
+      "receipt_sha256": null,
+      "original_attempt_status": "unreadable_or_nontext",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": []
+    },
+    {
+      "row_index": 473,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:473",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of highways numbered 466",
+        "Manitoba Provincial Road 466",
+        "New Mexico State Road 466"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:9986056",
+          "title": "List of highways numbered 466",
+          "score": -3.370522975921631,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:67501488",
+          "title": "Manitoba Provincial Road 466",
+          "score": -3.7212631702423096,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:59001334",
+          "title": "New Mexico State Road 466",
+          "score": -4.114987850189209,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "466",
+      "match_margin": 0.3507401943206787,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-473.json",
+      "receipt_sha256": "8bc58701ae29558c1dc8ead18657650d7c433cea6998e8e8589ec240cef4d5f9",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 493,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:493",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Isla, Queensland",
+        "Carrying capacity",
+        "Hill–Robertson effect"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:62163987",
+          "title": "Isla, Queensland",
+          "score": -0.9543014764785768,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:47544",
+          "title": "Carrying capacity",
+          "score": -2.128847599029541,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:8942458",
+          "title": "Hill–Robertson effect",
+          "score": -2.352597236633301,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "(a) This might have been the case in the time of Pennant, from whom the above account is taken. It is not so now, although the population has increased to nearly 12,000. Isla indeed enjoys the peculiar advantages of being not only a grazing but it com own ",
+      "match_margin": 1.1745461225509644,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-493.json",
+      "receipt_sha256": "b410943043c1b6cfd26dab53a9b40e786fd886cbce25df3a51b040c496124f54",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 499,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:499",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of Nepenthes species by distribution",
+        "List of Nepenthes natural hybrids",
+        "List of flora of Pennsylvania"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:5069711",
+          "title": "List of Nepenthes species by distribution",
+          "score": -6.518666744232178,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:5067412",
+          "title": "List of Nepenthes natural hybrids",
+          "score": -6.674936294555664,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:77167075",
+          "title": "List of flora of Pennsylvania",
+          "score": -6.806889533996582,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "I N D T A",
+      "match_margin": 0.15626955032348633,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-499.json",
+      "receipt_sha256": "e56215e14b10d50c9b510339f6b247a5e86f28aecbfc71682c3847f40bb4dd85",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 513,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:513",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Pairing",
+        "Hardy–Littlewood inequality",
+        "Watson's lemma"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:1191490",
+          "title": "Pairing",
+          "score": -7.217000007629395,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:36704617",
+          "title": "Hardy–Littlewood inequality",
+          "score": -7.230524063110352,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:27175770",
+          "title": "Watson's lemma",
+          "score": -7.379239082336426,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "E N G [ 2756 ] E N G",
+      "match_margin": 0.013524055480956143,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-513.json",
+      "receipt_sha256": "ec2ee692e2f01464c9ebeade72408d3809307365a76b017e3a7de97ca4d0e720",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 523,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:523",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Hardy–Littlewood inequality",
+        "Cryptographic multilinear map",
+        "Pairing"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:36704617",
+          "title": "Hardy–Littlewood inequality",
+          "score": -5.395184516906738,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:56835844",
+          "title": "Cryptographic multilinear map",
+          "score": -5.582455635070801,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1191490",
+          "title": "Pairing",
+          "score": -5.649402618408203,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "EN G [ 2729] E N G",
+      "match_margin": 0.1872711181640625,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-523.json",
+      "receipt_sha256": "e0004b9243833dac9ced4487e2053d90eaedd4063953d9d7f4667c4ce5e639be",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 546,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:546",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "IO Group, Inc. v. Veoh Networks, Inc.",
+        "Comparison of mobile phone standards",
+        "JWPce"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:26497231",
+          "title": "IO Group, Inc. v. Veoh Networks, Inc.",
+          "score": -5.0114288330078125,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:5285100",
+          "title": "Comparison of mobile phone standards",
+          "score": -5.19789981842041,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:9246679",
+          "title": "JWPce",
+          "score": -5.5219807624816895,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "This means that the number of users are available to the same as they do not have a few times. The number of users can be used in the case where the number of users are able to use the number of users. However, the number of users are also used to generate",
+      "match_margin": 0.18647098541259766,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-546.json",
+      "receipt_sha256": "0a1f8da052e9f797a29df51c735d75d5fafbcaf748c421aed56c6cdd19781ce5",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 560,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:560",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": ["Ami", "Ami (given name)", "Amy (disambiguation)"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:6646906",
+          "title": "Ami",
+          "score": -3.633214950561523,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:6290855",
+          "title": "Ami (given name)",
+          "score": -4.991322040557861,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:6656324",
+          "title": "Amy (disambiguation)",
+          "score": -5.462541580200195,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "AMI [ 619] A M I",
+      "match_margin": 1.3581070899963383,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-560.json",
+      "receipt_sha256": "cfb07b38b51a1959880f6370a6027e707ba5a37b068edb48b3d731bfcd31970b",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 563,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:563",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of short titles",
+        "List of acts of the New Zealand Parliament (1840–1890)",
+        "List of acts of the Parliament of Malaysia by citation number"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:21490029",
+          "title": "List of short titles",
+          "score": -5.104468822479248,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:5046618",
+          "title": "List of acts of the New Zealand Parliament (1840–1890)",
+          "score": -5.390714645385742,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:49588563",
+          "title": "List of acts of the Parliament of Malaysia by citation number",
+          "score": -5.617517471313477,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "ACT [ 97] ACT",
+      "match_margin": 0.28624582290649414,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-563.json",
+      "receipt_sha256": "322c42adc8d613432ceb52100d28a58842b329b8f9d8bc3eccb52a1a32ec7e6c",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 604,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:604",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Fleischmannia", "Ageratina", "Eupatorieae"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:12347214",
+          "title": "Fleischmannia",
+          "score": -6.839362144470215,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:904441",
+          "title": "Ageratina",
+          "score": -6.8395771980285645,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2604796",
+          "title": "Eupatorieae",
+          "score": -7.000748634338379,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "T H O T H R",
+      "match_margin": 0.00021505355834960938,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-604.json",
+      "receipt_sha256": "203aa54abe03b903576c7ca3151336ef501b15ac34636d16453ba7fa14305486",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 611,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:611",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Resultant",
+        "Weil restriction",
+        "Residue at infinity"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2195020",
+          "title": "Resultant",
+          "score": -4.40380859375,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:361168",
+          "title": "Weil restriction",
+          "score": -4.947570323944092,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:29719506",
+          "title": "Residue at infinity",
+          "score": -5.040465831756592,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "R E S 752 T RES",
+      "match_margin": 0.5437617301940918,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-611.json",
+      "receipt_sha256": "5e757c320166e9bf40de68389ee63c24611e50e67b064a830e92ddd250e830b6",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 651,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:651",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Helminthology",
+        "Journal of Helminthology",
+        "Edwin Linton"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2203555",
+          "title": "Helminthology",
+          "score": -4.491147041320801,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:49030783",
+          "title": "Journal of Helminthology",
+          "score": -5.380772113800049,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:34802434",
+          "title": "Edwin Linton",
+          "score": -5.751197814941406,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "HELMINTHOLOGY. Plate CCLI",
+      "match_margin": 0.889625072479248,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-651.json",
+      "receipt_sha256": "8a22e625430d87cdda9c040f27b8b94de60a197b8c2a8b0267fa770b0da60f5b",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 681,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:681",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Bau (plant)", "List of Lupinus species", "Borneoa"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:81648138",
+          "title": "Bau (plant)",
+          "score": -5.122136116027832,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:71610808",
+          "title": "List of Lupinus species",
+          "score": -5.320127487182617,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:81648227",
+          "title": "Borneoa",
+          "score": -5.397154331207275,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "O P T I C S. 427",
+      "match_margin": 0.19799137115478516,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-681.json",
+      "receipt_sha256": "7d9f943e64972cc20a19c193ed73d4873d956ea064613e5c7337aa632b106654",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 713,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:713",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Oyi (song)", "Oyi", "Vincent Ofumelu"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:39804647",
+          "title": "Oyi (song)",
+          "score": -4.9396233558654785,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:13567361",
+          "title": "Oyi",
+          "score": -5.064939022064209,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:78703530",
+          "title": "Vincent Ofumelu",
+          "score": -5.874249458312988,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**OYI ( 447)** **OUS**",
+      "match_margin": 0.12531566619873047,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-713.json",
+      "receipt_sha256": "b4bd4f1ba6359bf297b5921db8e2b2bb50cb1086bd19d7f5aa7027ed232698ae",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 756,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:756",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Magnetism (album)",
+        "Magnetic (disambiguation)",
+        "Magnet (disambiguation)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:45471960",
+          "title": "Magnetism (album)",
+          "score": -2.71848726272583,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:38222069",
+          "title": "Magnetic (disambiguation)",
+          "score": -3.05609130859375,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1271622",
+          "title": "Magnet (disambiguation)",
+          "score": -3.325763463973999,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "MAGNETISM.",
+      "match_margin": 0.3376040458679199,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-756.json",
+      "receipt_sha256": "22f758b85249f7d64673632ee169dfae45d0821f529ccd3d1fd83563e311a0e8",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 851,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:851",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["HD 5550", "IBM 5550", "Hanshin 5550 series"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:47873636",
+          "title": "HD 5550",
+          "score": -3.1395726203918457,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:20607348",
+          "title": "IBM 5550",
+          "score": -3.149717092514038,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:27046174",
+          "title": "Hanshin 5550 series",
+          "score": -3.4944887161254883,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "5550",
+      "match_margin": 0.010144472122192383,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-851.json",
+      "receipt_sha256": "7014e82a0e91db5bb6398251793058ff2017211256c7a03ebc7c416d193b51ec",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 914,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:914",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Ramaria",
+        "Minesweeper flotilla (Kriegsmarine)",
+        "List of Australian plant species described by Robert Brown"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:15680402",
+          "title": "Ramaria",
+          "score": -6.719456672668457,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:53584442",
+          "title": "Minesweeper flotilla (Kriegsmarine)",
+          "score": -6.844709396362305,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2902975",
+          "title": "List of Australian plant species described by Robert Brown",
+          "score": -6.867560863494873,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "A R A  [ 182 ] A R A",
+      "match_margin": 0.12525272369384766,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-914.json",
+      "receipt_sha256": "e05e80244930dbc3284bc4de3279ec819b66fb55ac9c902923e8ce0e30ddaca7",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 944,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:944",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Epiphragma", "Erioptera", "Entyloma"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:23988412",
+          "title": "Epiphragma",
+          "score": -5.899655818939209,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:23988417",
+          "title": "Erioptera",
+          "score": -5.918327331542969,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:43235241",
+          "title": "Entyloma",
+          "score": -5.967785835266113,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "M E A [ 715] M E A",
+      "match_margin": 0.018671512603759766,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-944.json",
+      "receipt_sha256": "4fbaca45031db6d55de9e5da64657949d9e2aa3829400c0aac23eba0a60848d4",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 948,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:948",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Lava (color)",
+        "Lava (disambiguation)",
+        "Lava field"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:14158935",
+          "title": "Lava (color)",
+          "score": -3.1481714248657227,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1354210",
+          "title": "Lava (disambiguation)",
+          "score": -3.32545804977417,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:4232899",
+          "title": "Lava field",
+          "score": -4.479132652282715,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "Lava.",
+      "match_margin": 0.17728662490844727,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-948.json",
+      "receipt_sha256": "9dc25958be71c961f8e6803a19078fa8f3f6a14a99a4bfd53003d4c36f90c489",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1017,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1017",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Nick Fury, Agent of S.H.I.E.L.D. (disambiguation)",
+        "S.H.I.E.L.D. (disambiguation)",
+        "List of Erica species"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:28540222",
+          "title": "Nick Fury, Agent of S.H.I.E.L.D. (disambiguation)",
+          "score": -5.578307628631592,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:56057078",
+          "title": "S.H.I.E.L.D. (disambiguation)",
+          "score": -5.757538795471191,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:59594801",
+          "title": "List of Erica species",
+          "score": -6.010533332824707,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "H E L",
+      "match_margin": 0.1792311668395996,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1017.json",
+      "receipt_sha256": "d7de04b965374d41da498265d193ab5f92f4c314f825e988aa11d0dabd0e9f09",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1032,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1032",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Cardiovascular physiology",
+        "Léon Fredericq",
+        "Exercitatio Anatomica de Motu Cordis et Sanguinis in Animalibus"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:4156844",
+          "title": "Cardiovascular physiology",
+          "score": -5.306503772735596,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:71776328",
+          "title": "Léon Fredericq",
+          "score": -5.733771324157715,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:523886",
+          "title": "Exercitatio Anatomica de Motu Cordis et Sanguinis in Animalibus",
+          "score": -5.7604780197143555,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "heart blood physiology",
+      "match_margin": 0.42726755142211914,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-1032.json",
+      "receipt_sha256": "42fb882fb9ad598b7fb60eb34075e0e0f5e1ed93f9546b16ab26dc3f543e146d",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": [
+        "wikipedia: No complete, hash-verified candidates"
+      ],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1102,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1102",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "2-hydroxypropyl-CoM lyase",
+        "Com Truise discography",
+        "BoatTrader.com"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:39527518",
+          "title": "2-hydroxypropyl-CoM lyase",
+          "score": -7.588779449462891,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:60782614",
+          "title": "Com Truise discography",
+          "score": -7.889083862304688,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:41527859",
+          "title": "BoatTrader.com",
+          "score": -7.961872100830078,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "182 COM COM",
+      "match_margin": 0.30030441284179776,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1102.json",
+      "receipt_sha256": "7ea55377034d173a511eb206c40ce31e97030d362404216f919e18a0899e41d8",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1166,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1166",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Liberties Press",
+        "Press laws",
+        "Liberty Party (Turkey)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:23369583",
+          "title": "Liberties Press",
+          "score": -2.4051671028137207,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:3955928",
+          "title": "Press laws",
+          "score": -3.555582046508789,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:29678713",
+          "title": "Liberty Party (Turkey)",
+          "score": -3.713358879089355,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**LIBERTY OF THE PRESS.**",
+      "match_margin": 1.1504149436950684,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1166.json",
+      "receipt_sha256": "c2f283b0e86f1ba11ced3b231c0ed0b68506414557763fb085c0464ab0f53edd",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1214,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1214",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of dams and reservoirs in Iran",
+        "List of dams and reservoirs in Turkey",
+        "List of dams and reservoirs"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2195555",
+          "title": "List of dams and reservoirs in Iran",
+          "score": -4.985522270202637,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:24611308",
+          "title": "List of dams and reservoirs in Turkey",
+          "score": -5.010150909423828,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:164917",
+          "title": "List of dams and reservoirs",
+          "score": -5.0585103034973145,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "DAM [ 658]",
+      "match_margin": 0.024628639221191406,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1214.json",
+      "receipt_sha256": "0ec3ced77c893625e459a2ad7b0f93d74730bbd820f19f7a2515ac19e7378162",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1250,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1250",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "COI",
+        "Community of interest (computer security)",
+        "Dennis Coi"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:629195",
+          "title": "COI",
+          "score": -4.3701677322387695,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:3626867",
+          "title": "Community of interest (computer security)",
+          "score": -4.38186502456665,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:7867266",
+          "title": "Dennis Coi",
+          "score": -5.133235931396484,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "COI I 130 | COI",
+      "match_margin": 0.01169729232788086,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1250.json",
+      "receipt_sha256": "2b514a15c7b8e7a4d98cc62666c183546df19ae6cd999ce3c3e2d5db1363f35c",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1268,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1268",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "66",
+        "List of highways numbered 66",
+        "66th meridian east"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:9109170",
+          "title": "66",
+          "score": -2.9897496700286865,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:5640035",
+          "title": "List of highways numbered 66",
+          "score": -5.1692094802856445,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:21124312",
+          "title": "66th meridian east",
+          "score": -5.273998260498047,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "66",
+      "match_margin": 2.179459810256958,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1268.json",
+      "receipt_sha256": "0e365ec44227ffb7708ae36cd4013dbdbea90a382ec7b3a1a47a11334b6d64b5",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1284,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1284",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of Coleophora species",
+        "List of Diapheromeridae genera",
+        "List of Phasmatidae genera"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:29686909",
+          "title": "List of Coleophora species",
+          "score": -6.727106094360352,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:57279534",
+          "title": "List of Diapheromeridae genera",
+          "score": -6.803274631500244,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:57279624",
+          "title": "List of Phasmatidae genera",
+          "score": -6.860485553741455,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "S C O [ 865 ]",
+      "match_margin": 0.07616853713989258,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1284.json",
+      "receipt_sha256": "4216f390fa87a6701f38a0756e537a5cc8d2e3411dd5b94c8515ed08932c21c5",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1298,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1298",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": ["Edwards (surname)", "Edwards", "William Edwards"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:6356690",
+          "title": "Edwards (surname)",
+          "score": -1.680882453918457,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:352350",
+          "title": "Edwards",
+          "score": -2.2178468704223633,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2554077",
+          "title": "William Edwards",
+          "score": -2.8908567428588867,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "452 EdWARDS",
+      "match_margin": 0.5369644165039062,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1298.json",
+      "receipt_sha256": "075b9f9580043b0f38cdce83e00e1f9133899f8df1a5e7f16920ff9fbb9fa2b1",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1324,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1324",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Fuel hedging", "Zero Hedge", "Mailüfterl"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:19402331",
+          "title": "Fuel hedging",
+          "score": -4.16614294052124,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:24083658",
+          "title": "Zero Hedge",
+          "score": -4.565417766571045,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:20529838",
+          "title": "Mailüfterl",
+          "score": -4.649918079376221,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "Hedges. price of line in high they may be built without any content, and author the purple very well if the work is properly executed?’",
+      "match_margin": 0.3992748260498047,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1324.json",
+      "receipt_sha256": "6fc22f7a7a6542ae4923447ef11eea5552872b7186c6fbdb634358f21b92ea3a",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1327,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1327",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Group homomorphism",
+        "List of Greek and Latin roots in English/H–O",
+        "Associated bundle"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:12396",
+          "title": "Group homomorphism",
+          "score": -5.0750603675842285,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:51941639",
+          "title": "List of Greek and Latin roots in English/H–O",
+          "score": -5.1970906257629395,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:398874",
+          "title": "Associated bundle",
+          "score": -5.524472713470459,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "H U E [ 707 ] H U G",
+      "match_margin": 0.12203025817871094,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1327.json",
+      "receipt_sha256": "369ceab0043cffbf91c9df5eeaf5624ec69e5d6fb32dd5ec75ab28c8383aceb7",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1344,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1344",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Hyperharmonic number",
+        "Quasitriangular Hopf algebra",
+        "Ageratina"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:40486440",
+          "title": "Hyperharmonic number",
+          "score": -4.1159515380859375,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:3727020",
+          "title": "Quasitriangular Hopf algebra",
+          "score": -4.544454097747803,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:904441",
+          "title": "Ageratina",
+          "score": -4.583945274353027,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "H O R [ 664 ] H O R",
+      "match_margin": 0.42850255966186523,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1344.json",
+      "receipt_sha256": "f3fcbcf3d7b77e20d3325c6e13a3bdef8dd9ce9fdca41c88fa9107684c4e4530",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1400,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1400",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Midwife", "347", "Robert Bland"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:47456362",
+          "title": "Midwife",
+          "score": -4.718364715576172,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:48432",
+          "title": "347",
+          "score": -5.0363569259643555,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:35292793",
+          "title": "Robert Bland",
+          "score": -5.042166709899902,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "MIDWIFERY PLATE CCCXLVII.",
+      "match_margin": 0.3179922103881836,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1400.json",
+      "receipt_sha256": "c80fb3b31036e8b8f6154a437f8bf5af0e21df68d12854b777388e62d226c7d3",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1415,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1415",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "H-E-B Mexico",
+        "Antimima",
+        "The Existence of God (book)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:30954485",
+          "title": "H-E-B Mexico",
+          "score": -6.704868793487549,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:12857155",
+          "title": "Antimima",
+          "score": -6.762581825256348,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:69682704",
+          "title": "The Existence of God (book)",
+          "score": -6.833709716796875,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "ET H  [ 797 ] E T H",
+      "match_margin": 0.05771303176879883,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1415.json",
+      "receipt_sha256": "946620e009c129f75a68b79ad6f2c72ad73a9538938707fd5491dda81a7861e5",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1422,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1422",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Ed Iacobucci",
+        "ISO 639:u",
+        "Searchable symmetric encryption"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:1371357",
+          "title": "Ed Iacobucci",
+          "score": -5.697178363800049,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:5540485",
+          "title": "ISO 639:u",
+          "score": -5.860966205596924,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:65133209",
+          "title": "Searchable symmetric encryption",
+          "score": -6.1706318855285645,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**ED U** **[ 353 1 E D U**",
+      "match_margin": 0.163787841796875,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1422.json",
+      "receipt_sha256": "c5b496b8de2660d61531fbd25107fc3b7d8d9e630eda54eb6febe4fb2be6cda0",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1430,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1430",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["C18H22N4O2", "C20H31NO", "GYKI-52895"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:61495967",
+          "title": "C18H22N4O2",
+          "score": -5.65127420425415,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:24424280",
+          "title": "C20H31NO",
+          "score": -5.974724769592285,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:14286084",
+          "title": "GYKI-52895",
+          "score": -6.054306983947754,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "EGY [ 368 ] E G Y",
+      "match_margin": 0.32345056533813477,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1430.json",
+      "receipt_sha256": "3cc613f528cc519a23558804f96ca2b22efcb5959b6e46cda04103feb7f0bfb2",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1466,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1466",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Erioptera", "Epiphragma", "List of Aldama species"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:23988417",
+          "title": "Erioptera",
+          "score": -7.189795970916748,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:23988412",
+          "title": "Epiphragma",
+          "score": -7.276165962219238,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:75165526",
+          "title": "List of Aldama species",
+          "score": -7.356570243835449,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "E S S [ 729 ] E S S",
+      "match_margin": 0.08636999130249023,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1466.json",
+      "receipt_sha256": "e9e95a366b057137174a6b6d27b1200c3378dd227c942b9bb9b5a4fe88c0dffc",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1473,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1473",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "European Society of Cardiology",
+        "Electronic stability control",
+        "Guggenmos ESC"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:18009617",
+          "title": "European Society of Cardiology",
+          "score": -4.529507637023926,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:420943",
+          "title": "Electronic stability control",
+          "score": -4.8422698974609375,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:34805348",
+          "title": "Guggenmos ESC",
+          "score": -5.004822254180908,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "ESC 1723 I ESC",
+      "match_margin": 0.3127622604370117,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1473.json",
+      "receipt_sha256": "5fb9fa65407c73137dff4a528887d1778e991b07ad4830f5151ad824c01edaca",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1580,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1580",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Outline of trigonometry",
+        "Uses of trigonometry",
+        "Generalized trigonometry"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:6600160",
+          "title": "Outline of trigonometry",
+          "score": -3.726428270339966,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:753225",
+          "title": "Uses of trigonometry",
+          "score": -4.155629634857178,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:22850636",
+          "title": "Generalized trigonometry",
+          "score": -4.237818241119385,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "TRIGONOMETRY.",
+      "match_margin": 0.4292013645172119,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1580.json",
+      "receipt_sha256": "7928635d9feeed90aeda4141fa7ebba88e9eeaf957e458c681d262f4fa7ecdc4",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1614,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1614",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Hilara", "Hymenobacter", "Hexatoma"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:26963888",
+          "title": "Hilara",
+          "score": -5.97603702545166,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:51528922",
+          "title": "Hymenobacter",
+          "score": -6.128030300140381,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:23988447",
+          "title": "Hexatoma",
+          "score": -6.225326061248779,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "T H O ( 896 )",
+      "match_margin": 0.1519932746887207,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1614.json",
+      "receipt_sha256": "8634ac9a6603324eabe9b6b1ee77906b336ec62346ef61b7fd57d76649b5d680",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1615,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1615",
+      "source_classification": "blank_leaf",
+      "status": "blank_leaf",
+      "candidate_titles": [],
+      "candidates": [],
+      "review_state": "Original image visually verified as blank; no inferred prose.",
+      "query": null,
+      "match_margin": null,
+      "receipt_path": null,
+      "receipt_sha256": null,
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["v1/search: HTTP 422"],
+      "final_blockers": [],
+      "inference_tools": []
+    },
+    {
+      "row_index": 1649,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1649",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Chi-won", "Tai chi classics", "Ch'oe Malli"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:37627410",
+          "title": "Chi-won",
+          "score": -7.116152763366699,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:12534514",
+          "title": "Tai chi classics",
+          "score": -7.411728858947754,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:4175360",
+          "title": "Ch'oe Malli",
+          "score": -7.413250923156738,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "CH I 671 CHI",
+      "match_margin": 0.2955760955810547,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1649.json",
+      "receipt_sha256": "3fc3088c1e930c49395c311927117142042e0d2198d1055b068bf232c236e5e7",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1670,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1670",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of Greek and Latin roots in English/A–G",
+        "List of Greek and Latin roots in English/P–Z",
+        "List of Greek and Latin roots in English/H–O"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:51941621",
+          "title": "List of Greek and Latin roots in English/A–G",
+          "score": -5.221173286437988,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:51941660",
+          "title": "List of Greek and Latin roots in English/P–Z",
+          "score": -5.337468147277832,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:51941639",
+          "title": "List of Greek and Latin roots in English/H–O",
+          "score": -5.342511177062988,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "G-AP [ 141] C A P",
+      "match_margin": 0.11629486083984375,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1670.json",
+      "receipt_sha256": "cfcb49a7a3d661b8092090c29a4f19240a4d83d0726b6943ca2ae4541e2e612d",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1678,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1678",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Quadratic Jordan algebra",
+        "Navia (plant)",
+        "Agalmyla"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:39323582",
+          "title": "Quadratic Jordan algebra",
+          "score": -4.556595325469971,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:9477973",
+          "title": "Navia (plant)",
+          "score": -4.76521635055542,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:57356837",
+          "title": "Agalmyla",
+          "score": -4.846980094909668,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "B I L",
+      "match_margin": 0.20862102508544922,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1678.json",
+      "receipt_sha256": "846fa78905da4b44df7b11b44bf33e1ebe4a85b54e8c9f936a77d9cb2c0ed873",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1680,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1680",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of Diapheromeridae genera",
+        "List of Achilidae genera",
+        "List of Phasmatidae genera"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:57279534",
+          "title": "List of Diapheromeridae genera",
+          "score": -6.818097114562988,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:57053633",
+          "title": "List of Achilidae genera",
+          "score": -6.917015552520752,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:57279624",
+          "title": "List of Phasmatidae genera",
+          "score": -6.977560043334961,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "C ARPENTRY. 631",
+      "match_margin": 0.09891843795776367,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1680.json",
+      "receipt_sha256": "bf14b180e40172d23bb6f493876cce8f2f662ad6089a6b4bb204d442d2dcdd18",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1722,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1722",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of Quebec provincial highways",
+        "Ramaria",
+        "List of Australian plant species described by Robert Brown"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:334710",
+          "title": "List of Quebec provincial highways",
+          "score": -7.332513809204102,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:15680402",
+          "title": "Ramaria",
+          "score": -7.439078807830811,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2902975",
+          "title": "List of Australian plant species described by Robert Brown",
+          "score": -7.481316566467285,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "A R S 354 7 A R S",
+      "match_margin": 0.10656499862670987,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1722.json",
+      "receipt_sha256": "eee15fb8b96ebebef2feb7560d2b79fedfd8e19be8e1958f57ace0da90efc6d1",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1765,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1765",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Kal", "Kal, Kolovrat", "Kal (name)"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:3210346",
+          "title": "Kal",
+          "score": -3.2334342002868652,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:73289023",
+          "title": "Kal, Kolovrat",
+          "score": -3.5327365398406982,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:39334525",
+          "title": "Kal (name)",
+          "score": -4.1818695068359375,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "KAL [ 421]",
+      "match_margin": 0.299302339553833,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1765.json",
+      "receipt_sha256": "9465ee897cf52309533026327d7ab04c39ba47b0a10bdfce47de9f4d02bcc7ec",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1803,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1803",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Hardy–Littlewood inequality",
+        "Cryptographic multilinear map",
+        "Pairing"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:36704617",
+          "title": "Hardy–Littlewood inequality",
+          "score": -6.7111406326293945,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:56835844",
+          "title": "Cryptographic multilinear map",
+          "score": -6.758218288421631,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1191490",
+          "title": "Pairing",
+          "score": -6.8264641761779785,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "EN G E 141 T E N G",
+      "match_margin": 0.04707765579223633,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1803.json",
+      "receipt_sha256": "d6fd05ae1f38c800a3bbf0d4867272b503031a265cae2b13acc3bc4f7411070a",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1805,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1805",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": ["Exe", "HMS Exe", "Exes"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:621239",
+          "title": "Exe",
+          "score": -2.3767781257629395,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:52774693",
+          "title": "HMS Exe",
+          "score": -5.406440258026123,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:48218465",
+          "title": "Exes",
+          "score": -5.551100730895996,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "EXE [ 375 ] EXE",
+      "match_margin": 3.0296621322631836,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1805.json",
+      "receipt_sha256": "1e13a1a1b5b4c4dabfcaa7bea49d1cc4f75f0ed68c67e7e6dc4674129cad9f7f",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1818,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1818",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": ["Blowpipe (tool)", "Bubble pipe", "Blow football"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2762233",
+          "title": "Blowpipe (tool)",
+          "score": -1.0901789665222168,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1646704",
+          "title": "Bubble pipe",
+          "score": -4.325198173522949,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:3349329",
+          "title": "Blow football",
+          "score": -4.408000946044922,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "BLOW-PIPE 713",
+      "match_margin": 3.2350192070007324,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1818.json",
+      "receipt_sha256": "98d32851e0fe71bda28aa721d24d61b386da6c2ab2a2d9f1a71c983550cead05",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1828,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1828",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Beauty (disambiguation)",
+        "Something Beautiful",
+        "Beautiful"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:3491990",
+          "title": "Beauty (disambiguation)",
+          "score": -2.004852771759033,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:5927337",
+          "title": "Something Beautiful",
+          "score": -3.2288818359375,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:214502",
+          "title": "Beautiful",
+          "score": -3.269042730331421,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "BEAUTY. 489",
+      "match_margin": 1.2240290641784668,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1828.json",
+      "receipt_sha256": "133f35bb94f3446c9f493a07c9e40bd223b54542d86f549864c10e4d0e8efa09",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1845,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1845",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "XVII Reserve Corps (German Empire)",
+        "Kodam XVII/Cenderawasih",
+        "XVII Corps"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:35197356",
+          "title": "XVII Reserve Corps (German Empire)",
+          "score": -2.4252443313598633,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:38756019",
+          "title": "Kodam XVII/Cenderawasih",
+          "score": -2.803167819976806,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:33609182",
+          "title": "XVII Corps",
+          "score": -2.8642706871032715,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "XVII.",
+      "match_margin": 0.3779234886169429,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1845.json",
+      "receipt_sha256": "91ef9db07eabf40c8acc770f7280898ca802ddea9b134b0b343289957493d2fb",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1904,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1904",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": ["-ly", "List of drugs: L", "Early Lý dynasty"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:3855241",
+          "title": "-ly",
+          "score": -3.742179155349731,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1948966",
+          "title": "List of drugs: L",
+          "score": -4.32960844039917,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:25496773",
+          "title": "Early Lý dynasty",
+          "score": -4.335818767547607,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**LY R  [ 4329 ]** **L Y R**",
+      "match_margin": 0.5874292850494389,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1904.json",
+      "receipt_sha256": "4f38828b1f67196709cd40162188f7b191c5ab926c2f5061720d3dc10c84348f",
+      "original_attempt_status": "candidate",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1910,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1910",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Kingman's subadditive ergodic theorem",
+        "List of Lepidodexia species",
+        "Desmocladus"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:43597724",
+          "title": "Kingman's subadditive ergodic theorem",
+          "score": -5.619640827178955,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:57045644",
+          "title": "List of Lepidodexia species",
+          "score": -5.680160045623779,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:59741801",
+          "title": "Desmocladus",
+          "score": -5.856993198394775,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "L I G [ 4230 ] L I G",
+      "match_margin": 0.06051921844482422,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1910.json",
+      "receipt_sha256": "5928e07c98f0ba61701dbcf9597b4eb7cd849bffd413c67918d199b24b8a46aa",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1933,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1933",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Pale, Goa",
+        "And So to Sleep Again",
+        "Boston Street Railway Association"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:14473324",
+          "title": "Pale, Goa",
+          "score": -3.976154804229736,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2583659",
+          "title": "And So to Sleep Again",
+          "score": -4.346334457397461,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:9251816",
+          "title": "Boston Street Railway Association",
+          "score": -4.352438449859619,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "5706",
+      "match_margin": 0.37017965316772505,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1933.json",
+      "receipt_sha256": "9ba7e02d667becd6286f9f815e9f541b9f0096424714f6e9b7f3b80df96ead09",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1939,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1939",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "NGC 6056",
+        "Midvale, Western Australia",
+        "Dimethylhomotryptamine"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:58350677",
+          "title": "NGC 6056",
+          "score": -2.94144868850708,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2961028",
+          "title": "Midvale, Western Australia",
+          "score": -3.142056941986084,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:81570758",
+          "title": "Dimethylhomotryptamine",
+          "score": -3.6005403995513916,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "6056",
+      "match_margin": 0.2006082534790039,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1939.json",
+      "receipt_sha256": "cedac4b13ed0e34c69b788598079f525c689af0e8fba559671d755a9d07f673d",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1942,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1942",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["U engine", "Dedications II", "Brilanestrant"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:877975",
+          "title": "U engine",
+          "score": -5.161656379699707,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:7512347",
+          "title": "Dedications II",
+          "score": -5.533343315124512,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:51508759",
+          "title": "Brilanestrant",
+          "score": -5.597591400146484,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "6046",
+      "match_margin": 0.3716869354248047,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-1942.json",
+      "receipt_sha256": "18937ec38acc634171abd66edc047b2261f9349b79dce299274c43ff585a3e05",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 1945,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1945",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "III Steps Forward",
+        "Thomas P. O'Neill III",
+        "Bentham & Hooker system"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2529691",
+          "title": "III Steps Forward",
+          "score": -4.901933670043945,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:3473092",
+          "title": "Thomas P. O'Neill III",
+          "score": -5.144272327423096,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:4345598",
+          "title": "Bentham & Hooker system",
+          "score": -5.606383323669434,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "Part III. U P T I C S. 5605",
+      "match_margin": 0.2423386573791504,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-1945.json",
+      "receipt_sha256": "1520a53f1254c3ff832519eee09fbbcd7b8bf6408a0ddc2286e7dae73aa7af9c",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2001,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2001",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Libnotes",
+        "List of United States Navy Landing Craft Infantry",
+        "Lingulella"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:23988460",
+          "title": "Libnotes",
+          "score": -7.44962215423584,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:10032514",
+          "title": "List of United States Navy Landing Craft Infantry",
+          "score": -7.508918285369873,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:27156020",
+          "title": "Lingulella",
+          "score": -7.5884294509887695,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "S I L [ 355 ]",
+      "match_margin": 0.0592961311340332,
+      "receipt_path": "evidence/live-nemotron-matching-20261018T1742Z/page-2001.json",
+      "receipt_sha256": "6756c5d0b3be7509fbb75a0e9b4ae5daba165562b8a02dca16b5e4eb703d65fd",
+      "original_attempt_status": "ambiguous",
+      "original_attempt_blockers": [],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2051,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2051",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Lom language", "Lom", "Si Lom"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:29413734",
+          "title": "Lom language",
+          "score": -3.5821683406829834,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:178042",
+          "title": "Lom",
+          "score": -3.635998487472534,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:81710051",
+          "title": "Si Lom",
+          "score": -4.463083267211914,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**LOM [ 168 ]**",
+      "match_margin": 0.05383014678955078,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2051.json",
+      "receipt_sha256": "4e930efa32752896a9ae9f9749bf9f5ac174799600816643a2d91d2355d2a399",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["v1/embeddings: HTTP 502"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2077,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2077",
+      "source_classification": "blank_leaf",
+      "status": "blank_leaf",
+      "candidate_titles": [],
+      "candidates": [],
+      "review_state": "Original image visually verified as blank; no inferred prose.",
+      "query": null,
+      "match_margin": null,
+      "receipt_path": null,
+      "receipt_sha256": null,
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": []
+    },
+    {
+      "row_index": 2087,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2087",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Britain",
+        "Little Britain",
+        "List of national sports teams of the United Kingdom"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:3745",
+          "title": "Britain",
+          "score": -2.9118242263793945,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1671663",
+          "title": "Little Britain",
+          "score": -4.184450626373291,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:44279949",
+          "title": "List of national sports teams of the United Kingdom",
+          "score": -4.2797980308532715,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "BRITAIN. 571",
+      "match_margin": 1.2726263999938965,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2087.json",
+      "receipt_sha256": "54292e8ce9a36d592da027cb2d29c8131548c832bad4ad58fa1b109c95308ab5",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2093,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2093",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Ayusman Sen",
+        "Eu Tong Sen Street",
+        "Institution (computer science)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:33069652",
+          "title": "Ayusman Sen",
+          "score": -3.33960485458374,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:7392833",
+          "title": "Eu Tong Sen Street",
+          "score": -3.6876778602600098,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2156522",
+          "title": "Institution (computer science)",
+          "score": -3.866905927658081,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "S E N T I ST J SEN",
+      "match_margin": 0.34807300567627,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2093.json",
+      "receipt_sha256": "c20fa2569b562393a661d39a82045349b9222ac69c420984c9ec75f4bb7ea22f",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2108,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2108",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Asemeia (plant)", "Werauhia", "Senega"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:63653137",
+          "title": "Asemeia (plant)",
+          "score": -6.38482666015625,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:4384572",
+          "title": "Werauhia",
+          "score": -6.44475793838501,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2909442",
+          "title": "Senega",
+          "score": -6.45501184463501,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "B R I  [ 645 J B R F",
+      "match_margin": 0.059931278228759766,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2108.json",
+      "receipt_sha256": "eaf473a05f6990a66c70ae2e90452b9f9c6d790403c0c3a907d7fc0dd52b0c39",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2131,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2131",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["BOM", "Bom Bom Bom", "Bom Dia"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:848101",
+          "title": "BOM",
+          "score": -4.061990261077881,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:8980535",
+          "title": "Bom Bom Bom",
+          "score": -4.331661701202393,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:44601954",
+          "title": "Bom Dia",
+          "score": -4.732617378234863,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "BOM [ 353 BOM",
+      "match_margin": 0.2696714401245117,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2131.json",
+      "receipt_sha256": "0a177447720abed97d08f27e136c1f633ff11af1a5cf1e650a5a491589eb876f",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2155,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2155",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Henckelia", "Petrocodon", "Primulina"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:48030863",
+          "title": "Henckelia",
+          "score": -5.808230400085449,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:67331254",
+          "title": "Petrocodon",
+          "score": -6.0190629959106445,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:42328549",
+          "title": "Primulina",
+          "score": -6.053431987762451,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "B L I [ 301] B LI",
+      "match_margin": 0.2108325958251953,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2155.json",
+      "receipt_sha256": "557202a29cce05dbfdbfbf035a95a6df853865c6fdad9f8677dea296fad37c6b",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2171,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2171",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": ["Calmness", "Ruben Pang", "Tamara Levitt"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:5976304",
+          "title": "Calmness",
+          "score": -3.515918254852295,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:46718991",
+          "title": "Ruben Pang",
+          "score": -4.653426647186279,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:63346867",
+          "title": "Tamara Levitt",
+          "score": -4.772984981536865,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "ataraxy calmness mind",
+      "match_margin": 1.1375083923339844,
+      "receipt_path": "evidence/live-nemotron-matching-entry-retry/page-2171.json",
+      "receipt_sha256": "68f47a5487fed8f657d64b8b4d5546555956d0ab1dcca05e612b2b8f092cad3d",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2209,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2209",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Kebon Kopi I inscription",
+        "Orlando del Fierro",
+        "Manuel Ferreira Guzmán"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:59205109",
+          "title": "Kebon Kopi I inscription",
+          "score": -4.526774883270264,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:81071116",
+          "title": "Orlando del Fierro",
+          "score": -5.137694835662842,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:81071132",
+          "title": "Manuel Ferreira Guzmán",
+          "score": -5.216279983520508,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "Plate. XLVI",
+      "match_margin": 0.6109199523925781,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2209.json",
+      "receipt_sha256": "2a0b67d8763eeee5761482c41aaa0b0ae4f0b32e8dbb5b2c5ce8db80ed6be636",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2243,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2243",
+      "source_classification": "partial_plate",
+      "status": "candidate",
+      "candidate_titles": ["Ng", "Ng (name)", ".ng"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2148752",
+          "title": "Ng",
+          "score": -5.192503452301025,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1663951",
+          "title": "Ng (name)",
+          "score": -5.729209899902344,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1237667",
+          "title": ".ng",
+          "score": -5.979867458343506,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Four-crop partial OCR retained; candidate does not repair missing plate content.",
+      "query": "Ng. 1.",
+      "match_margin": 0.5367064476013184,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2243.json",
+      "receipt_sha256": "1eb44cfcc519a84bcc7dd939f298ca88394627c2df24209d14724c1c2255a91f",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2250,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2250",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Beta function",
+        "First-order partial differential equation",
+        "Fokker periodicity block"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:245660",
+          "title": "Beta function",
+          "score": -6.216197967529297,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:4722013",
+          "title": "First-order partial differential equation",
+          "score": -6.401905536651611,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:3303198",
+          "title": "Fokker periodicity block",
+          "score": -6.562056541442871,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "B U X ( 697 ) B Y Z",
+      "match_margin": 0.18570756912231445,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2250.json",
+      "receipt_sha256": "e01ecfeb6a2c4b59607b05efff809c1246aaac04ba11248f5791c873e8ac7737",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2277,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2277",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "The Chronology of Ancient Kingdoms Amended",
+        "I quattro libri dell'architettura",
+        "Pierre Meile"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:17785596",
+          "title": "The Chronology of Ancient Kingdoms Amended",
+          "score": -5.025331497192383,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:1127193",
+          "title": "I quattro libri dell'architettura",
+          "score": -5.390249252319336,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:34260620",
+          "title": "Pierre Meile",
+          "score": -5.5380024909973145,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "Chap. VI.",
+      "match_margin": 0.3649177551269531,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2277.json",
+      "receipt_sha256": "b9060cffca30134ed95e2e1c2571af60f17ff8520b681d917b60553e6ab817ab",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2296,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2296",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Pol (given name)",
+        "Pol",
+        "List of pols in Ahmedabad"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:57679348",
+          "title": "Pol (given name)",
+          "score": -1.9505953788757324,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:3522496",
+          "title": "Pol",
+          "score": -2.1076231002807617,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:34653492",
+          "title": "List of pols in Ahmedabad",
+          "score": -2.4276325702667236,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**POL [ 93 ]**",
+      "match_margin": 0.1570277214050293,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2296.json",
+      "receipt_sha256": "d54a31a3e906511431a426c9a2900ca7f2b382cbad88384d8d448fb0124679e3",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2307,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2307",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "1932 Philadelphia Athletics season",
+        "1915 Chicago White Sox season",
+        "Pristepyris"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:12567412",
+          "title": "1932 Philadelphia Athletics season",
+          "score": -6.723322868347168,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:16039945",
+          "title": "1915 Chicago White Sox season",
+          "score": -7.067785739898682,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:82267036",
+          "title": "Pristepyris",
+          "score": -7.073563575744629,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**AL G** **241** **A L G**",
+      "match_margin": 0.34446287155151367,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2307.json",
+      "receipt_sha256": "0c36d410e100da71fbdb7057746411cab74f96f9d1d542edb4262e905fabdede",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2402,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2402",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Limit comparison test",
+        "Stolz–Cesàro theorem",
+        "Fekete's lemma"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:11030945",
+          "title": "Limit comparison test",
+          "score": -5.626537799835205,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2874706",
+          "title": "Stolz–Cesàro theorem",
+          "score": -5.798581600189209,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:2597408",
+          "title": "Fekete's lemma",
+          "score": -5.883128643035889,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "A N A T O M Y. 3",
+      "match_margin": 0.1720438003540039,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2402.json",
+      "receipt_sha256": "913811ac10100ec222ec17685f6c138bf83df68181e932ed99444ffd89cb3ca8",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2424,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2424",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Agricultural literacy",
+        "Census of agriculture",
+        "Ministry of Agriculture (Indonesia)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:23589291",
+          "title": "Agricultural literacy",
+          "score": -4.440187931060791,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:38121957",
+          "title": "Census of agriculture",
+          "score": -4.663873672485352,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:47484819",
+          "title": "Ministry of Agriculture (Indonesia)",
+          "score": -4.711767673492432,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "AGRICULTURE. 245",
+      "match_margin": 0.22368574142456055,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2424.json",
+      "receipt_sha256": "c947a56ce8518f6554a8e5d8b6ec7c4253a36e848afebf8e0328b95ccb4f1724",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2446,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2446",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "List of chemistry mnemonics",
+        "Silanes",
+        "Group 14 hydride"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:34410870",
+          "title": "List of chemistry mnemonics",
+          "score": -5.154231071472168,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:60826815",
+          "title": "Silanes",
+          "score": -5.84858512878418,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:51379805",
+          "title": "Group 14 hydride",
+          "score": -5.989545822143555,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "C H E M I S SI T R Y. 17",
+      "match_margin": 0.6943540573120117,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2446.json",
+      "receipt_sha256": "4198bcfc0e9e36b2874f06eaf5c490c19504be16a02b932bf12d61e9a36e7510",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2448,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2448",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of Achilidae genera",
+        "List of Diapheromeridae genera",
+        "List of Coleophora species"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:57053633",
+          "title": "List of Achilidae genera",
+          "score": -5.553001403808594,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:57279534",
+          "title": "List of Diapheromeridae genera",
+          "score": -5.714068412780762,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:29686909",
+          "title": "List of Coleophora species",
+          "score": -5.716134071350098,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "**C O M ( 255 ) C O M**",
+      "match_margin": 0.16106700897216797,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2448.json",
+      "receipt_sha256": "0eb6c240726aa4872938dcc1c9635f6a2b1c1fafd1c58c6b8341c946f5f5731d",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2464,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2464",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Half-side formula",
+        "Titu's lemma",
+        "Extranatural transformation"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:26563388",
+          "title": "Half-side formula",
+          "score": -5.5847086906433105,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:58325116",
+          "title": "Titu's lemma",
+          "score": -5.671999454498291,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:31940975",
+          "title": "Extranatural transformation",
+          "score": -5.71829080581665,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "C A B ( 2 ) C A B",
+      "match_margin": 0.08729076385498047,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2464.json",
+      "receipt_sha256": "46d75836f4b6cbf0bf41ecf650f765731feb42088a9ba9fef8321610f0edc559",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2473,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2473",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "List of R.E.M. concert tours",
+        "1980 Edmonton municipal election",
+        "1971 Haringey London Borough Council election"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:15884551",
+          "title": "List of R.E.M. concert tours",
+          "score": -5.791364669799805,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:12059818",
+          "title": "1980 Edmonton municipal election",
+          "score": -5.833600044250488,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:46263746",
+          "title": "1971 Haringey London Borough Council election",
+          "score": -5.987055778503418,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "E R A ( sit)",
+      "match_margin": 0.042235374450683594,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2473.json",
+      "receipt_sha256": "da474595dc3b0fc7c5bf78eab4b172f11f966918b6172551273238d746f87419",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2479,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2479",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "Quotient of a formal language",
+        "List of Nature Conservation Review sites",
+        "Pseudo-polynomial transformation"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:208850",
+          "title": "Quotient of a formal language",
+          "score": -5.974740028381348,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:6689057",
+          "title": "List of Nature Conservation Review sites",
+          "score": -6.255165100097656,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:58104681",
+          "title": "Pseudo-polynomial transformation",
+          "score": -6.297734260559082,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "948 L A W.",
+      "match_margin": 0.2804250717163086,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2479.json",
+      "receipt_sha256": "0b4cf2549320356f8f0d195e390123cf25149a7d2f308309615443be777fe07b",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2493,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2493",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": [
+        "598 BC",
+        "Ohio State Route 598",
+        "List of highways numbered 598"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:303855",
+          "title": "598 BC",
+          "score": -2.6554107666015625,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:8206340",
+          "title": "Ohio State Route 598",
+          "score": -2.9687952995300293,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:19974823",
+          "title": "List of highways numbered 598",
+          "score": -3.073697566986084,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "598",
+      "match_margin": 0.3133845329284668,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2493.json",
+      "receipt_sha256": "ee30d8ab327513b6d27741803ee2efe433d9f1fbd10fafc9b7be8fcb5bea5f98",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2524,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2524",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "The 408",
+        "List of highways numbered 408",
+        "National Route 408 (Costa Rica)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:24033355",
+          "title": "The 408",
+          "score": -2.1811633110046387,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:17457294",
+          "title": "List of highways numbered 408",
+          "score": -2.6850807666778564,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:64135080",
+          "title": "National Route 408 (Costa Rica)",
+          "score": -3.1704065799713135,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "408",
+      "match_margin": 0.5039174556732178,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2524.json",
+      "receipt_sha256": "2ec1b30e5cf2fe2e58ee457b2299456bec45238d0dd258076a88f4048044196f",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2569,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2569",
+      "source_classification": "full_text_parse",
+      "status": "ambiguous",
+      "candidate_titles": ["Sinia", "Mavri Sinia", "Navut language"],
+      "candidates": [
+        {
+          "document_id": "wikipedia:19926970",
+          "title": "Sinia",
+          "score": -3.991347312927246,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:61344333",
+          "title": "Mavri Sinia",
+          "score": -4.4504194259643555,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:38602828",
+          "title": "Navut language",
+          "score": -4.502475738525391,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "ABY S SINIA. 57",
+      "match_margin": 0.4590721130371094,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2569.json",
+      "receipt_sha256": "4757172d88602fecd73db100a9bc2f43397f5d7a919862058c36016f08a61809",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    },
+    {
+      "row_index": 2570,
+      "page_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:2570",
+      "source_classification": "full_text_parse",
+      "status": "candidate",
+      "candidate_titles": [
+        "Abyssinia (disambiguation)",
+        "Abyssinia (1987 musical)",
+        "Abyssinia (1906 musical)"
+      ],
+      "candidates": [
+        {
+          "document_id": "wikipedia:2123",
+          "title": "Abyssinia (disambiguation)",
+          "score": -1.1330277919769287,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:12173260",
+          "title": "Abyssinia (1987 musical)",
+          "score": -1.7772960662841797,
+          "score_type": "raw_logit"
+        },
+        {
+          "document_id": "wikipedia:74544097",
+          "title": "Abyssinia (1906 musical)",
+          "score": -2.169802665710449,
+          "score_type": "raw_logit"
+        }
+      ],
+      "review_state": "Candidate relevance unreviewed; score is not accuracy.",
+      "query": "88 ABYSSINIA.",
+      "match_margin": 0.644268274307251,
+      "receipt_path": "evidence/live-nemotron-matching-retry-20261018T1800Z/page-2570.json",
+      "receipt_sha256": "db95034f05dc1f93ba533b2e11196652ef02635f3b143d49abd45ae0d4dd558c",
+      "original_attempt_status": "blocked",
+      "original_attempt_blockers": ["http: ConnectError"],
+      "final_blockers": [],
+      "inference_tools": [
+        "nemotron.embed.document",
+        "nemotron.embed.query",
+        "lancedb.search",
+        "nemotron.rerank"
+      ]
+    }
+  ]
+}

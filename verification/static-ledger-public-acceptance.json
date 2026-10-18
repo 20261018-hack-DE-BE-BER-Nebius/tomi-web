@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-10-18T20:44:57.516439+00:00",
+  "origin": "https://tomi-web.graysky-dd3771ab.swedencentral.azurecontainerapps.io",
+  "path": "/archive/assets/matching-summary.json",
+  "http": 200,
+  "rows": 100,
+  "unique_rows": 100,
+  "counts": {
+    "ambiguous": 73,
+    "candidate": 23,
+    "blank_leaf": 3,
+    "nontext_cover": 1
+  },
+  "semantic_completed_pages": 96,
+  "public_sha256": "b8b3e760a87c0e90517a4b9df69635efe9d88dbdd2dbdc547adf0427b83aa0c6",
+  "local_sha256": "b8b3e760a87c0e90517a4b9df69635efe9d88dbdd2dbdc547adf0427b83aa0c6",
+  "bytes_match": true,
+  "summary": "All 100 original pages accounted for. Real semantic retrieval completed for 96 textual/partial pages: 23 candidates and 73 ambiguous outcomes. Three blank leaves and one nontext cover remain unmatched. One of the 96 textual pages is a partial astronomy plate. Candidate scores are uncalibrated; matching accuracy and full-page relevance remain unreviewed. Initial transport failures and targeted retries are retained.",
+  "passed": true
+}

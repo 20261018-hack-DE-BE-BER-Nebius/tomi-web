@@ -1,0 +1,62 @@
+{
+  "observed_at": "2026-10-18T20:44:21.768649+00:00",
+  "status": "deployed; actual public file inference verified",
+  "actual_core_receipt": "../tomi-ai/tomi-ai-core/verification/nebius-model-deployment/diarization-live.json",
+  "actual_http": 200,
+  "actual_response_parsed": true,
+  "actual_segments": 6,
+  "actual_anonymous_speakers": 5,
+  "browser_capture_test": "No physical microphone fidelity claim; parent owns actual browser file-picker acceptance.",
+  "unit_tests": {
+    "passed": 33,
+    "assertions": 167
+  },
+  "audio_persistence": "browser memory only; no localStorage or conversation export",
+  "limits": {
+    "max_bytes": 1048576,
+    "max_recording_ms": 59000,
+    "api_timeout_ms": 120000
+  },
+  "changed_paths": [
+    "README.md",
+    "biome.json",
+    "public/deck/architecture.mmd",
+    "src/features/chat/ChatWorkspace.tsx",
+    "src/features/deck/architecture.ts",
+    "src/features/deck/slides.json",
+    "src/features/voice/SpeakerRecording.module.css",
+    "src/features/voice/SpeakerRecording.tsx",
+    "src/features/voice/diarization.test.ts",
+    "src/features/voice/diarization.ts",
+    "src/features/voice/labels.json",
+    "src/features/voice/recording.test.ts",
+    "src/features/voice/recording.ts",
+    "src/features/voice/useSpeakerRecording.ts",
+    "src/features/voice/useVoice.ts",
+    "src/lib/api-routes.test.ts",
+    "verification/archive-receipts.test.ts",
+    "verification/diarization-build.txt",
+    "verification/diarization-tests.txt",
+    "verification/diarization-ui-validation.json",
+    "verification/verify-diarization.ts"
+  ],
+  "production_build": "passed",
+  "typecheck": "passed",
+  "lint": "passed; generated1.3MiB archive pages JSON exceeds Biome formatter size and is skipped",
+  "dependency_audit": {
+    "vulnerabilities": 0,
+    "packages_checked": 338
+  },
+  "input_methods": [
+    "explicit microphone recording",
+    "explicit audio file selection"
+  ],
+  "actual_public_receipt": "../tomi-ai/tomi-ai-core/verification/nebius-model-deployment/public-diarization.json",
+  "actual_public_http": 200,
+  "actual_public_seconds": 34.29,
+  "immutable_receipt_hashes": {
+    "checked": 6,
+    "passed": 6
+  },
+  "prior_public_failure": "tomi-web/verification/diarization-public-acceptance.json retains503 after90.64s"
+}

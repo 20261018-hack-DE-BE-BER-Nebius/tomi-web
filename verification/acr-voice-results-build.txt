@@ -1,0 +1,115 @@
+WARNING: Packing source code into tar to upload...
+WARNING: Excluding '.gitignore' based on default ignore rules
+WARNING: Excluding '.git' based on default ignore rules
+WARNING: Uploading archived source code from '/var/folders/zb/6yrhsssj3tg5647b8fyhjs800000gn/T/build_archive_4dd06037f660406fba3a603dec7d20ca.tar.gz'...
+WARNING: Sending context (49.641 MiB) to registry: tomireg2610181730...
+WARNING: Queued a build with ID: dts
+WARNING: Waiting for an agent...
+2026/10/18 18:04:09 Downloading source code...
+2026/10/18 18:04:11 Finished downloading source code
+2026/10/18 18:04:11 Using acb_vol_5bb96fb6-9e49-492e-aa34-835fced55c03 as the home volume
+2026/10/18 18:04:11 Setting up Docker configuration...
+2026/10/18 18:04:11 Successfully set up Docker configuration
+2026/10/18 18:04:11 Logging in to registry: tomireg2610181730.azurecr.io
+2026/10/18 18:04:12 Successfully logged into tomireg2610181730.azurecr.io
+2026/10/18 18:04:12 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+2026/10/18 18:04:12 Scanning for dependencies...
+2026/10/18 18:04:13 Successfully scanned dependencies
+2026/10/18 18:04:13 Launching container with name: build
+Sending build context to Docker daemon  56.29MB
+
+Step 1/15 : FROM oven/bun:1.4.3 AS dependencies
+1.4.3: Pulling from oven/bun
+4846f2900730: Pulling fs layer
+c4194ac61053: Pulling fs layer
+5fe4e744a71a: Pulling fs layer
+1a556d540a85: Pulling fs layer
+c6792e97436b: Pulling fs layer
+b521ffe452bc: Pulling fs layer
+8a6cfacb3076: Pulling fs layer
+1a556d540a85: Waiting
+c6792e97436b: Waiting
+b521ffe452bc: Waiting
+8a6cfacb3076: Waiting
+5fe4e744a71a: Verifying Checksum
+5fe4e744a71a: Download complete
+c4194ac61053: Verifying Checksum
+c4194ac61053: Download complete
+4846f2900730: Download complete
+c6792e97436b: Verifying Checksum
+c6792e97436b: Download complete
+b521ffe452bc: Verifying Checksum
+b521ffe452bc: Download complete
+8a6cfacb3076: Verifying Checksum
+8a6cfacb3076: Download complete
+1a556d540a85: Verifying Checksum
+1a556d540a85: Download complete
+4846f2900730: Pull complete
+c4194ac61053: Pull complete
+5fe4e744a71a: Pull complete
+1a556d540a85: Pull complete
+c6792e97436b: Pull complete
+b521ffe452bc: Pull complete
+8a6cfacb3076: Pull complete
+Digest: sha256:ec06c3b6cea04192ae6770c434f668ca41d343ad19fa6472216c7b48be39c598
+Status: Downloaded newer image for oven/bun:1.4.3
+ ---> 88fe237a7725
+Step 2/15 : WORKDIR /app
+ ---> Running in 81c805c8c224
+Removing intermediate container 81c805c8c224
+ ---> 482e5ff56baa
+Step 3/15 : COPY package.json bun.lock ./
+ ---> ce92b7ca7d67
+Step 4/15 : RUN bun install --frozen-lockfile
+ ---> Running in 8bb9430e4675
+bun install v1.4.3 (c6da4a4d3)
+
++ @biomejs/biome@2.4.2
++ @tailwindcss/turbopack@4.3.3
++ @types/bun@1.4.3
++ @types/node@20.19.43
++ @types/react@19.3.0
++ @types/react-dom@19.3.0
++ @types/three@0.186.0
++ @types/ws@8.18.1
++ babel-plugin-react-compiler@1.0.0
++ tailwindcss@4.3.3
++ typescript@5.9.3
++ dompurify@3.4.17
++ mermaid@12.2.0
++ next@16.4.2
++ react@19.3.0
++ react-dom@19.3.0
++ react-markdown@10.1.0
++ remark-gfm@4.0.1
++ three@0.186.1
++ ws@8.21.0
+
+288 packages installed [2.67s]
+Removing intermediate container 8bb9430e4675
+ ---> b5b8f712726b
+Step 5/15 : RUN bun audit
+ ---> Running in ad7e08e13e08
+bun audit v1.4.3 (c6da4a4d3)
+
+No vulnerabilities found (checked 338 packages) [226.00ms]
+Removing intermediate container ad7e08e13e08
+ ---> 14c903031f6c
+Step 6/15 : FROM dependencies AS build
+ ---> 14c903031f6c
+Step 7/15 : COPY . .
+ ---> f0112bff60eb
+Step 8/15 : RUN bun run build
+ ---> Running in 6f723a4eda1c
+$ next build
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.ts took 40ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  Creating an optimized production build ...
+
+ERROR: HTTPSConnection(host='acrtaskprodsec175.blob.core.windows.net', port=443): Failed to resolve 'acrtaskprodsec175.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)

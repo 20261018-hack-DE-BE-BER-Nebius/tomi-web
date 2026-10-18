@@ -1,0 +1,58 @@
+{
+  "observed_at": "2026-10-18T18:22:10.010208+00:00",
+  "origin": "https://tomi-web.graysky-dd3771ab.swedencentral.azurecontainerapps.io",
+  "class": "HTTP assets and immutable evidence validation, not browser interaction",
+  "revision": "tomi-web--0000003",
+  "image_digest": "sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168",
+  "checks": {
+    "/api/health": {
+      "http": 200,
+      "expected_text": true
+    },
+    "/chat": {
+      "http": 200,
+      "expected_text": true
+    },
+    "/archive/results.html": {
+      "http": 200,
+      "expected_text": true
+    },
+    "/deck/architecture.mmd": {
+      "http": 200,
+      "expected_text": true
+    }
+  },
+  "receipts": [
+    {
+      "id": "success-candidate-01-shipbuilding",
+      "http": 200,
+      "sha256_matches": true
+    },
+    {
+      "id": "success-candidate-02-litre",
+      "http": 200,
+      "sha256_matches": true
+    },
+    {
+      "id": "success-candidate-03-bleaching",
+      "http": 200,
+      "sha256_matches": true
+    },
+    {
+      "id": "case-01-shipbuilding",
+      "http": 200,
+      "sha256_matches": true
+    },
+    {
+      "id": "case-02-measurement",
+      "http": 200,
+      "sha256_matches": true
+    },
+    {
+      "id": "case-03-bleaching",
+      "http": 200,
+      "sha256_matches": true
+    }
+  ],
+  "passed": true
+}

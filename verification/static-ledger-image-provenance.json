@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-10-18T18:28:47.657039+00:00",
+  "change": "Only static100page matching ledger copied over previously built and audited app",
+  "base_image": "tomireg2610181730.azurecr.io/tomi-web@sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168",
+  "ledger_sha256": "b8b3e760a87c0e90517a4b9df69635efe9d88dbdd2dbdc547adf0427b83aa0c6",
+  "dockerfile": "static-ledger-image/Dockerfile",
+  "canonical_full_build": "Repository Dockerfile remains the independent full build; it now includes same final static ledger"
+}

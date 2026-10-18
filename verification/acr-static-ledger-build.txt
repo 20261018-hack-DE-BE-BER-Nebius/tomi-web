@@ -1,0 +1,128 @@
+WARNING: Packing source code into tar to upload...
+WARNING: Uploading archived source code from '/var/folders/zb/6yrhsssj3tg5647b8fyhjs800000gn/T/build_archive_6f0ceaed3abf44a6b35afbeaf28a9f2a.tar.gz'...
+WARNING: Sending context (21.348 KiB) to registry: tomireg2610181730...
+WARNING: Queued a build with ID: dtt
+WARNING: Waiting for an agent...
+2026/10/18 18:29:01 Downloading source code...
+2026/10/18 18:29:02 Finished downloading source code
+2026/10/18 18:29:02 Using acb_vol_03ea41a1-a702-4b3d-8a00-c83692ea910f as the home volume
+2026/10/18 18:29:02 Setting up Docker configuration...
+2026/10/18 18:29:03 Successfully set up Docker configuration
+2026/10/18 18:29:03 Logging in to registry: tomireg2610181730.azurecr.io
+2026/10/18 18:29:04 Successfully logged into tomireg2610181730.azurecr.io
+2026/10/18 18:29:04 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+2026/10/18 18:29:04 Scanning for dependencies...
+2026/10/18 18:29:04 Successfully scanned dependencies
+2026/10/18 18:29:04 Launching container with name: build
+Sending build context to Docker daemon  154.1kB
+
+Step 1/4 : FROM tomireg2610181730.azurecr.io/tomi-web@sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168
+tomireg2610181730.azurecr.io/tomi-web@sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168: Pulling from tomi-web
+0e840204587c: Pulling fs layer
+c4194ac61053: Pulling fs layer
+5fe4e744a71a: Pulling fs layer
+1a556d540a85: Pulling fs layer
+c6792e97436b: Pulling fs layer
+b521ffe452bc: Pulling fs layer
+8a6cfacb3076: Pulling fs layer
+dc232e4ddd2f: Pulling fs layer
+679de3a907b2: Pulling fs layer
+1a556d540a85: Waiting
+c6792e97436b: Waiting
+b521ffe452bc: Waiting
+8a6cfacb3076: Waiting
+dc232e4ddd2f: Waiting
+679de3a907b2: Waiting
+5fe4e744a71a: Verifying Checksum
+5fe4e744a71a: Download complete
+c4194ac61053: Verifying Checksum
+c4194ac61053: Download complete
+0e840204587c: Verifying Checksum
+0e840204587c: Download complete
+0e840204587c: Pull complete
+c4194ac61053: Pull complete
+5fe4e744a71a: Pull complete
+c6792e97436b: Verifying Checksum
+c6792e97436b: Download complete
+b521ffe452bc: Download complete
+8a6cfacb3076: Verifying Checksum
+8a6cfacb3076: Download complete
+dc232e4ddd2f: Verifying Checksum
+dc232e4ddd2f: Download complete
+1a556d540a85: Verifying Checksum
+1a556d540a85: Download complete
+1a556d540a85: Pull complete
+c6792e97436b: Pull complete
+b521ffe452bc: Pull complete
+8a6cfacb3076: Pull complete
+dc232e4ddd2f: Pull complete
+679de3a907b2: Verifying Checksum
+679de3a907b2: Download complete
+679de3a907b2: Pull complete
+Digest: sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168
+Status: Downloaded newer image for tomireg2610181730.azurecr.io/tomi-web@sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168
+ ---> 76af8172c328
+Step 2/4 : WORKDIR /app
+ ---> Running in 8cc0ec15ab22
+Removing intermediate container 8cc0ec15ab22
+ ---> 0cd1589cbd83
+Step 3/4 : COPY --chown=bun:bun matching-summary.json /app/public/archive/assets/matching-summary.json
+ ---> 45b7a5486652
+Step 4/4 : RUN bun audit
+ ---> Running in c26b46accc05
+bun audit v1.4.3 (c6da4a4d3)
+
+No vulnerabilities found (checked 338 packages) [216.00ms]
+Removing intermediate container c26b46accc05
+ ---> 71778dcbf5e3
+Successfully built 71778dcbf5e3
+Successfully tagged tomireg2610181730.azurecr.io/tomi-web:20261018-implementation
+2026/10/18 18:29:32 Successfully executed container: build
+2026/10/18 18:29:32 Executing step ID: push. Timeout(sec): 3600, Working directory: '', Network: ''
+2026/10/18 18:29:32 Pushing image: tomireg2610181730.azurecr.io/tomi-web:20261018-implementation, attempt 1
+The push refers to repository [tomireg2610181730.azurecr.io/tomi-web]
+506182bc8aaf: Preparing
+fb94bbb00928: Preparing
+c0303eb57c65: Preparing
+bba7cbd90ad4: Preparing
+7d7e5edd555c: Preparing
+18fa3c8262f0: Preparing
+6c04c2b058b9: Preparing
+c83271467846: Preparing
+50db8351c565: Preparing
+0487fc82d485: Preparing
+18fa3c8262f0: Waiting
+6c04c2b058b9: Waiting
+c83271467846: Waiting
+50db8351c565: Waiting
+0487fc82d485: Waiting
+fb94bbb00928: Layer already exists
+7d7e5edd555c: Layer already exists
+bba7cbd90ad4: Layer already exists
+c0303eb57c65: Layer already exists
+18fa3c8262f0: Layer already exists
+c83271467846: Layer already exists
+6c04c2b058b9: Layer already exists
+50db8351c565: Layer already exists
+0487fc82d485: Layer already exists
+506182bc8aaf: Pushed
+20261018-implementation: digest: sha256:421dde8e8b595ca4791fdde9165892f159df72982e64aa5fe93f65382da73a49 size: 2409
+2026/10/18 18:29:34 Successfully pushed image: tomireg2610181730.azurecr.io/tomi-web:20261018-implementation
+2026/10/18 18:29:34 Step ID: build marked as successful (elapsed time in seconds: 28.447735)
+2026/10/18 18:29:34 Populating digests for step ID: build...
+2026/10/18 18:29:35 Successfully populated digests for step ID: build
+2026/10/18 18:29:35 Step ID: push marked as successful (elapsed time in seconds: 2.083414)
+2026/10/18 18:29:35 The following dependencies were found:
+2026/10/18 18:29:35
+- image:
+    registry: tomireg2610181730.azurecr.io
+    repository: tomi-web
+    tag: 20261018-implementation
+    digest: sha256:421dde8e8b595ca4791fdde9165892f159df72982e64aa5fe93f65382da73a49
+  runtime-dependency:
+    registry: tomireg2610181730.azurecr.io
+    repository: tomi-web
+    digest: sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168
+  git: {}
+
+Run ID: dtt was successful after 34s

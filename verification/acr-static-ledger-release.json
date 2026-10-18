@@ -1,0 +1,18 @@
+{
+  "finishTime": "2026-10-18T18:29:38.860217+00:00",
+  "outputImages": [
+    {
+      "digest": "sha256:421dde8e8b595ca4791fdde9165892f159df72982e64aa5fe93f65382da73a49",
+      "registry": "tomireg2610181730.azurecr.io",
+      "repository": "tomi-web",
+      "tag": "20261018-implementation"
+    }
+  ],
+  "platform": {
+    "architecture": "amd64",
+    "os": "linux",
+    "variant": null
+  },
+  "runId": "dtt",
+  "status": "Succeeded"
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "web-only static ledger image",
+  "changes": [
+    {
+      "address": "azurerm_container_app.service[\"web\"]",
+      "actions": ["update"],
+      "before_image": "tomireg2610181730.azurecr.io/tomi-web@sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168",
+      "after_image": "tomireg2610181730.azurecr.io/tomi-web@sha256:421dde8e8b595ca4791fdde9165892f159df72982e64aa5fe93f65382da73a49",
+      "container_changed_keys": ["image"],
+      "environment_changed": false
+    }
+  ]
+}

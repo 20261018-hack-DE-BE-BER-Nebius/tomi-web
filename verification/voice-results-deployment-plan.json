@@ -1,0 +1,14 @@
+{
+  "scope": "web-only",
+  "changes": [
+    {
+      "address": "azurerm_container_app.service[\"web\"]",
+      "actions": ["update"],
+      "before_image": "tomireg2610181730.azurecr.io/tomi-web@sha256:e60ec1ce4c85d3c1677fb633d523198022f03cb85dc69073ad2535ab12e2b9d2",
+      "after_image": "tomireg2610181730.azurecr.io/tomi-web@sha256:b1017427ede8a22997de8868595f32bfe43e404047ac5921969783dccc22f168",
+      "container_changed_keys": ["image"],
+      "top_level_changed_keys": ["template"],
+      "environment_changed": false
+    }
+  ]
+}

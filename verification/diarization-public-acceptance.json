@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-10-18T17:50:17.330Z",
+  "origin": "https://tomi-web.graysky-dd3771ab.swedencentral.azurecontainerapps.io",
+  "route": "/api/diarize",
+  "class": "actual selected-file HTTP inference; not microphone capture",
+  "audio_bytes": 241203,
+  "audio_sha256": "bddd5d6b3478b68eeb0a8a895dadd449e90da1e11a3be5f591d3a9fde94b36ca",
+  "http_status": 503,
+  "duration_seconds": 90.64,
+  "parsed": false,
+  "response": null,
+  "passed": false
+}
