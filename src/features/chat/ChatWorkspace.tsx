@@ -6,6 +6,7 @@ import { ComparisonCard } from "@/components/ui/cards/ComparisonCard/ComparisonC
 import { TracePanel } from "@/components/ui/data-display/TracePanel/TracePanel";
 import { useApp } from "@/features/shell/AppProvider";
 import { Preferences } from "@/features/shell/Header";
+import { SpeakerRecording } from "@/features/voice/SpeakerRecording";
 import { useVoice } from "@/features/voice/useVoice";
 import { api } from "@/lib/api/client";
 import s from "./Chat.module.css";
@@ -55,7 +56,7 @@ export function ChatWorkspace() {
     }
   }
   async function logout() {
-    voice.stop();
+    voice.reset();
     await api("auth/logout", {});
     chat.forget();
     location.assign("/login");
@@ -275,6 +276,7 @@ export function ChatWorkspace() {
             </div>
           )}
           <div className={s.composerArea}>
+            <SpeakerRecording recording={voice.recording} language={language} />
             <Composer
               onSend={chat.send}
               onStop={chat.stop}

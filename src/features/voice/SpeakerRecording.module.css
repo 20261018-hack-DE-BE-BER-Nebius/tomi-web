@@ -1,0 +1,113 @@
+.panel {
+  margin-bottom: var(--s2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  background: var(--surface);
+  font-size: var(--small);
+}
+.panel summary {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: var(--s2) var(--s3);
+  cursor: pointer;
+  color: var(--secondary);
+}
+.panel summary::after {
+  content: "+";
+  margin-left: auto;
+}
+.panel[open] summary::after {
+  content: "−";
+}
+.panel summary svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--accentText);
+}
+.panel summary i {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: var(--pill);
+  background: var(--accent);
+}
+.body {
+  padding: 0 var(--s3) var(--s3);
+  max-height: 18rem;
+  overflow: auto;
+}
+.body p {
+  margin: var(--s2) 0;
+  color: var(--secondary);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  align-items: center;
+}
+.actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text);
+  border-radius: var(--r1);
+  padding: var(--s2) var(--s3);
+  font-size: var(--small);
+}
+.actions button svg {
+  width: 1rem;
+  height: 1rem;
+}
+.actions .primary {
+  background: var(--accent);
+  color: var(--ink);
+  border-color: var(--accent);
+}
+.actions time {
+  font-variant-numeric: tabular-nums;
+  color: var(--secondary);
+}
+.body .status {
+  color: var(--accentText);
+  display: block;
+  margin-top: var(--s2);
+}
+.body .error {
+  color: var(--danger);
+}
+.result {
+  border-top: 1px solid var(--border);
+  margin-top: var(--s3);
+  padding-top: var(--s3);
+}
+.complete {
+  color: var(--text);
+  font-weight: 600;
+}
+.tableWrap {
+  overflow: auto;
+  max-height: 10rem;
+}
+.result table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.result th,
+.result td {
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  padding: var(--s1) var(--s2);
+}
+.result th {
+  color: var(--secondary);
+  font-weight: 500;
+}
+.result small {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--secondary);
+  margin-top: var(--s2);
+}

@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { api } from "@/lib/api/client";
 import { isRecord, type Language, type RunEvent } from "@/lib/types";
+import { useSpeakerRecording } from "./useSpeakerRecording";
 export function useVoice(
   language: Language,
   onQuestion: (query: string) => boolean,
@@ -13,12 +14,13 @@ export function useVoice(
   const [transcript, setTranscript] = useState("");
   const peer = useRef<RTCPeerConnection | null>(null);
   const stream = useRef<MediaStream | null>(null);
+  const recording = useSpeakerRecording(language, stream);
   const channel = useRef<RTCDataChannel | null>(null);
   const audio = useRef<HTMLAudioElement | null>(null);
   const pending = useRef<string | null>(null);
   const question = useRef(onQuestion);
   question.current = onQuestion;
-  function stop() {
+  function disconnect() {
     channel.current?.close();
     peer.current?.close();
     stream.current?.getTracks().forEach((track) => {
@@ -35,6 +37,14 @@ export function useVoice(
     setActive(false);
     setConnecting(false);
     setMuted(false);
+  }
+  function stop() {
+    recording.finish();
+    disconnect();
+  }
+  function reset() {
+    recording.discard();
+    disconnect();
   }
   useEffect(
     () => () => {
@@ -110,7 +120,7 @@ export function useVoice(
       pc.onconnectionstatechange = () => {
         if (pc.connectionState === "failed") {
           setError("The voice connection failed.");
-          stop();
+          reset();
         }
       };
       const dc = pc.createDataChannel("oai-events");
@@ -130,7 +140,7 @@ export function useVoice(
         throw new Error("The voice service returned no SDP answer.");
       await pc.setRemoteDescription({ type: "answer", sdp: answer.sdp });
     } catch (e) {
-      stop();
+      reset();
       setError(e instanceof Error ? e.message : "Unable to start voice");
     }
   }
@@ -167,8 +177,10 @@ export function useVoice(
     muted,
     error,
     transcript,
+    recording,
     start,
     stop,
+    reset,
     toggleMute,
     deliver,
   };

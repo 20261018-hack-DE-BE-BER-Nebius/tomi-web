@@ -38,6 +38,7 @@ describe("BFF route allowlist", () => {
       "images/generations",
       "realtime/session",
       "realtime/connect",
+      "diarize",
     ]) {
       expect(isAllowedApiPath(path)).toBe(true);
     }
